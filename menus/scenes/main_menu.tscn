@@ -1,0 +1,139 @@
+[gd_scene load_steps=9 format=3 uid="uid://btcfigagl7wq0"]
+
+[ext_resource type="Texture2D" uid="uid://crk3jq04o2fy2" path="res://menus/assets/background/img1/aesthetic-pixel-art-garden-at-night-0ax4fopcqzot21lj.jpg" id="1_4bevd"]
+[ext_resource type="Script" path="res://menus/scripts/main_menu.gd" id="1_ukf5g"]
+[ext_resource type="PackedScene" uid="uid://cawi1y20tbbfy" path="res://menus/scenes/option_menu.tscn" id="2_ck0dt"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uyiai"]
+texture = ExtResource("1_4bevd")
+modulate_color = Color(0.568973, 0.568973, 0.568973, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yltbn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w3rh1"]
+bg_color = Color(0.12549, 0.12549, 0.12549, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0.0768358, 0.0768358, 0.0768358, 0.470588)
+shadow_size = 5
+shadow_offset = Vector2(5, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lbojn"]
+bg_color = Color(0.28485, 0.28485, 0.28485, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0.0768358, 0.0768358, 0.0768358, 0.470588)
+shadow_size = 5
+shadow_offset = Vector2(5, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_100ax"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0.0768358, 0.0768358, 0.0768358, 0.470588)
+shadow_size = 5
+shadow_offset = Vector2(5, 5)
+
+[node name="Main_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ukf5g")
+option_menu = ExtResource("2_ck0dt")
+
+[node name="Background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_uyiai")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -256.5
+offset_top = 91.0
+offset_right = 256.5
+offset_bottom = 168.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 56
+text = "A classic The Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Buttons_cont" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = -40.0
+offset_right = 180.0
+offset_bottom = 244.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+
+[node name="Button_start" type="Button" parent="Buttons_cont"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yltbn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w3rh1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lbojn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_100ax")
+text = "Starta la partita"
+
+[node name="Button_options" type="Button" parent="Buttons_cont"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yltbn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w3rh1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lbojn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_100ax")
+text = "Options"
+
+[node name="Button_exit" type="Button" parent="Buttons_cont"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yltbn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w3rh1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lbojn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_100ax")
+text = "Exit"
+
+[connection signal="pressed" from="Buttons_cont/Button_start" to="." method="_on_button_start_pressed"]
+[connection signal="pressed" from="Buttons_cont/Button_options" to="." method="_on_button_options_pressed"]
+[connection signal="pressed" from="Buttons_cont/Button_exit" to="." method="_on_button_exit_pressed"]
