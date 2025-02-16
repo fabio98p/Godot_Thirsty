@@ -16,8 +16,7 @@ func _physics_process(delta: float) -> void:
 		self.velocity = direction * SPEED
 	else:
 		self.velocity = Vector2.ZERO
-	if Input.is_action_pressed("jump"):
-		lose_hp()
+	
 		
 	print(current_hp, isInvincible)
 	move_and_slide()
