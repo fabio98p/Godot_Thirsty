@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://d1cwkxxbgcmug"]
 
-[ext_resource type="Script" path="res://HUD/hud.gd" id="1_xg5uo"]
+[ext_resource type="Script" path="res://Player_and_hud/HUD/hud.gd" id="1_xg5uo"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d6fvt"]
 

@@ -7,7 +7,7 @@ var option_menu_instance
 var pause_already_pressed := false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	get_node("Player_and_Hud").get_node("Player").connect("player_dead", Callable(self, "death_player"))
 
 
 
@@ -20,7 +20,6 @@ func _input(event: InputEvent) -> void:
 		pause_game(false)
 		pause_already_pressed = false
 	elif event.is_action_pressed("pause"):
-		print("c")
 		#controllare se c'è gia il child di pause
 		pause_menu_instance = pause_menu.instantiate()
 		pause_menu_instance.connect("pause_delete", Callable(self, "on_pause_delete"))
@@ -58,3 +57,6 @@ func main_menu_game() -> void:
 func hide_option_menu() -> void:
 	remove_child(option_menu_instance)
 	pause_menu_instance.visible = true
+	
+func death_player()-> void:
+	print("ehm... sono morto di sete! THIRSTY")

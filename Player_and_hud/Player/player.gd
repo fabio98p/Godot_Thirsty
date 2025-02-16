@@ -1,12 +1,14 @@
 extends CharacterBody2D
 
+@onready var hud: Control = $"../HUD"
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
-@export var hp_max := 3
+@export var hp_max := 4
 var current_hp = hp_max
 var isInvincible := false
 @onready var inv_frame_timer: Timer = $InvFrameTimer
+signal player_dead
 
 func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
@@ -16,16 +18,22 @@ func _physics_process(delta: float) -> void:
 		self.velocity = direction * SPEED
 	else:
 		self.velocity = Vector2.ZERO
-	
 		
-	print(current_hp, isInvincible)
 	move_and_slide()
 	
 func lose_hp():
 	if !isInvincible:
 		current_hp = current_hp-1
+		if current_hp == 0:
+			player_dead.emit()
 		inv_frame_timer.start()
 		isInvincible = true
+		hud.change_afterlife(current_hp)
+	
 
 func _on_inv_frame_timer_timeout() -> void:
 	isInvincible = false
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("jump"):
+		lose_hp()

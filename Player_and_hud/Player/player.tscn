@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://dahmom2txf0uv"]
 
-[ext_resource type="Script" path="res://Player/player.gd" id="1_62xh4"]
+[ext_resource type="Script" path="res://Player_and_hud/Player/player.gd" id="1_62xh4"]
 [ext_resource type="Texture2D" uid="uid://cts0i6pcnusmk" path="res://Assets/craftpix-net-865357-free-pixel-citizens-for-top-down-tower-defense/2/U_Idle.png" id="1_uiv2y"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m4sgu"]
@@ -58,4 +58,5 @@ frame_progress = 0.685092
 [node name="InvFrameTimer" type="Timer" parent="."]
 wait_time = 2.5
 
+[connection signal="Take_dmg" from="." to="." method="_on_take_dmg"]
 [connection signal="timeout" from="InvFrameTimer" to="." method="_on_inv_frame_timer_timeout"]

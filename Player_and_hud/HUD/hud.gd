@@ -6,6 +6,7 @@ extends Control
 func _ready() -> void:
 	change_afterlife(4)
 
+
 #questo script si occuperà solo di una cosa, ovvero captare il segnale con un numero relativo alla vita del player, e 
 #in base al numero estratto cambierà la suddetta foto png schifosa della vita
 func change_afterlife(value: int):
