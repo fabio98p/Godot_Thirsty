@@ -26,6 +26,10 @@ OptionsHandler="*res://menus/scripts/options_handler.gd"
 window/size/viewport_width=1024
 window/size/viewport_height=600
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/ez_dialogue/plugin.cfg")
+
 [input]
 
 pause={
