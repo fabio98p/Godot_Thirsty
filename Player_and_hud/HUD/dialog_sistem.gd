@@ -20,6 +20,7 @@ func change_dialog(text: String):
 	dialog.text = text
 
 func _on_ez_dialogue_dialogue_generated(response: DialogueResponse) -> void:
+	clear_dialog()
 	change_dialog(response.text)
 	
 func _on_button_pressed() -> void:
