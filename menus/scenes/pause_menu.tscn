@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://menus/scripts/pause_menu.gd" id="1_amdy2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n88bl"]
-bg_color = Color(0, 0, 0, 0.454902)
+bg_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lvtbe"]
 

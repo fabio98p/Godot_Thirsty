@@ -1,5 +1,6 @@
 extends Node2D
 
+@onready var camera_2d: Camera2D = $Camera2D
 @export var pause_menu: PackedScene
 @export var option_menu: PackedScene
 var pause_menu_instance
