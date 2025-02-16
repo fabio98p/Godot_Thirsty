@@ -1,5 +1,6 @@
 extends Control
 
+@onready var speack_person: Label = $Speack_person
 @onready var dialog: Label = $VBoxContainer/Dialog
 @onready var button: Button = $VBoxContainer/Button
 @onready var ez_dialogue: EzDialogue = $EzDialogue
@@ -43,3 +44,10 @@ func dialogue_slow_effect(new_text: String):
 		await get_tree().create_timer(text_speed).timeout
 		if i == (full_text.length()-1):
 			button.disabled = false
+
+#vado a estrapolare il nome dai segnali custom di ezdialog
+func _on_ez_dialogue_custom_signal_received(value: Variant) -> void:
+	var params = value.split(",")
+	if params[0] == "set":
+		if params[1] == "dialogue_name":
+			speack_person.text = params[2]
