@@ -4,7 +4,7 @@ extends Control
 @onready var npc_img_dialogue: Panel = $Npc_img_dialogue
 @onready var speack_person: Label = $Speack_person
 @onready var dialog: Label = $VBoxContainer/Dialog
-@onready var button: Button = $VBoxContainer/Button
+@onready var button: Button = $Button
 @onready var ez_dialogue: EzDialogue = $EzDialogue
 @export var dialog_json: JSON 
 @onready var state= {}
