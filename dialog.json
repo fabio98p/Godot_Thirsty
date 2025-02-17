@@ -10,7 +10,7 @@
 		]
 	},
 	{
-		"commands_raw": "signal(set,dialogue_name,Alice)\nciao!\nxbdfbd\n---\ndfbdfbdf\n---\ndbffbdf\n?> Continua -> Diag2",
+		"commands_raw": "signal(set,dialogue_name,Alice)\nciao!\n---\nxbdfbd\n---\ndfbdfbdf\n---\ndbffbdf\n?> Continua -> Diag2",
 		"gnode_name": "dialogo1",
 		"id": 1,
 		"name": "Dialogo1",

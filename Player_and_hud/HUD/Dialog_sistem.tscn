@@ -1,8 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://dy6ojes0dljoj"]
+[gd_scene load_steps=8 format=3 uid="uid://dy6ojes0dljoj"]
 
 [ext_resource type="Script" path="res://Player_and_hud/HUD/dialog_sistem.gd" id="1_fisah"]
 [ext_resource type="Script" path="res://addons/ez_dialogue/ez_dialogue_node.gd" id="2_agowf"]
 [ext_resource type="JSON" path="res://dialog.json" id="2_b6slm"]
+[ext_resource type="Texture2D" uid="uid://h638e8j7jdwh" path="res://Assets/pg_images/Sprite_kevin_speak.png" id="4_j8bib"]
+[ext_resource type="Texture2D" uid="uid://du55qsshtf12y" path="res://Assets/pg_images/Sprite_alice_speak.png" id="5_5ootb"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fhcp8"]
+texture = ExtResource("4_j8bib")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vpxt8"]
+texture = ExtResource("5_5ootb")
 
 [node name="DialogSistem" type="Control"]
 layout_mode = 3
@@ -16,10 +24,10 @@ dialog_json = ExtResource("2_b6slm")
 
 [node name="Speack_person" type="Label" parent="."]
 layout_mode = 2
-offset_left = 194.0
-offset_top = 436.0
-offset_right = 325.0
-offset_bottom = 459.0
+offset_left = 278.0
+offset_top = 411.0
+offset_right = 409.0
+offset_bottom = 434.0
 text = "PROVA DIALOGO"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -42,6 +50,25 @@ text = "Continua"
 
 [node name="EzDialogue" type="Node" parent="."]
 script = ExtResource("2_agowf")
+
+[node name="Player_img_dialogue" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -66.0
+offset_top = 358.0
+offset_right = -20.0
+offset_bottom = 398.0
+scale = Vector2(9.41694, 6.07583)
+theme_override_styles/panel = SubResource("StyleBoxTexture_fhcp8")
+metadata/_edit_lock_ = true
+
+[node name="Npc_img_dialogue" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 1071.0
+offset_top = 357.0
+offset_right = 1117.0
+offset_bottom = 397.0
+scale = Vector2(-9.417, 6.076)
+theme_override_styles/panel = SubResource("StyleBoxTexture_vpxt8")
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="custom_signal_received" from="EzDialogue" to="." method="_on_ez_dialogue_custom_signal_received"]
