@@ -1,1 +1,42 @@
-[{"commands_raw":"signal(set,dialogue_name,Kevin)\nquesto è inizio prova è davvero così facile?\nsono cosi assetato....\n---\nwtf!\n---\nSEEEETEEEEEEE\n\n\n?> Continua -> Dialogo1","gnode_name":"start","id":0,"name":"Start","position":[340,300]},{"commands_raw":"signal(set,dialogue_name,Alice)\nciao!\n---\nda quanto tempo mitico Kevin \n---\nil kombini è esploso, sono tutta sporchina ihihi\n---\nalmeno c'erano 7 litri di acqua in bottiglia haha \nsono riuscita a lavare le macchie sulla divisa\n?> Continua -> Diag2","gnode_name":"dialogo1","id":1,"name":"Dialogo1","position":[560,200]},{"commands_raw":"hai sete? prova con la fontana\nnel parco anti-tossici\n\n?> Continua -> Diag3","gnode_name":"diag2","id":2,"name":"Diag2","position":[740,200]},{"commands_raw":"signal(set,dialogue_name,Kevin)\nma cacchio, 7 litri di preziosa acqua....\nnon mi resta che andare al parco anti-tossici\n---\na bere dalla fontana anti-tossici","gnode_name":"diag3","id":3,"name":"Diag3","position":[900,200]}]
+[
+	{
+		"commands_raw": "signal(set,dialogue_name,Kevin)\nquesto è inizio prova è davvero così facile?\nsono cosi assetato....\n---\nwtf!\n---\nSEEEETEEEEEEE\n\n\n?> Continua -> Dialogo1",
+		"gnode_name": "start",
+		"id": 0,
+		"name": "Start",
+		"position": [
+			340,
+			300
+		]
+	},
+	{
+		"commands_raw": "signal(set,dialogue_name,Alice)\nciao!\n---\nda quanto tempo mitico Kevin \n---\nil kombini è esploso, sono tutta sporchina ihihi\n---\nalmeno c'erano 7 litri di acqua in bottiglia haha \nsono riuscita a lavare le macchie sulla divisa\n?> Continua -> Diag2",
+		"gnode_name": "dialogo1",
+		"id": 1,
+		"name": "Dialogo1",
+		"position": [
+			560,
+			200
+		]
+	},
+	{
+		"commands_raw": "hai sete? prova con la fontana\nnel parco anti-tossici\n\n?> Continua -> Diag3",
+		"gnode_name": "diag2",
+		"id": 2,
+		"name": "Diag2",
+		"position": [
+			740,
+			200
+		]
+	},
+	{
+		"commands_raw": "signal(set,dialogue_name,Kevin)\nma cacchio, 7 litri di preziosa acqua....\nnon mi resta che andare al parco anti-tossici\n---\na bere dalla fontana anti-tossici",
+		"gnode_name": "diag3",
+		"id": 3,
+		"name": "Diag3",
+		"position": [
+			900,
+			200
+		]
+	}
+]

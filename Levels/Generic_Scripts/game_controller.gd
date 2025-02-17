@@ -31,6 +31,11 @@ func _input(event: InputEvent) -> void:
 		pause_already_pressed = true
 		pause_game(true)
 		
+func connectToPlayerHit(bullet: Bullet):
+	bullet.connect("playerHit", Callable(self, "playerHitted"))
+
+func playerHitted():
+	print("player take a hit")
 
 func on_pause_delete():
 	print("funzioone")
