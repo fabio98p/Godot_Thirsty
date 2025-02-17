@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dahmom2txf0uv"]
+[gd_scene load_steps=10 format=3 uid="uid://dahmom2txf0uv"]
 
 [ext_resource type="Script" path="res://Player_and_hud/Player/player.gd" id="1_62xh4"]
 [ext_resource type="Texture2D" uid="uid://cts0i6pcnusmk" path="res://Assets/craftpix-net-865357-free-pixel-citizens-for-top-down-tower-defense/2/U_Idle.png" id="1_uiv2y"]
@@ -42,11 +42,13 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_qj1w6"]
+
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_62xh4")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_m4sgu")
 
@@ -58,5 +60,14 @@ frame_progress = 0.685092
 [node name="InvFrameTimer" type="Timer" parent="."]
 wait_time = 2.5
 
-[connection signal="Take_dmg" from="." to="." method="_on_take_dmg"]
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(0, -4)
+collision_layer = 6
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_qj1w6")
+
 [connection signal="timeout" from="InvFrameTimer" to="." method="_on_inv_frame_timer_timeout"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

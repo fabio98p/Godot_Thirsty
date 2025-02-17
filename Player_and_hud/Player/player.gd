@@ -34,6 +34,9 @@ func lose_hp():
 func _on_inv_frame_timer_timeout() -> void:
 	isInvincible = false
 
-func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("jump"):
-		lose_hp()
+#func _input(event: InputEvent) -> void:
+	#if event.is_action_pressed("jump"):
+		#lose_hp()
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	lose_hp()
