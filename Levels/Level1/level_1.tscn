@@ -239,3 +239,5 @@ shape = SubResource("WorldBoundaryShape2D_rf116")
 
 [node name="Enemy" parent="." instance=ExtResource("7_jeel7")]
 position = Vector2(512, 308)
+
+[node name="Bullets" type="Node" parent="."]
