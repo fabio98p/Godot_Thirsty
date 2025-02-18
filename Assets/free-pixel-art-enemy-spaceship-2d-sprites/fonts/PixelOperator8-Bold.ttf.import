@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dhglvak4fko4"
-path="res://.godot/imported/PixelOperator8-Bold.ttf-5a70332b24eb4ba7f7bc8cc414916120.fontdata"
+path="res://.godot/imported/PixelOperator8-Bold.ttf-8aa6e6967f3362a41486e03f70701277.fontdata"
 
 [deps]
 
-source_file="res://Assets/fonts/fonts/PixelOperator8-Bold.ttf"
-dest_files=["res://.godot/imported/PixelOperator8-Bold.ttf-5a70332b24eb4ba7f7bc8cc414916120.fontdata"]
+source_file="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/fonts/PixelOperator8-Bold.ttf"
+dest_files=["res://.godot/imported/PixelOperator8-Bold.ttf-8aa6e6967f3362a41486e03f70701277.fontdata"]
 
 [params]
 
