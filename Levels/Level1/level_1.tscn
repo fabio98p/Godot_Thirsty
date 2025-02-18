@@ -770,4 +770,3 @@ rotation = -1.61759
 texture = ExtResource("18_b2cwn")
 
 [node name="Enemy" parent="." instance=ExtResource("7_jeel7")]
-position = Vector2(464, 166)

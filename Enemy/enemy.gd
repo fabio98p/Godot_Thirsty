@@ -1,6 +1,7 @@
 extends Node2D
 
 @export var bullet_scene: PackedScene
+@export var bullet_sprite: Texture
 @onready var shoot_rate_spawn_timer: Timer = $Shoot_rate_spawn_timer
 @onready var rotator_bullets: Node2D = $Rotator_bullets
 
@@ -31,6 +32,7 @@ func _process(delta):
 func _on_shoot_rate_spawn_timer_timeout() -> void:
 	for s in rotator_bullets.get_children():
 		var bullet = bullet_scene.instantiate()
+		bullet.bullet_sprite = bullet_sprite
 		get_parent().get_node("Bullets").add_child(bullet)
 		bullet.position = s.global_position
 		bullet.rotation = s.global_rotation	

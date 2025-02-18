@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://itvnkntfrqk2"]
+[gd_scene load_steps=6 format=3 uid="uid://itvnkntfrqk2"]
 
 [ext_resource type="Script" path="res://Enemy/enemy.gd" id="1_tlvwf"]
 [ext_resource type="PackedScene" uid="uid://cu4jgwl0oakgw" path="res://bullet_hell/bullet.tscn" id="2_bocpt"]
+[ext_resource type="Texture2D" uid="uid://825bfp2py1va" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Shots/Shot1/shot1_exp2.png" id="3_4u05y"]
 [ext_resource type="Texture2D" uid="uid://dmdvh6bu0fa68" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship6/Ship6.png" id="3_sdtf3"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bqm4q"]
@@ -11,6 +12,7 @@ height = 232.0
 [node name="Enemy" type="Node2D"]
 script = ExtResource("1_tlvwf")
 bullet_scene = ExtResource("2_bocpt")
+bullet_sprite = ExtResource("3_4u05y")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 rotation = 1.5708

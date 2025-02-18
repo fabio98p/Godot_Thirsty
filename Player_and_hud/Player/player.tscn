@@ -51,7 +51,9 @@ script = ExtResource("1_62xh4")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_riwa8")
 animation = &"Idle_back"
-frame_progress = 0.685092
+autoplay = "Idle_back"
+frame = 3
+frame_progress = 0.111039
 
 [node name="InvFrameTimer" type="Timer" parent="."]
 wait_time = 2.5
