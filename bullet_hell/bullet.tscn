@@ -1,16 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://cu4jgwl0oakgw"]
 
 [ext_resource type="Script" path="res://bullet_hell/bullet.gd" id="1_k8ooh"]
-[ext_resource type="Texture2D" uid="uid://dommm0frpedqv" path="res://icon.svg" id="2_xtmp4"]
+[ext_resource type="Texture2D" uid="uid://sw85ho5qd7w1" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship6/Exhaust/Normal_flight/Exhaust1/exhaust2.png" id="2_c81o8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8ysje"]
+radius = 1.25487
 
 [node name="Bullet" type="Node2D"]
 script = ExtResource("1_k8ooh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("2_xtmp4")
+texture = ExtResource("2_c81o8")
 
 [node name="Kill_timer" type="Timer" parent="."]
 wait_time = 10.0

@@ -15,14 +15,14 @@ extends Control
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	ez_dialogue.start_dialogue(dialog_json, state,)
-	
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
 func clear_dialog():
 	dialog.text = ""
-	
+
 func change_dialog(text: String):
 	speack_person.text = state["dialogue_name"]
 	priorityze_speaker_imgtxt(state)
@@ -32,10 +32,10 @@ func change_dialog(text: String):
 func _on_ez_dialogue_dialogue_generated(response: DialogueResponse) -> void:
 	clear_dialog()
 	change_dialog(response.text)
-	
+
 func _on_button_pressed() -> void:
 	ez_dialogue.next()
-	
+
 	#funzioni per il testo in slowmotion mostra lettera per lettara disabilitando il bottone
 func dialogue_slow_effect(new_text: String):
 	button.disabled = true
@@ -56,14 +56,14 @@ func _on_ez_dialogue_custom_signal_received(value: Variant) -> void:
 		var variable_name = params[1]
 		var variable_value = params[2]
 		state[variable_name] = variable_value
-		
+
 	if params[0] == "get":
 		print(params, "parametri")
 		var variable_expression = params[1]
 		var variable_expression_value = params[2]	
 		state[variable_expression]= variable_expression_value
-		
-		
+
+
 #vado a dare priotià di colore all immagine di chi sta parlando, tra player o npc
 func priorityze_speaker_imgtxt(state: Dictionary):
 	var player_dialogue_stylebox = player_img_dialogue.get_theme_stylebox("panel")

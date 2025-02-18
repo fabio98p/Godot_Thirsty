@@ -10,7 +10,7 @@
 		]
 	},
 	{
-		"commands_raw": "signal(set,dialogue_name,Alice,)\nsignal(get,dialogue_prova, Prova)\nciao!\n---\nda quanto tempo mitico Kevin \n---\nil kombini è esploso, sono tutta sporchina ihihi\n---\nalmeno c'erano 7 litri di acqua in bottiglia haha \nsono riuscita a lavare le macchie sulla divisa\n?> Continua -> Diag2",
+		"commands_raw": "signal(set,dialogue_name,Alice,)\nsignal(set,dialogo_prova,ESPRESISONE,)\nciao!\n---\nda quanto tempo mitico Kevin \n---\nil kombini è esploso, sono tutta sporchina ihihi\n---\nalmeno c'erano 7 litri di acqua in bottiglia haha \nsono riuscita a lavare le macchie sulla divisa\n?> Continua ->Diag2\n",
 		"gnode_name": "dialogo1",
 		"id": 1,
 		"name": "Dialogo1",

@@ -1,19 +1,30 @@
-[gd_scene load_steps=4 format=3 uid="uid://itvnkntfrqk2"]
+[gd_scene load_steps=5 format=3 uid="uid://itvnkntfrqk2"]
 
-[ext_resource type="Texture2D" uid="uid://dommm0frpedqv" path="res://icon.svg" id="1_h16ae"]
 [ext_resource type="Script" path="res://Enemy/enemy.gd" id="1_tlvwf"]
 [ext_resource type="PackedScene" uid="uid://cu4jgwl0oakgw" path="res://bullet_hell/bullet.tscn" id="2_bocpt"]
+[ext_resource type="Texture2D" uid="uid://dmdvh6bu0fa68" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship6/Ship6.png" id="3_sdtf3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bqm4q"]
+radius = 59.0
+height = 232.0
 
 [node name="Enemy" type="Node2D"]
 script = ExtResource("1_tlvwf")
 bullet_scene = ExtResource("2_bocpt")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
 scale = Vector2(2, 2)
-texture = ExtResource("1_h16ae")
+texture = ExtResource("3_sdtf3")
 
 [node name="Shoot_rate_spawn_timer" type="Timer" parent="."]
 
 [node name="Rotator_bullets" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+rotation = -8.98647e-05
+shape = SubResource("CapsuleShape2D_bqm4q")
 
 [connection signal="timeout" from="Shoot_rate_spawn_timer" to="." method="_on_shoot_rate_spawn_timer_timeout"]
