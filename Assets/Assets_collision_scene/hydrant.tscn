@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://fe502urw6wt7"]
+
+[ext_resource type="Texture2D" uid="uid://clmu7ulh3ukts" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/hydrant 32x32.png" id="1_r0pu5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_12qi5"]
+size = Vector2(12, 8)
+
+[node name="Hydrant" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_12qi5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_r0pu5")

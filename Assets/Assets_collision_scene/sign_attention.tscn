@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://br0app472xdri"]
+
+[ext_resource type="Texture2D" uid="uid://cnmoxyb1a6oe1" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Road Signs/Sign Attention.png" id="1_kcgev"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ua6nj"]
+size = Vector2(4, 5)
+
+[node name="Sign_attention" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_kcgev")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 16.5)
+shape = SubResource("RectangleShape2D_ua6nj")

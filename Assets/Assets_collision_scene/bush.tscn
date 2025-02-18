@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1ulrl3qd8c3q"]
+
+[ext_resource type="Texture2D" uid="uid://dp8wee3bwxaw7" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Vegetation/bush.png" id="1_wp6jq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5qwd7"]
+
+[node name="Bush" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wp6jq")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("CircleShape2D_5qwd7")

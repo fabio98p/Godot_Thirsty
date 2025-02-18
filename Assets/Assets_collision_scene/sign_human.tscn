@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://w0m2irsvl22v"]
+
+[ext_resource type="Texture2D" uid="uid://cw67yqqfjw7n3" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Road Signs/Sign Human.png" id="1_hc6m0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_87exj"]
+size = Vector2(3, 4)
+
+[node name="Sign_human" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hc6m0")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0.5, 18)
+shape = SubResource("RectangleShape2D_87exj")

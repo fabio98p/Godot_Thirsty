@@ -3,9 +3,6 @@
 [ext_resource type="Script" path="res://Player_and_hud/Player/player.gd" id="1_62xh4"]
 [ext_resource type="Texture2D" uid="uid://cts0i6pcnusmk" path="res://Assets/craftpix-net-865357-free-pixel-citizens-for-top-down-tower-defense/2/U_Idle.png" id="1_uiv2y"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_m4sgu"]
-radius = 9.05539
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_m03m0"]
 atlas = ExtResource("1_uiv2y")
 region = Rect2(0, 0, 48, 48)
@@ -42,15 +39,14 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_m4sgu"]
+radius = 8.24621
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_qj1w6"]
 
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_62xh4")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(0, -5)
-shape = SubResource("CircleShape2D_m4sgu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_riwa8")
@@ -59,6 +55,10 @@ frame_progress = 0.685092
 
 [node name="InvFrameTimer" type="Timer" parent="."]
 wait_time = 2.5
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5)
+shape = SubResource("CircleShape2D_m4sgu")
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(0, -4)

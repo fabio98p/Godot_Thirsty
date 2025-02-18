@@ -57,10 +57,18 @@ func _on_ez_dialogue_custom_signal_received(value: Variant) -> void:
 		var variable_value = params[2]
 		state[variable_name] = variable_value
 		
+	if params[0] == "get":
+		print(params, "parametri")
+		var variable_expression = params[1]
+		var variable_expression_value = params[2]	
+		state[variable_expression]= variable_expression_value
+		
+		
 #vado a dare priotià di colore all immagine di chi sta parlando, tra player o npc
 func priorityze_speaker_imgtxt(state: Dictionary):
 	var player_dialogue_stylebox = player_img_dialogue.get_theme_stylebox("panel")
 	var npc_dialogue_stylebox = npc_img_dialogue.get_theme_stylebox("panel")
+	print(state, "stato")
 	if state["dialogue_name"] == "Kevin":
 		
 		if player_dialogue_stylebox && npc_dialogue_stylebox is StyleBoxTexture :

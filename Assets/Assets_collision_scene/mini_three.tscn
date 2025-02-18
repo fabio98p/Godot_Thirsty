@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://q4yri6y3s148"]
+
+[ext_resource type="Texture2D" uid="uid://bfwkjpt77buc" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Vegetation/minitree32x48.png" id="1_3on77"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4jilt"]
+radius = 5.0
+
+[node name="Mini_three" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_3on77")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 8)
+shape = SubResource("CircleShape2D_4jilt")
