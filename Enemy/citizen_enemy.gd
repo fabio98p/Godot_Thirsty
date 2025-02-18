@@ -1,35 +1,39 @@
 extends Node2D
 
+
 @export var bullet_scene: PackedScene
 @export var bullet_sprite: Texture
-@onready var shoot_rate_spawn_timer: Timer = $Shoot_rate_spawn_timer
+@onready var shoot_rate_spawn_timer: Timer = $Timer
 @onready var rotator_bullets: Node2D = $Rotator_bullets
 
-
 @export var rotate_speed = 100
-@export var shoot_timer_wait_time = 0.2
-@export var spawn_point_count = 4
-@export var radius = 100
-
+@export var shoot_timer_wait_time = 0.1
+@export var spawn_point_count = 1
+@export var radius = 10
+@export var fire_angle_rotator = 50
+@export var bullet_direction: float = 90
 func _ready():	
+	#rotator_bullets.rotation = bullet_direction
 	var step = 2 * PI / spawn_point_count
 	
 	for i in range(spawn_point_count):
 		var spawn_point = Node2D.new()
 		var pos = Vector2(radius, 0).rotated(step * i)
 		spawn_point.position = pos
-		spawn_point.rotation = pos.angle()
+		spawn_point.rotation = bullet_direction + pos.angle()
+		print(spawn_point.rotation)
 		rotator_bullets.add_child(spawn_point)
-		
+	
 	shoot_rate_spawn_timer.wait_time = shoot_timer_wait_time
 	shoot_rate_spawn_timer.start()
 
 
 func _process(delta):
 	var new_rotation = rotator_bullets.rotation_degrees + rotate_speed * delta
-	rotator_bullets.rotation_degrees = fmod(new_rotation, 360)
-	
-func _on_shoot_rate_spawn_timer_timeout() -> void:
+	rotator_bullets.rotation_degrees = fmod(new_rotation, fire_angle_rotator)
+	rotator_bullets.get_children()[0].rotation = bullet_direction
+
+func _on_timer_timeout() -> void:
 	for s in rotator_bullets.get_children():
 		var bullet = bullet_scene.instantiate()
 		bullet.bullet_sprite = bullet_sprite
