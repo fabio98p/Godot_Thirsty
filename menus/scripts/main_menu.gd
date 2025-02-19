@@ -8,7 +8,7 @@ func _process(delta: float) -> void:
 
 
 func _on_button_start_pressed() -> void:
-	get_tree().change_scene_to_file("res://Levels/Level1/level_1.tscn")
+	get_tree().change_scene_to_file("res://Levels/House_dialogue/house_scene.tscn")
 
 func _on_button_options_pressed() -> void:
 	option_menu_instance = option_menu.instantiate()

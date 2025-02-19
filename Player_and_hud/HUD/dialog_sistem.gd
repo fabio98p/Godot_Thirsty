@@ -8,6 +8,13 @@ extends Control
 @onready var ez_dialogue: EzDialogue = $EzDialogue
 @export var dialog_json: JSON 
 @onready var state= {}
+@export var pg_expression:Dictionary = {
+	"idle" : "",
+	"sad" : "",
+	"angry" : "",
+	"surprise": "",
+	"speack": ""
+}
 
 @export var text_speed = 0.02# Tempo tra una lettera e l'altra (in secondi)
 
@@ -58,7 +65,8 @@ func _on_ez_dialogue_custom_signal_received(value: Variant) -> void:
 		state[variable_name] = variable_value
 		if variable_name == "scenes":
 			get_tree().change_scene_to_file(variable_value)
-			
+		if 	variable_name == "pg_expression":
+			change_pg_img_dialogue(pg_expression[variable_value])
 
 	if params[0] == "get":
 		print(params, "parametri")
@@ -89,3 +97,8 @@ func change_background_scene(background_string: String):
 	var style2 : StyleBoxTexture = StyleBoxTexture.new()
 	style2.texture = load(background_string)
 	background.add_theme_stylebox_override("panel", style2)
+
+func change_pg_img_dialogue(img: String):
+	var style2 : StyleBoxTexture = StyleBoxTexture.new()
+	style2.texture = load(img)
+	player_img_dialogue.add_theme_stylebox_override("panel", style2)

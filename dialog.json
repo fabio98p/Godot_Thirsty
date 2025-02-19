@@ -40,7 +40,7 @@
 		]
 	},
 	{
-		"commands_raw": "signal(set,dialogue_name,Kevin)\nsignal(set,background,bg_bed_room)\nWow... it's so fun playing these games haha\n---\nThe Skirat Games are the best!\n---\nAlright, after all that nerding,\nI'm really thirsty. \nTime to get a drink!\n\n?> Continua{\n    signal(set,background,bg_entrance_house)\n    -> Fridge_scene\n} \n\n",
+		"commands_raw": "signal(set,dialogue_name,Kevin)\nsignal(set,background,bg_bed_room)\nsignal(set,pg_expression,idle)\nWow... it's so fun playing these games haha\n---\nThe Skirat Games are the best!\n---\nAlright, after all that nerding,\nI'm really thirsty. \nTime to get a drink!\n\n?> Continua{\n    signal(set,background,bg_entrance_house)\n    -> Fridge_scene\n} \n\n",
 		"gnode_name": "house_scene_start",
 		"id": 4,
 		"name": "House_scene_start",
@@ -50,7 +50,7 @@
 		]
 	},
 	{
-		"commands_raw": "\nUgh, what a pain...\n---\nOh crap... right \n---\nI ran out of water bottles.\n---\nI need to remember to buy some.\n\n?> Continua{\n    signal(set,backgrounds,sink_bg)\n    -> sink_scene\n} ",
+		"commands_raw": "\nUgh, what a pain...\n---\nsignal(set,pg_expression,sad)\nOh crap... right \n---\nI ran out of water bottles.\n---\nsignal(set,pg_expression,idle)\nI need to remember to buy some.\n\n?> Continua{\n    signal(set,backgrounds,sink_bg)\n    -> sink_scene\n} ",
 		"gnode_name": "fridge_scene",
 		"id": 5,
 		"name": "Fridge_scene",
