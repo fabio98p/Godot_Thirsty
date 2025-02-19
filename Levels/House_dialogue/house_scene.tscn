@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0kktvww68kjn"]
+
+[ext_resource type="Script" path="res://Levels/House_dialogue/house_scene.gd" id="1_ch8bo"]
+[ext_resource type="PackedScene" uid="uid://dy6ojes0dljoj" path="res://Player_and_hud/HUD/Dialog_sistem.tscn" id="1_rlhtc"]
+[ext_resource type="AudioStream" uid="uid://bakue03808www" path="res://Assets/musics/music_biiansu_no_sleep_for_busy_minds_016.mp3" id="3_7micj"]
+
+[node name="House_scene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ch8bo")
+dialogue_value = "House_scene_start"
+backgrounds = {
+"bg_bath_room": "res://Assets/Img_background_dialogue/bath_room.png",
+"bg_bed_room": "res://Assets/Img_background_dialogue/bed_room.png",
+"bg_entrance_house": "res://Assets/Img_background_dialogue/entrance_house.png"
+}
+
+[node name="DialogSistem" parent="." instance=ExtResource("1_rlhtc")]
+layout_mode = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_7micj")
+autoplay = true
+bus = &"Music"

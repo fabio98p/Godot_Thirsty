@@ -1,45 +1,45 @@
 [gd_scene load_steps=59 format=4 uid="uid://0voju36h31a7"]
 
-[ext_resource type="Script" path="res://Levels/Generic_Scripts/game_controller.gd" id="1_b1dy2"]
-[ext_resource type="PackedScene" uid="uid://b68it0wpeivxb" path="res://Player_and_hud/Player_and_hud.tscn" id="2_ltfjq"]
-[ext_resource type="PackedScene" uid="uid://bxa5nus5m4ntu" path="res://menus/scenes/pause_menu.tscn" id="2_n4y8o"]
-[ext_resource type="PackedScene" uid="uid://cawi1y20tbbfy" path="res://menus/scenes/option_menu.tscn" id="3_hhsth"]
-[ext_resource type="Texture2D" uid="uid://xuueyigshkw8" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/roadtilemap16x16.png" id="3_mv6bs"]
-[ext_resource type="Texture2D" uid="uid://lpxaft5migcm" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/Tilemap32x32_down_environment.png" id="4_1u4vy"]
-[ext_resource type="Texture2D" uid="uid://clmu7ulh3ukts" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/hydrant 32x32.png" id="7_g077o"]
-[ext_resource type="Texture2D" uid="uid://dp8wee3bwxaw7" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Vegetation/bush.png" id="7_p8gwm"]
-[ext_resource type="Texture2D" uid="uid://gi0u4elkk6p5" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/trashcan32x32.png" id="8_gd6xg"]
-[ext_resource type="Texture2D" uid="uid://bfwkjpt77buc" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Vegetation/minitree32x48.png" id="8_gv7rc"]
-[ext_resource type="Texture2D" uid="uid://ct6sncrita6mm" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Vegetation/tree_big 128x128.png" id="9_3qyoa"]
-[ext_resource type="Texture2D" uid="uid://v0wfco7si6ms" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/weed01.png" id="9_kdprd"]
-[ext_resource type="Texture2D" uid="uid://dhkef4xca8s5s" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/weed02.png" id="10_npcix"]
-[ext_resource type="Texture2D" uid="uid://boxt2f5to4wae" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/building-red-01.png" id="10_tqr27"]
-[ext_resource type="Texture2D" uid="uid://chybptthbbknh" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/weed03.png" id="11_4rkql"]
-[ext_resource type="Texture2D" uid="uid://ettwst82ljkj" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/weed04.png" id="12_seiu6"]
-[ext_resource type="Texture2D" uid="uid://c1g5kvmw0q65w" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/weed05.png" id="13_1lfqv"]
-[ext_resource type="Texture2D" uid="uid://cmpg5bgsxevve" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/roadpit_tilemap_16x16.png" id="14_ykbj6"]
-[ext_resource type="Texture2D" uid="uid://dp1tbkm02yjbj" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/decals/all-decals.png" id="15_c8isu"]
-[ext_resource type="Texture2D" uid="uid://crrhglmyo5njj" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/decals/crack-decal-11x11-01.png" id="16_kd44s"]
-[ext_resource type="Texture2D" uid="uid://dimhiud7dm0gg" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/decals/tire-decal-27x05-01.png" id="17_avvty"]
-[ext_resource type="Texture2D" uid="uid://dh2lxoy7g7mn2" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/decals/tire-decal-64x6-02.png" id="18_b2cwn"]
-[ext_resource type="Texture2D" uid="uid://bu256x0c4nnv6" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Road Signs/roadblock.png" id="20_3ymef"]
-[ext_resource type="Texture2D" uid="uid://dt3fanuo7xmip" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Road Signs/roadblock_vertical.png" id="21_vpv5a"]
-[ext_resource type="Texture2D" uid="uid://d34mbhmw6ei0y" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/decals/crack-decal-18x22-02.png" id="24_341yj"]
-[ext_resource type="Texture2D" uid="uid://b5pgqpmjb2o70" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/decals/trail-decal-74x41.png" id="27_fklnc"]
-[ext_resource type="PackedScene" uid="uid://ci2wix67nofsh" path="res://Assets/Assets_collision_scene/big_three.tscn" id="28_bp8jq"]
-[ext_resource type="PackedScene" uid="uid://d1ulrl3qd8c3q" path="res://Assets/Assets_collision_scene/bush.tscn" id="29_bep6n"]
-[ext_resource type="PackedScene" uid="uid://fe502urw6wt7" path="res://Assets/Assets_collision_scene/hydrant.tscn" id="30_8kp1p"]
-[ext_resource type="PackedScene" uid="uid://q4yri6y3s148" path="res://Assets/Assets_collision_scene/mini_three.tscn" id="31_e387r"]
-[ext_resource type="PackedScene" uid="uid://br0app472xdri" path="res://Assets/Assets_collision_scene/sign_attention.tscn" id="32_sg0y8"]
-[ext_resource type="PackedScene" uid="uid://w0m2irsvl22v" path="res://Assets/Assets_collision_scene/sign_human.tscn" id="33_toa2g"]
-[ext_resource type="PackedScene" uid="uid://nubhk65xe1u2" path="res://Assets/Assets_collision_scene/sign_orange.tscn" id="34_y61o4"]
-[ext_resource type="PackedScene" uid="uid://57j2uriat84d" path="res://Assets/Assets_collision_scene/trashcan.tscn" id="35_xjc3w"]
-[ext_resource type="Texture2D" uid="uid://cb4otlstb4id2" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Animations/Shots/Shot4/shot4_3.png" id="36_tgmcq"]
-[ext_resource type="PackedScene" uid="uid://bhcf2pa40j7ph" path="res://Enemy/citizen_enemy.tscn" id="36_ume5o"]
-[ext_resource type="FontFile" uid="uid://dhglvak4fko4" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/fonts/PixelOperator8-Bold.ttf" id="38_avdq0"]
+[ext_resource type="Script" path="res://Levels/Generic_Scripts/game_controller.gd" id="1_dwsm6"]
+[ext_resource type="PackedScene" uid="uid://bxa5nus5m4ntu" path="res://menus/scenes/pause_menu.tscn" id="2_xhrso"]
+[ext_resource type="PackedScene" uid="uid://cawi1y20tbbfy" path="res://menus/scenes/option_menu.tscn" id="3_106cb"]
+[ext_resource type="PackedScene" uid="uid://b68it0wpeivxb" path="res://Player_and_hud/Player_and_hud.tscn" id="4_6ad1q"]
+[ext_resource type="Texture2D" uid="uid://xuueyigshkw8" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/roadtilemap16x16.png" id="5_kmn14"]
+[ext_resource type="Texture2D" uid="uid://lpxaft5migcm" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/Tilemap32x32_down_environment.png" id="6_egv7w"]
+[ext_resource type="Texture2D" uid="uid://dp8wee3bwxaw7" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Vegetation/bush.png" id="7_r0g7w"]
+[ext_resource type="Texture2D" uid="uid://bfwkjpt77buc" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Vegetation/minitree32x48.png" id="8_6nbjd"]
+[ext_resource type="Texture2D" uid="uid://ct6sncrita6mm" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Vegetation/tree_big 128x128.png" id="9_hm3po"]
+[ext_resource type="Texture2D" uid="uid://boxt2f5to4wae" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/building-red-01.png" id="10_xv2cn"]
+[ext_resource type="Texture2D" uid="uid://bu256x0c4nnv6" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Road Signs/roadblock.png" id="11_sjrpm"]
+[ext_resource type="Texture2D" uid="uid://dt3fanuo7xmip" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Road Signs/roadblock_vertical.png" id="12_osexb"]
+[ext_resource type="Texture2D" uid="uid://clmu7ulh3ukts" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/hydrant 32x32.png" id="13_qn43s"]
+[ext_resource type="Texture2D" uid="uid://gi0u4elkk6p5" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/trashcan32x32.png" id="14_ccel4"]
+[ext_resource type="Texture2D" uid="uid://v0wfco7si6ms" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/weed01.png" id="15_abe87"]
+[ext_resource type="Texture2D" uid="uid://dhkef4xca8s5s" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/weed02.png" id="16_rdi0x"]
+[ext_resource type="Texture2D" uid="uid://chybptthbbknh" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/weed03.png" id="17_j2d38"]
+[ext_resource type="Texture2D" uid="uid://ettwst82ljkj" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/weed04.png" id="18_noti4"]
+[ext_resource type="Texture2D" uid="uid://c1g5kvmw0q65w" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/weed05.png" id="19_qr45n"]
+[ext_resource type="Texture2D" uid="uid://cmpg5bgsxevve" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/roadpit_tilemap_16x16.png" id="20_p86v7"]
+[ext_resource type="Texture2D" uid="uid://dp1tbkm02yjbj" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/decals/all-decals.png" id="21_vd8eq"]
+[ext_resource type="Texture2D" uid="uid://crrhglmyo5njj" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/decals/crack-decal-11x11-01.png" id="22_2f2mp"]
+[ext_resource type="Texture2D" uid="uid://d34mbhmw6ei0y" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/decals/crack-decal-18x22-02.png" id="23_h6528"]
+[ext_resource type="Texture2D" uid="uid://dimhiud7dm0gg" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/decals/tire-decal-27x05-01.png" id="24_tk11m"]
+[ext_resource type="Texture2D" uid="uid://dh2lxoy7g7mn2" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/decals/tire-decal-64x6-02.png" id="25_mmt3s"]
+[ext_resource type="Texture2D" uid="uid://b5pgqpmjb2o70" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/decals/trail-decal-74x41.png" id="26_nqjs3"]
+[ext_resource type="PackedScene" uid="uid://ci2wix67nofsh" path="res://Assets/Assets_collision_scene/big_three.tscn" id="27_jjbok"]
+[ext_resource type="PackedScene" uid="uid://d1ulrl3qd8c3q" path="res://Assets/Assets_collision_scene/bush.tscn" id="28_5r0d0"]
+[ext_resource type="PackedScene" uid="uid://fe502urw6wt7" path="res://Assets/Assets_collision_scene/hydrant.tscn" id="29_sda0p"]
+[ext_resource type="PackedScene" uid="uid://q4yri6y3s148" path="res://Assets/Assets_collision_scene/mini_three.tscn" id="30_6ikqq"]
+[ext_resource type="PackedScene" uid="uid://br0app472xdri" path="res://Assets/Assets_collision_scene/sign_attention.tscn" id="31_3ualn"]
+[ext_resource type="PackedScene" uid="uid://w0m2irsvl22v" path="res://Assets/Assets_collision_scene/sign_human.tscn" id="32_n8hvj"]
+[ext_resource type="PackedScene" uid="uid://nubhk65xe1u2" path="res://Assets/Assets_collision_scene/sign_orange.tscn" id="33_j8cyr"]
+[ext_resource type="PackedScene" uid="uid://57j2uriat84d" path="res://Assets/Assets_collision_scene/trashcan.tscn" id="34_8tdff"]
+[ext_resource type="PackedScene" uid="uid://bhcf2pa40j7ph" path="res://Enemy/citizen_enemy.tscn" id="35_coxac"]
+[ext_resource type="Texture2D" uid="uid://cb4otlstb4id2" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Animations/Shots/Shot4/shot4_3.png" id="36_2p8tf"]
+[ext_resource type="FontFile" uid="uid://dhglvak4fko4" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/fonts/PixelOperator8-Bold.ttf" id="37_qwuab"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kin8h"]
-texture = ExtResource("3_mv6bs")
+texture = ExtResource("5_kmn14")
 0:0/0 = 0
 4:0/0 = 0
 5:0/0 = 0
@@ -57,7 +57,7 @@ texture = ExtResource("3_mv6bs")
 5:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pmpxd"]
-texture = ExtResource("4_1u4vy")
+texture = ExtResource("6_egv7w")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -236,7 +236,7 @@ texture = ExtResource("4_1u4vy")
 11:13/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0j0jm"]
-texture = ExtResource("7_p8gwm")
+texture = ExtResource("7_r0g7w")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.125, -1.125, 8, -2.75, 8, 8, -1.875, 8)
 1:0/0 = 0
@@ -247,7 +247,7 @@ texture = ExtResource("7_p8gwm")
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 2.125, -8, 0.625, -1, -8, 1.375)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_464lb"]
-texture = ExtResource("8_gv7rc")
+texture = ExtResource("8_6nbjd")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
@@ -260,7 +260,7 @@ texture = ExtResource("8_gv7rc")
 1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -3, -8, -3.75, -3, -8, -2.375)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8js5v"]
-texture = ExtResource("9_3qyoa")
+texture = ExtResource("9_hm3po")
 3:0/0 = 0
 4:0/0 = 0
 3:1/0 = 0
@@ -289,7 +289,7 @@ texture = ExtResource("9_3qyoa")
 4:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.375, -8, -1.875, -8, 3.75, -3.375, 0.375, -2.375, -2.625, 0, -5.25, 5.625, -8, 2.5)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jpiqf"]
-texture = ExtResource("10_tqr27")
+texture = ExtResource("10_xv2cn")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -388,7 +388,7 @@ texture = ExtResource("10_tqr27")
 6:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 2.5, -8, 2.875, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ik6jt"]
-texture = ExtResource("20_3ymef")
+texture = ExtResource("11_sjrpm")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(1.75, 5.625, 8, 5.25, 8, 8, 1.5, 8)
 1:0/0 = 0
@@ -409,7 +409,7 @@ texture = ExtResource("20_3ymef")
 2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 2.5, -8, 2.5, -5.75, -0.25, -5.625, -0.5, -0.5, -8, -0.375)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dgbn3"]
-texture = ExtResource("21_vpv5a")
+texture = ExtResource("12_osexb")
 1:0/0 = 0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.625, 3.5, -2.625, 1.625, 8, 1.5, 8, 8, -6.125, 8)
 2:0/0 = 0
@@ -424,7 +424,7 @@ texture = ExtResource("21_vpv5a")
 2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -0.75, -8, -8, -5.125, -8, -5.25, 2.5, -8, 2.625)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qpnm5"]
-texture = ExtResource("7_g077o")
+texture = ExtResource("13_qn43s")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(4.25, 0.25, 8, -1.75, 8, 8, 2.125, 8)
 1:0/0 = 0
@@ -435,7 +435,7 @@ texture = ExtResource("7_g077o")
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -3.125, -8, -2.125, -1, -8, 1.875)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aheru"]
-texture = ExtResource("8_gd6xg")
+texture = ExtResource("14_ccel4")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(2.5, -0.875, 8, -1.5, 8, 8, 3, 8)
 1:0/0 = 0
@@ -446,27 +446,27 @@ texture = ExtResource("8_gd6xg")
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -3.125, -8, -2.125, -1, -8, 1.875)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sk3dc"]
-texture = ExtResource("9_kdprd")
+texture = ExtResource("15_abe87")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3isol"]
-texture = ExtResource("10_npcix")
+texture = ExtResource("16_rdi0x")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a3hgc"]
-texture = ExtResource("11_4rkql")
+texture = ExtResource("17_j2d38")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0b06b"]
-texture = ExtResource("12_seiu6")
+texture = ExtResource("18_noti4")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0uu4t"]
-texture = ExtResource("13_1lfqv")
+texture = ExtResource("19_qr45n")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xqw5t"]
-texture = ExtResource("14_ykbj6")
+texture = ExtResource("20_p86v7")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5, -2.25, 8, -2, 8, 8, -5.625, 8)
 1:0/0 = 0
@@ -598,12 +598,12 @@ _data = {
 "RESET": SubResource("Animation_2lea4")
 }
 
-[node name="Level1" type="Node2D"]
-script = ExtResource("1_b1dy2")
-pause_menu = ExtResource("2_n4y8o")
-option_menu = ExtResource("3_hhsth")
+[node name="Level_city" type="Node2D"]
+script = ExtResource("1_dwsm6")
+pause_menu = ExtResource("2_xhrso")
+option_menu = ExtResource("3_106cb")
 
-[node name="Player_and_Hud" parent="." instance=ExtResource("2_ltfjq")]
+[node name="Player_and_Hud" parent="." instance=ExtResource("4_6ad1q")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(512, 300)
@@ -641,281 +641,281 @@ autoplay = "Auto_scroll"
 [node name="All-decals" type="Sprite2D" parent="Enviroments"]
 position = Vector2(358, -438)
 rotation = -4.41455
-texture = ExtResource("15_c8isu")
+texture = ExtResource("21_vd8eq")
 
 [node name="Crack-decal-11x11-01" type="Sprite2D" parent="Enviroments"]
 position = Vector2(263, -415)
-texture = ExtResource("16_kd44s")
+texture = ExtResource("22_2f2mp")
 
 [node name="Crack-decal-18x22-02" type="Sprite2D" parent="Enviroments"]
 position = Vector2(424, -310)
-texture = ExtResource("24_341yj")
+texture = ExtResource("23_h6528")
 
 [node name="Tire-decal-27x05-01" type="Sprite2D" parent="Enviroments"]
 position = Vector2(295, -261)
 rotation = 1.57266
-texture = ExtResource("17_avvty")
+texture = ExtResource("24_tk11m")
 
 [node name="Tire-decal-64x6-02" type="Sprite2D" parent="Enviroments"]
 position = Vector2(288, -371)
 rotation = -4.69114
-texture = ExtResource("18_b2cwn")
+texture = ExtResource("25_mmt3s")
 
 [node name="Tire-decal-64x6-03" type="Sprite2D" parent="Enviroments"]
 position = Vector2(314, -373)
 rotation = -4.70321
-texture = ExtResource("18_b2cwn")
+texture = ExtResource("25_mmt3s")
 
 [node name="Trail-decal-74x41" type="Sprite2D" parent="Enviroments"]
 position = Vector2(377, -287)
 rotation = 1.54564
-texture = ExtResource("27_fklnc")
+texture = ExtResource("26_nqjs3")
 
-[node name="Big_three" parent="Enviroments" instance=ExtResource("28_bp8jq")]
+[node name="Big_three" parent="Enviroments" instance=ExtResource("27_jjbok")]
 position = Vector2(733, -160)
 
-[node name="Big_three2" parent="Enviroments" instance=ExtResource("28_bp8jq")]
+[node name="Big_three2" parent="Enviroments" instance=ExtResource("27_jjbok")]
 position = Vector2(727, -694)
 
-[node name="Bush" parent="Enviroments" instance=ExtResource("29_bep6n")]
+[node name="Bush" parent="Enviroments" instance=ExtResource("28_5r0d0")]
 position = Vector2(702, -215)
 
-[node name="Bush2" parent="Enviroments" instance=ExtResource("29_bep6n")]
+[node name="Bush2" parent="Enviroments" instance=ExtResource("28_5r0d0")]
 position = Vector2(699, -389)
 
-[node name="Bush3" parent="Enviroments" instance=ExtResource("29_bep6n")]
+[node name="Bush3" parent="Enviroments" instance=ExtResource("28_5r0d0")]
 position = Vector2(699, -567)
 
-[node name="Bush4" parent="Enviroments" instance=ExtResource("29_bep6n")]
+[node name="Bush4" parent="Enviroments" instance=ExtResource("28_5r0d0")]
 position = Vector2(696, -730)
 
-[node name="Hydrant" parent="Enviroments" instance=ExtResource("30_8kp1p")]
+[node name="Hydrant" parent="Enviroments" instance=ExtResource("29_sda0p")]
 position = Vector2(461, -215)
 
-[node name="Hydrant2" parent="Enviroments" instance=ExtResource("30_8kp1p")]
+[node name="Hydrant2" parent="Enviroments" instance=ExtResource("29_sda0p")]
 position = Vector2(461, -496)
 
-[node name="Mini_three" parent="Enviroments" instance=ExtResource("31_e387r")]
+[node name="Mini_three" parent="Enviroments" instance=ExtResource("30_6ikqq")]
 position = Vector2(735, -278)
 
-[node name="Sign_attention" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(449, -293)
 
-[node name="Sign_attention2" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention2" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(199, -293)
 
-[node name="Sign_attention3" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention3" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(223, -502)
 
-[node name="Sign_attention4" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention4" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(461, -559)
 
-[node name="Sign_attention5" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention5" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(460, -707)
 
-[node name="Sign_human" parent="Enviroments" instance=ExtResource("33_toa2g")]
+[node name="Sign_human" parent="Enviroments" instance=ExtResource("32_n8hvj")]
 position = Vector2(696, -346)
 
-[node name="Sign_orange" parent="Enviroments" instance=ExtResource("34_y61o4")]
+[node name="Sign_orange" parent="Enviroments" instance=ExtResource("33_j8cyr")]
 position = Vector2(753, -442)
 
-[node name="Trashcan" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(695, -290)
 
-[node name="Trashcan2" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan2" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(694, -498)
 
-[node name="Trashcan3" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan3" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(694, -641)
 
-[node name="Trashcan4" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan4" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(694, -863)
 
-[node name="Trashcan5" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan5" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(694, -1267)
 
-[node name="Trashcan6" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan6" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(694, -1646)
 
-[node name="Trashcan7" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan7" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(695, -1450)
 
-[node name="Trashcan8" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan8" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(696, -1929)
 
-[node name="Trashcan9" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan9" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(696, -2139)
 
-[node name="Trashcan10" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan10" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(699, -2451)
 
-[node name="Trashcan11" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan11" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(696, -2650)
 
-[node name="Trashcan12" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan12" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(698, -2915)
 
-[node name="Trashcan13" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan13" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(700, -3199)
 
-[node name="Trashcan14" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan14" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(700, -3481)
 
-[node name="Trashcan15" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan15" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(700, -3676)
 
-[node name="Trashcan16" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan16" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(698, -3841)
 
-[node name="Trashcan17" parent="Enviroments" instance=ExtResource("35_xjc3w")]
+[node name="Trashcan17" parent="Enviroments" instance=ExtResource("34_8tdff")]
 position = Vector2(698, -4159)
 
-[node name="Big_three3" parent="Enviroments" instance=ExtResource("28_bp8jq")]
+[node name="Big_three3" parent="Enviroments" instance=ExtResource("27_jjbok")]
 position = Vector2(732, -1057)
 
-[node name="Big_three4" parent="Enviroments" instance=ExtResource("28_bp8jq")]
+[node name="Big_three4" parent="Enviroments" instance=ExtResource("27_jjbok")]
 position = Vector2(734, -1422)
 
-[node name="Big_three5" parent="Enviroments" instance=ExtResource("28_bp8jq")]
+[node name="Big_three5" parent="Enviroments" instance=ExtResource("27_jjbok")]
 position = Vector2(729, -1793)
 
-[node name="Big_three6" parent="Enviroments" instance=ExtResource("28_bp8jq")]
+[node name="Big_three6" parent="Enviroments" instance=ExtResource("27_jjbok")]
 position = Vector2(730, -2234)
 
-[node name="Big_three7" parent="Enviroments" instance=ExtResource("28_bp8jq")]
+[node name="Big_three7" parent="Enviroments" instance=ExtResource("27_jjbok")]
 position = Vector2(731, -2594)
 
-[node name="Big_three8" parent="Enviroments" instance=ExtResource("28_bp8jq")]
+[node name="Big_three8" parent="Enviroments" instance=ExtResource("27_jjbok")]
 position = Vector2(730, -3006)
 
-[node name="Big_three9" parent="Enviroments" instance=ExtResource("28_bp8jq")]
+[node name="Big_three9" parent="Enviroments" instance=ExtResource("27_jjbok")]
 position = Vector2(727, -3381)
 
-[node name="Big_three10" parent="Enviroments" instance=ExtResource("28_bp8jq")]
+[node name="Big_three10" parent="Enviroments" instance=ExtResource("27_jjbok")]
 position = Vector2(731, -3786)
 
-[node name="Big_three11" parent="Enviroments" instance=ExtResource("28_bp8jq")]
+[node name="Big_three11" parent="Enviroments" instance=ExtResource("27_jjbok")]
 position = Vector2(727, -4247)
 
-[node name="Sign_human2" parent="Enviroments" instance=ExtResource("33_toa2g")]
+[node name="Sign_human2" parent="Enviroments" instance=ExtResource("32_n8hvj")]
 position = Vector2(694, -1048)
 
-[node name="Sign_human3" parent="Enviroments" instance=ExtResource("33_toa2g")]
+[node name="Sign_human3" parent="Enviroments" instance=ExtResource("32_n8hvj")]
 position = Vector2(689, -1767)
 
-[node name="Sign_human4" parent="Enviroments" instance=ExtResource("33_toa2g")]
+[node name="Sign_human4" parent="Enviroments" instance=ExtResource("32_n8hvj")]
 position = Vector2(694, -2402)
 
-[node name="Sign_human5" parent="Enviroments" instance=ExtResource("33_toa2g")]
+[node name="Sign_human5" parent="Enviroments" instance=ExtResource("32_n8hvj")]
 position = Vector2(693, -3175)
 
-[node name="Sign_human6" parent="Enviroments" instance=ExtResource("33_toa2g")]
+[node name="Sign_human6" parent="Enviroments" instance=ExtResource("32_n8hvj")]
 position = Vector2(691, -3883)
 
-[node name="Sign_attention6" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention6" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(205, -3879)
 
-[node name="Sign_attention7" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention7" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(223, -3803)
 
-[node name="Sign_attention8" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention8" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(440, -3833)
 
-[node name="Sign_attention9" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention9" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(227, -3098)
 
-[node name="Sign_attention10" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention10" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(213, -3158)
 
-[node name="Sign_attention11" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention11" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(443, -3104)
 
-[node name="Sign_attention12" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention12" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(208, -2452)
 
-[node name="Sign_attention13" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention13" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(229, -2398)
 
-[node name="Sign_attention14" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention14" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(443, -2471)
 
-[node name="Sign_attention15" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention15" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(446, -2367)
 
-[node name="Sign_attention16" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention16" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(226, -1755)
 
-[node name="Sign_attention17" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention17" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(216, -1709)
 
-[node name="Sign_attention18" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention18" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(442, -1720)
 
-[node name="Sign_attention19" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention19" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(208, -1037)
 
-[node name="Sign_attention20" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention20" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(229, -1015)
 
-[node name="Sign_attention21" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention21" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(197, -1001)
 
-[node name="Sign_attention22" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention22" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(224, -974)
 
-[node name="Sign_attention23" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention23" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(445, -1028)
 
-[node name="Sign_attention24" parent="Enviroments" instance=ExtResource("32_sg0y8")]
+[node name="Sign_attention24" parent="Enviroments" instance=ExtResource("31_3ualn")]
 position = Vector2(443, -991)
 
 [node name="Tire-decal-64x6-04" type="Sprite2D" parent="Enviroments"]
 position = Vector2(364, -691)
 rotation = -1.61759
-texture = ExtResource("18_b2cwn")
+texture = ExtResource("25_mmt3s")
 
 [node name="Tire-decal-64x6-05" type="Sprite2D" parent="Enviroments"]
 position = Vector2(389, -692)
 rotation = -1.61759
-texture = ExtResource("18_b2cwn")
+texture = ExtResource("25_mmt3s")
 
 [node name="Enemies" type="Node" parent="."]
 
 [node name="Est_enemies" type="Node" parent="Enemies"]
 
-[node name="Citizen_enemy2" parent="Enemies/Est_enemies" instance=ExtResource("36_ume5o")]
+[node name="Citizen_enemy2" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
 position = Vector2(856, -565)
-bullet_sprite = ExtResource("36_tgmcq")
+bullet_sprite = ExtResource("36_2p8tf")
 rotate_speed = 50
 shoot_timer_wait_time = 0.2
 
-[node name="Citizen_enemy3" parent="Enemies/Est_enemies" instance=ExtResource("36_ume5o")]
+[node name="Citizen_enemy3" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
 position = Vector2(866, -1269)
-bullet_sprite = ExtResource("36_tgmcq")
+bullet_sprite = ExtResource("36_2p8tf")
 rotate_speed = 50
 shoot_timer_wait_time = 0.2
 
-[node name="Citizen_enemy4" parent="Enemies/Est_enemies" instance=ExtResource("36_ume5o")]
+[node name="Citizen_enemy4" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
 position = Vector2(850, -1718)
-bullet_sprite = ExtResource("36_tgmcq")
+bullet_sprite = ExtResource("36_2p8tf")
 rotate_speed = 50
 shoot_timer_wait_time = 0.2
 
-[node name="Citizen_enemy5" parent="Enemies/Est_enemies" instance=ExtResource("36_ume5o")]
+[node name="Citizen_enemy5" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
 position = Vector2(854, -2025)
-bullet_sprite = ExtResource("36_tgmcq")
+bullet_sprite = ExtResource("36_2p8tf")
 rotate_speed = 50
 shoot_timer_wait_time = 0.2
 
-[node name="Citizen_enemy6" parent="Enemies/Est_enemies" instance=ExtResource("36_ume5o")]
+[node name="Citizen_enemy6" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
 position = Vector2(854, -2559)
-bullet_sprite = ExtResource("36_tgmcq")
+bullet_sprite = ExtResource("36_2p8tf")
 rotate_speed = 50
 shoot_timer_wait_time = 0.2
 
-[node name="Citizen_enemy7" parent="Enemies/Est_enemies" instance=ExtResource("36_ume5o")]
+[node name="Citizen_enemy7" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
 position = Vector2(854, -3194)
-bullet_sprite = ExtResource("36_tgmcq")
+bullet_sprite = ExtResource("36_2p8tf")
 rotate_speed = 50
 shoot_timer_wait_time = 0.2
 
@@ -923,7 +923,7 @@ shoot_timer_wait_time = 0.2
 
 [node name="West_enemies2" type="Node" parent="Enemies"]
 
-[node name="Citizen_enemy3" parent="Enemies/West_enemies2" instance=ExtResource("36_ume5o")]
+[node name="Citizen_enemy3" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
 position = Vector2(43, -708)
 rotate_speed = 80
 shoot_timer_wait_time = 0.4
@@ -931,7 +931,7 @@ radius = 0
 fire_angle_rotator = 70
 bullet_direction = 0.0
 
-[node name="Citizen_enemy4" parent="Enemies/West_enemies2" instance=ExtResource("36_ume5o")]
+[node name="Citizen_enemy4" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
 position = Vector2(36, -1178)
 rotate_speed = 80
 shoot_timer_wait_time = 0.4
@@ -939,7 +939,7 @@ radius = 0
 fire_angle_rotator = 70
 bullet_direction = 0.0
 
-[node name="Citizen_enemy5" parent="Enemies/West_enemies2" instance=ExtResource("36_ume5o")]
+[node name="Citizen_enemy5" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
 position = Vector2(50, -1606)
 rotate_speed = 80
 shoot_timer_wait_time = 0.4
@@ -947,7 +947,7 @@ radius = 0
 fire_angle_rotator = 70
 bullet_direction = 0.0
 
-[node name="Citizen_enemy6" parent="Enemies/West_enemies2" instance=ExtResource("36_ume5o")]
+[node name="Citizen_enemy6" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
 position = Vector2(50, -2034)
 rotate_speed = 80
 shoot_timer_wait_time = 0.4
@@ -955,7 +955,7 @@ radius = 0
 fire_angle_rotator = 70
 bullet_direction = 0.0
 
-[node name="Citizen_enemy7" parent="Enemies/West_enemies2" instance=ExtResource("36_ume5o")]
+[node name="Citizen_enemy7" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
 position = Vector2(58, -2419)
 rotate_speed = 80
 shoot_timer_wait_time = 0.4
@@ -963,7 +963,7 @@ radius = 0
 fire_angle_rotator = 70
 bullet_direction = 0.0
 
-[node name="Citizen_enemy8" parent="Enemies/West_enemies2" instance=ExtResource("36_ume5o")]
+[node name="Citizen_enemy8" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
 position = Vector2(25, -2767)
 rotate_speed = 80
 shoot_timer_wait_time = 0.4
@@ -971,7 +971,7 @@ radius = 0
 fire_angle_rotator = 70
 bullet_direction = 0.0
 
-[node name="Citizen_enemy9" parent="Enemies/West_enemies2" instance=ExtResource("36_ume5o")]
+[node name="Citizen_enemy9" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
 position = Vector2(42, -3445)
 rotate_speed = 80
 shoot_timer_wait_time = 0.4
@@ -987,7 +987,7 @@ offset_top = 325.0
 offset_right = 413.0
 offset_bottom = 379.0
 theme_override_colors/font_color = Color(0.945098, 1, 0, 1)
-theme_override_fonts/font = ExtResource("38_avdq0")
+theme_override_fonts/font = ExtResource("37_qwuab")
 text = "W
 A  S  D
 for the movement"
@@ -999,7 +999,7 @@ offset_top = 322.0
 offset_right = 821.0
 offset_bottom = 395.0
 theme_override_colors/font_color = Color(0.945098, 1, 0, 1)
-theme_override_fonts/font = ExtResource("38_avdq0")
+theme_override_fonts/font = ExtResource("37_qwuab")
 text = "Nothing can go wrong
 its just water no?
 be careful

@@ -67,7 +67,7 @@ script = ExtResource("1_62xh4")
 sprite_frames = SubResource("SpriteFrames_riwa8")
 animation = &"run"
 autoplay = "run"
-frame_progress = 0.0320281
+frame_progress = 0.388568
 
 [node name="InvFrameTimer" type="Timer" parent="."]
 wait_time = 2.5

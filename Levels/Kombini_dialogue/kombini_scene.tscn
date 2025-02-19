@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dggmjyydsuik2"]
+
+[ext_resource type="PackedScene" uid="uid://dy6ojes0dljoj" path="res://Player_and_hud/HUD/Dialog_sistem.tscn" id="1_qhr5c"]
+[ext_resource type="Script" path="res://Levels/Kombini_dialogue/kombini_scene.gd" id="1_yj4tw"]
+
+[node name="Kombini_scene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yj4tw")
+
+[node name="DialogSistem" parent="." instance=ExtResource("1_qhr5c")]
+layout_mode = 1

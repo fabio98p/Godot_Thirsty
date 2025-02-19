@@ -1,5 +1,5 @@
 extends Control
-
+@onready var background: Panel = $Background
 @onready var player_img_dialogue: Panel = $Player_img_dialogue
 @onready var npc_img_dialogue: Panel = $Npc_img_dialogue
 @onready var speack_person: Label = $Speack_person
@@ -56,13 +56,15 @@ func _on_ez_dialogue_custom_signal_received(value: Variant) -> void:
 		var variable_name = params[1]
 		var variable_value = params[2]
 		state[variable_name] = variable_value
+		if variable_name == "scenes":
+			get_tree().change_scene_to_file(variable_value)
+			
 
 	if params[0] == "get":
 		print(params, "parametri")
 		var variable_expression = params[1]
 		var variable_expression_value = params[2]	
 		state[variable_expression]= variable_expression_value
-
 
 #vado a dare priotià di colore all immagine di chi sta parlando, tra player o npc
 func priorityze_speaker_imgtxt(state: Dictionary):
@@ -81,3 +83,9 @@ func priorityze_speaker_imgtxt(state: Dictionary):
 		
 func start_dialogue(dialogue_value: String):
 	ez_dialogue.start_dialogue(dialog_json, state, dialogue_value)
+
+#funnzione per modificare il background della scena in base al dialogo che si sta effettivamente conducendo
+func change_background_scene(background_string: String):
+	var style2 : StyleBoxTexture = StyleBoxTexture.new()
+	style2.texture = load(background_string)
+	background.add_theme_stylebox_override("panel", style2)

@@ -9,7 +9,7 @@ var bullet_sprite: Texture
 signal playerHit
 
 func _ready() -> void:
-	get_tree().get_root().get_node("Level1").connectToPlayerHit(self)
+	get_tree().get_root().get_node("Level_city").connectToPlayerHit(self)
 	sprite_2d.texture = bullet_sprite
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
