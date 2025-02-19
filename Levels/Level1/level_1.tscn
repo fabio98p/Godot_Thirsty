@@ -675,7 +675,7 @@ texture = ExtResource("27_fklnc")
 position = Vector2(733, -160)
 
 [node name="Big_three2" parent="Enviroments" instance=ExtResource("28_bp8jq")]
-position = Vector2(736, -694)
+position = Vector2(727, -694)
 
 [node name="Bush" parent="Enviroments" instance=ExtResource("29_bep6n")]
 position = Vector2(702, -215)
@@ -771,31 +771,31 @@ position = Vector2(698, -3841)
 position = Vector2(698, -4159)
 
 [node name="Big_three3" parent="Enviroments" instance=ExtResource("28_bp8jq")]
-position = Vector2(743, -1057)
+position = Vector2(732, -1057)
 
 [node name="Big_three4" parent="Enviroments" instance=ExtResource("28_bp8jq")]
-position = Vector2(747, -1421)
+position = Vector2(734, -1422)
 
 [node name="Big_three5" parent="Enviroments" instance=ExtResource("28_bp8jq")]
-position = Vector2(747, -1792)
+position = Vector2(729, -1793)
 
 [node name="Big_three6" parent="Enviroments" instance=ExtResource("28_bp8jq")]
-position = Vector2(745, -2235)
+position = Vector2(730, -2234)
 
 [node name="Big_three7" parent="Enviroments" instance=ExtResource("28_bp8jq")]
-position = Vector2(747, -2593)
+position = Vector2(731, -2594)
 
 [node name="Big_three8" parent="Enviroments" instance=ExtResource("28_bp8jq")]
-position = Vector2(745, -3006)
+position = Vector2(730, -3006)
 
 [node name="Big_three9" parent="Enviroments" instance=ExtResource("28_bp8jq")]
-position = Vector2(743, -3377)
+position = Vector2(727, -3381)
 
 [node name="Big_three10" parent="Enviroments" instance=ExtResource("28_bp8jq")]
-position = Vector2(743, -3788)
+position = Vector2(731, -3786)
 
 [node name="Big_three11" parent="Enviroments" instance=ExtResource("28_bp8jq")]
-position = Vector2(736, -4246)
+position = Vector2(727, -4247)
 
 [node name="Sign_human2" parent="Enviroments" instance=ExtResource("33_toa2g")]
 position = Vector2(694, -1048)

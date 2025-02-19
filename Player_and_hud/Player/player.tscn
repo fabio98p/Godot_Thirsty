@@ -1,48 +1,63 @@
-[gd_scene load_steps=10 format=3 uid="uid://dahmom2txf0uv"]
+[gd_scene load_steps=12 format=3 uid="uid://dahmom2txf0uv"]
 
 [ext_resource type="Script" path="res://Player_and_hud/Player/player.gd" id="1_62xh4"]
-[ext_resource type="Texture2D" uid="uid://cts0i6pcnusmk" path="res://Assets/craftpix-net-865357-free-pixel-citizens-for-top-down-tower-defense/2/U_Idle.png" id="1_uiv2y"]
+[ext_resource type="Texture2D" uid="uid://6n2sqicdqq3y" path="res://Assets/craftpix-net-865357-free-pixel-citizens-for-top-down-tower-defense/2/U_Walk.png" id="2_ffvts"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_m03m0"]
-atlas = ExtResource("1_uiv2y")
+[sub_resource type="AtlasTexture" id="AtlasTexture_fesnq"]
+atlas = ExtResource("2_ffvts")
 region = Rect2(0, 0, 48, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vyyao"]
-atlas = ExtResource("1_uiv2y")
+[sub_resource type="AtlasTexture" id="AtlasTexture_81n8q"]
+atlas = ExtResource("2_ffvts")
 region = Rect2(48, 0, 48, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_aane8"]
-atlas = ExtResource("1_uiv2y")
+[sub_resource type="AtlasTexture" id="AtlasTexture_wram4"]
+atlas = ExtResource("2_ffvts")
 region = Rect2(96, 0, 48, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5soar"]
-atlas = ExtResource("1_uiv2y")
+[sub_resource type="AtlasTexture" id="AtlasTexture_tk0ls"]
+atlas = ExtResource("2_ffvts")
 region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shk46"]
+atlas = ExtResource("2_ffvts")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n00v8"]
+atlas = ExtResource("2_ffvts")
+region = Rect2(240, 0, 48, 48)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_riwa8"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_m03m0")
+"texture": SubResource("AtlasTexture_fesnq")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vyyao")
+"texture": SubResource("AtlasTexture_81n8q")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_aane8")
+"texture": SubResource("AtlasTexture_wram4")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5soar")
+"texture": SubResource("AtlasTexture_tk0ls")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shk46")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n00v8")
 }],
 "loop": true,
-"name": &"Idle_back",
-"speed": 5.0
+"name": &"run",
+"speed": 7.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m4sgu"]
 radius = 8.24621
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qj1w6"]
+radius = 3.16228
 
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
@@ -50,10 +65,9 @@ script = ExtResource("1_62xh4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_riwa8")
-animation = &"Idle_back"
-autoplay = "Idle_back"
-frame = 3
-frame_progress = 0.111039
+animation = &"run"
+autoplay = "run"
+frame_progress = 0.0320281
 
 [node name="InvFrameTimer" type="Timer" parent="."]
 wait_time = 2.5
