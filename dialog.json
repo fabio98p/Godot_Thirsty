@@ -40,7 +40,7 @@
 		]
 	},
 	{
-		"commands_raw": "signal(set,dialogue_name,Kevin)\nsignal(set,background,bg_bed_room)\nsignal(set,pg_expression,idle)\nWow... it's so fun playing these games haha\n---\nThe Skirat Games are the best!\n---\nAlright, after all that nerding,\nI'm really thirsty. \nTime to get a drink!\n\n?> Continua{\n    signal(set,background,bg_entrance_house)\n    -> Fridge_scene\n} \n\n",
+		"commands_raw": "signal(set,dialogue_name,Kevin)\nsignal(set,npc_name,Alice)\nsignal(set,npc_expression,idle)\nsignal(set,background,bg_bed_room)\nsignal(set,pg_expression,speack)\n\nWow... it's so fun playing these games haha\n---\nThe Skirat Games are the best!\n---\nAlright, after all that nerding,\nI'm really thirsty. \nTime to get a drink!\n\n?> Continua{\n    signal(set,dialogue_name,Alice)\n    signal(set,npc_expression,speack)\n    signal(set,pg_expression,idle)\n    signal(set,background,bg_entrance_house)\n    -> Fridge_scene\n} \n\n",
 		"gnode_name": "house_scene_start",
 		"id": 4,
 		"name": "House_scene_start",

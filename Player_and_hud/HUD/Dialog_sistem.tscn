@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dy6ojes0dljoj"]
+[gd_scene load_steps=12 format=3 uid="uid://dy6ojes0dljoj"]
 
 [ext_resource type="Script" path="res://Player_and_hud/HUD/dialog_sistem.gd" id="1_fisah"]
 [ext_resource type="Script" path="res://addons/ez_dialogue/ez_dialogue_node.gd" id="2_agowf"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://dphcgbji5yf7p" path="res://Assets/generic_img/back_dialog_backgoround.png" id="3_bk1p3"]
 [ext_resource type="Texture2D" uid="uid://h638e8j7jdwh" path="res://Assets/pg_images/Sprite_kevin_speak.png" id="4_j8bib"]
 [ext_resource type="FontFile" uid="uid://dhglvak4fko4" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/fonts/PixelOperator8-Bold.ttf" id="4_sotqv"]
-[ext_resource type="Texture2D" uid="uid://du55qsshtf12y" path="res://Assets/pg_images/Sprite_alice_speak.png" id="5_5ootb"]
 [ext_resource type="FontFile" uid="uid://doebr7djodoy2" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/fonts/PixelOperator8.ttf" id="5_7edsq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wyqyc"]
@@ -22,7 +21,6 @@ shadow_offset = Vector2(2, 2)
 texture = ExtResource("4_j8bib")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vpxt8"]
-texture = ExtResource("5_5ootb")
 
 [node name="DialogSistem" type="Control"]
 layout_mode = 3

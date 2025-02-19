@@ -18,6 +18,11 @@ backgrounds = {
 "bg_bed_room": "res://Assets/Img_background_dialogue/bed_room.png",
 "bg_entrance_house": "res://Assets/Img_background_dialogue/entrance_house.png"
 }
+npc_expression = {
+"idle": "res://Assets/pg_images/Sprite_alice_idle.png",
+"sad": "res://Assets/pg_images/Sprite_alice_sad.png",
+"speack": "res://Assets/pg_images/Sprite_alice_speak.png"
+}
 
 [node name="DialogSistem" parent="." instance=ExtResource("1_rlhtc")]
 layout_mode = 1
