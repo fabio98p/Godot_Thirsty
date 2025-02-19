@@ -100,6 +100,7 @@ func change_background_scene(background_string: String):
 
 func change_pg_img_dialogue(img: String):
 	var style2 : StyleBoxTexture = StyleBoxTexture.new()
+	
 	style2.texture = load(img)
 	player_img_dialogue.add_theme_stylebox_override("panel", style2)
 
