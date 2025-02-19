@@ -14,8 +14,8 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	ez_dialogue.start_dialogue(dialog_json, state,)
-
+	#ez_dialogue.start_dialogue(dialog_json, state,)
+	pass
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
@@ -79,3 +79,5 @@ func priorityze_speaker_imgtxt(state: Dictionary):
 		npc_dialogue_stylebox.modulate_color = Color(1,1,1,1) 
 		player_dialogue_stylebox.modulate_color = Color(0.204, 0.204, 0.204, 0.686)
 		
+func start_dialogue(dialogue_value: String):
+	ez_dialogue.start_dialogue(dialog_json, state, dialogue_value)
