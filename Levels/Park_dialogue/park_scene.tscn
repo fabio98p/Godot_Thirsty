@@ -11,6 +11,19 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_t7gtu")
+dialogue_value = "Park_scene_start"
+backgrounds = {
+"bg_bath_room": "",
+"bg_bed_room": "res://Assets/Img_background_dialogue/imageforestpark.png",
+"bg_entrance_house": ""
+}
+npc_expression = {
+"angry": "res://Assets/pg_images/Sprite_sergente_angry.png",
+"idle": "res://Assets/pg_images/Sprite_sergente_idle.png",
+"sad": "res://Assets/pg_images/Sprite_sergente_sad.png",
+"speack": "res://Assets/pg_images/Sprite_sergente_speak.png",
+"surprise": "res://Assets/pg_images/Sprite_sergente_stupito.png"
+}
 
 [node name="DialogSistem" parent="." instance=ExtResource("1_vcd1c")]
 layout_mode = 1
