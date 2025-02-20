@@ -14,6 +14,7 @@ extends Node2D
 @export var radius = 10
 @export var fire_angle_rotator = 50
 @export var bullet_direction: float = 90
+@export var bullet_speed: float = 100
 func _ready():	
 	#rotator_bullets.rotation = bullet_direction
 	rotetor_cont.rotation = bullet_direction
@@ -24,7 +25,6 @@ func _ready():
 		var pos = Vector2(radius, 0).rotated(step * i)
 		spawn_point.position = pos
 		spawn_point.rotation = pos.angle()
-		print(spawn_point.rotation)
 		
 		rotator_bullets.add_child(spawn_point)
 	
@@ -42,6 +42,7 @@ func _on_timer_timeout() -> void:
 		var bullet = bullet_scene.instantiate()
 		bullet.bullet_sprite = bullet_sprite
 		bullet.level_scene = level_scene
+		bullet.bullet_speed = bullet_speed
 		get_parent().get_node("Bullets").add_child(bullet)
 		bullet.position = s.global_position
 		bullet.rotation = s.global_rotation	

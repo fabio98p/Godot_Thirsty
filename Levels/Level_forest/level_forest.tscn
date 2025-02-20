@@ -8,7 +8,9 @@
 script = ExtResource("1_s31yo")
 
 [node name="Citizen_enemy" parent="." instance=ExtResource("1_ggaws")]
+position = Vector2(474, 271)
 level_scene = "Level_forest"
+bullet_speed = 30.0
 
 [node name="Bullets" type="Node" parent="."]
 
