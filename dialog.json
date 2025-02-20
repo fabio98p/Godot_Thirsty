@@ -90,7 +90,7 @@
 		]
 	},
 	{
-		"commands_raw": "\nUhm... \n---\nhi Alice. I guess I’m fine... \n---\nI just forgot that today was the TOTALLY NORMAL\ncivil war between East and West...\n---\ni dont know the motivation for today\n---\nBut uhh... \n---\nwhat happened here?\"\n\n",
+		"commands_raw": "\nUhm... \n---\nhi Alice. I guess I’m fine... \n---\nI just forgot that today was the TOTALLY NORMAL\ncivil war between East and West...\n---\ni dont know the motivation for today\n---\nBut uhh... \n---\nsignal(set,pg_expression,surprise)\nwhat happened here?\"\n\n?> Continua{\n    signal(set,dialogue_name,Alice)\n    \n    signal(set,npc_expression,speack)\n    ->kombini_2\n}",
 		"gnode_name": "kombini_1",
 		"id": 9,
 		"name": "kombini_1",
@@ -100,200 +100,200 @@
 		]
 	},
 	{
-		"commands_raw": "Alice:\n\"Oh, you mean the konbini? Dunno, it exploded. Maybe a gas leak? Who knows, hehe.\"\n\n",
-		"gnode_name": "diag node_1",
+		"commands_raw": "\nOh, you mean the konbini?\n---\nDunno, it exploded.\nMaybe a gas leak? Who knows, hehe.\n\n?> Continua{\n    signal(set,dialogue_name,Kevin)\n    signal(set,pg_expression,speack)\n    signal(set,npc_expression,idle)\n    ->kombini_3\n}\n",
+		"gnode_name": "kombini_2",
 		"id": 10,
-		"name": "Diag Node_1",
+		"name": "kombini_2",
 		"position": [
 			280,
 			580
 		]
 	},
 	{
-		"commands_raw": "Kevin:\n\"Oh, okay... Do you happen to have any water? I’m dying of thirst!\"\n\n",
-		"gnode_name": "diag node_2",
+		"commands_raw": "\nOh, okay... \n---\nDo you happen to have any water?\n---\nI’m dying of thirst!\n\n?> Continua{\n    signal(set,dialogue_name,Alice)\n    signal(set,pg_expression,idle)\n    signal(set,npc_expression,speack)\n    ->kombini_4\n}\n",
+		"gnode_name": "kombini_3",
 		"id": 11,
-		"name": "Diag Node_2",
+		"name": "kombini_3",
 		"position": [
 			460,
 			580
 		]
 	},
 	{
-		"commands_raw": "Alice:\n\"Damn, Kev, I just used the last bottles to wash my uniform. It got dirty during the evacuation—there was this nasty stain, haha.\"\n\n",
-		"gnode_name": "diag node_3",
+		"commands_raw": "\nDamn, Kev, I just used the last bottles \nto wash my uniform.\n---\nsignal(set,npc_expression,sad)\nIt got dirty during the evacuation\n—there was this nasty stain.\n\n?> Continua{\n    signal(set,dialogue_name,Kevin)\n    signal(set,pg_expression,speack)\n    signal(set,npc_expression,idle)\n    ->kombini_5\n}",
+		"gnode_name": "kombini_4",
 		"id": 12,
-		"name": "Diag Node_3",
+		"name": "kombini_4",
 		"position": [
 			640,
 			580
 		]
 	},
 	{
-		"commands_raw": "Kevin:\n\"You mean those empty bottles over there?\"\n\n",
-		"gnode_name": "diag node_4",
+		"commands_raw": "\nYou mean those empty bottles over there?\n\n?> Continua{\n    signal(set,dialogue_name,Alice)\n    signal(set,pg_expression,idle)\n    signal(set,npc_expression,speack)\n    ->kombini_6\n}",
+		"gnode_name": "kombini_5",
 		"id": 13,
-		"name": "Diag Node_4",
+		"name": "kombini_5",
 		"position": [
 			820,
 			580
 		]
 	},
 	{
-		"commands_raw": "Alice:\n\"Yep! Exactly those!\"\n\n",
-		"gnode_name": "diag node_5",
+		"commands_raw": "\nYep! Exactly those!\n\n?> Continua{\n    signal(set,dialogue_name,Kevin)\n    signal(set,pg_expression,angry)\n    signal(set,npc_expression,idle)\n    ->kombini_7\n}",
+		"gnode_name": "kombini_6",
 		"id": 14,
-		"name": "Diag Node_5",
+		"name": "kombini_6",
 		"position": [
 			1020,
 			580
 		]
 	},
 	{
-		"commands_raw": "Kevin:\n\"....\nAlice.....\"\n\n",
-		"gnode_name": "diag node_6",
+		"commands_raw": "\n....\n---\nAlice.....\n---\n....\n\n?> Continua{\n    signal(set,dialogue_name,Alice)\n    signal(set,npc_expression,speack)\n    ->kombini_8\n}",
+		"gnode_name": "kombini_7",
 		"id": 15,
-		"name": "Diag Node_6",
+		"name": "kombini_7",
 		"position": [
 			1200,
 			580
 		]
 	},
 	{
-		"commands_raw": "Alice:\n\"Yeah, Kev?\"\n\n",
-		"gnode_name": "diag node_7",
+		"commands_raw": "\nYeah, Kev?\n\n?> Continua{\n    signal(set,dialogue_name,Kevin)\n    signal(set,npc_expression,idle)\n    ->kombini_9\n}",
+		"gnode_name": "kombini_8",
 		"id": 16,
-		"name": "Diag Node_7",
+		"name": "kombini_8",
 		"position": [
 			1380,
 			580
 		]
 	},
 	{
-		"commands_raw": "Kevin:\n\"That’s like... at least 10 liters!!! Are you telling me you used that holy, incredible, delicious water... just for a stain???\"\n\n",
-		"gnode_name": "diag node_8",
+		"commands_raw": "That’s like... \n---\nat least 10 liters!!!\n---\nsignal(set,npc_expression,sad)\nAre you telling me you used that holy, \n---\nincredible,\n---\ndelicious water...\n---\njust for a stain???\n\n?> Continua{\n    signal(set,dialogue_name,Alice)\n    ->kombini_10\n}",
+		"gnode_name": "kombini_9",
 		"id": 17,
-		"name": "Diag Node_8",
+		"name": "kombini_9",
 		"position": [
 			1560,
 			580
 		]
 	},
 	{
-		"commands_raw": "Alice:\n\"Hey! It was a REALLY stubborn stain! Look, it’s still there!\"\n\n",
-		"gnode_name": "diag node_9",
+		"commands_raw": "Hey! It was a REALLY \nstubborn stain! Look,\n---\nit’s still there!\n\n?> Continua{\n    signal(set,dialogue_name,Kevin)\n    ->kombini_11\n}",
+		"gnode_name": "kombini_10",
 		"id": 18,
-		"name": "Diag Node_9",
+		"name": "kombini_10",
 		"position": [
 			1760,
 			580
 		]
 	},
 	{
-		"commands_raw": "Kevin:\n\"THAT'S NOT A STAIN! It's a patch!!! You put it on last month when you tore your uniform! I remember!!!\"\n\n",
-		"gnode_name": "diag node_10",
+		"commands_raw": "THAT'S NOT A STAIN!\n---\nIt's a patch!!!\n---\nYou put it on last month\nwhen you tore your uniform!\n---\nI remember!!!\n\n?> Continua{\n    signal(set,dialogue_name,Alice)\n    signal(set,npc_expression,speack)\n    ->kombini_12\n}",
+		"gnode_name": "kombini_11",
 		"id": 19,
-		"name": "Diag Node_10",
+		"name": "kombini_11",
 		"position": [
 			1960,
 			580
 		]
 	},
 	{
-		"commands_raw": "Alice:\n\"Ohhh, so THAT’S why it wouldn’t come off! HAHAHA what a fail, LOL!\"\n\n",
-		"gnode_name": "diag node_11",
+		"commands_raw": "\nOhhh, so THAT’S why it wouldn’t come off!\n---\nHAHAHA what a fail, LOL!\n\n?> Continua{\n    signal(set,dialogue_name,Kevin)\n    signal(set,npc_expression,idle)\n    signal(set,pg_expression,sad)\n    ->kombini_13\n}\n\n",
+		"gnode_name": "kombini_12",
 		"id": 20,
-		"name": "Diag Node_11",
+		"name": "kombini_12",
 		"position": [
 			2160,
 			580
 		]
 	},
 	{
-		"commands_raw": "Kevin:\n\"My water...\nMy thirst...\nThirst...\nTHIRST!\"\n\n",
-		"gnode_name": "diag node_12",
+		"commands_raw": "My water...\n---\nMy thirst...\n---\nThirst...\n---\nTHIRST!\n\n?> Continua{\n    signal(set,dialogue_name,Alice)\n    signal(set,npc_expression,speack)\n    ->kombini_14\n}\n",
+		"gnode_name": "kombini_13",
 		"id": 21,
-		"name": "Diag Node_12",
+		"name": "kombini_13",
 		"position": [
 			2360,
 			580
 		]
 	},
 	{
-		"commands_raw": "Alice:\n\"If you're that thirsty, I’ve got the perfect solution for you!\"\n\n",
-		"gnode_name": "diag node_13",
+		"commands_raw": "If you're that thirsty.\n---\nI’ve got the perfect solution for you!\n\n?> Continua{\n    signal(set,dialogue_name,Kevin)\n\n    ->kombini_15\n}",
+		"gnode_name": "kombini_14",
 		"id": 22,
-		"name": "Diag Node_13",
+		"name": "kombini_14",
 		"position": [
 			2580,
 			580
 		]
 	},
 	{
-		"commands_raw": "Kevin:\n\"Yeah? Please tell me! What do I do?\"\n\n",
-		"gnode_name": "diag node_14",
+		"commands_raw": "\nYeah? Please tell me! What do I do?\n\n?> Continua{\n    signal(set,dialogue_name,Alice)\n    ->kombini_16\n}",
+		"gnode_name": "kombini_15",
 		"id": 23,
-		"name": "Diag Node_14",
+		"name": "kombini_15",
 		"position": [
 			2780,
 			580
 		]
 	},
 	{
-		"commands_raw": "Alice:\n\"Just go drink from the anti-toxins park fountain, duh!\"\n\n",
-		"gnode_name": "diag node_15",
+		"commands_raw": "\nJust go drink \nfrom the anti-toxins \npark fountain, \nduh!\n\n?> Continua{\n    signal(set,dialogue_name,Kevin)\n    signal(set,npc_expression,idle)\n    signal(set,pg_expression,speack)\n    ->kombini_17\n}",
+		"gnode_name": "kombini_16",
 		"id": 24,
-		"name": "Diag Node_15",
+		"name": "kombini_16",
 		"position": [
 			2980,
 			580
 		]
 	},
 	{
-		"commands_raw": "Kevin:\n\"But the fountain is on the OTHER SIDE of the city!!!\nI’d have to go all the way back, and I really don’t feel like getting hit with more money and potatoes.\"\n\n",
-		"gnode_name": "diag node_16",
+		"commands_raw": "\nBut\n---\nthe fountain is on the OTHER SIDE of the city!!!\n---\nI’d have to go all the way back,\n---\nand I really don’t feel like getting hit\nwith more money and potatoes.\n\n?> Continua{\n    signal(set,dialogue_name,Alice)\n    signal(set,npc_expression,speack)\n    signal(set,pg_expression,sad)\n    ->kombini_18\n}",
+		"gnode_name": "kombini_17",
 		"id": 25,
-		"name": "Diag Node_16",
+		"name": "kombini_17",
 		"position": [
 			3200,
 			580
 		]
 	},
 	{
-		"commands_raw": "Alice:\n\"Silly! Just take the shortcut through the Forest of the Damned!\"\n\n",
-		"gnode_name": "diag node_17",
+		"commands_raw": "Silly!\n---\nJust take the shortcut\nthrough the Forest of the Damned!\n\n?> Continua{\n    signal(set,dialogue_name,Kevin)\n    signal(set,npc_expression,idle)\n    signal(set,pg_expression,speack)\n    ->kombini_19\n}",
+		"gnode_name": "kombini_18",
 		"id": 26,
-		"name": "Diag Node_17",
+		"name": "kombini_18",
 		"position": [
 			3400,
 			580
 		]
 	},
 	{
-		"commands_raw": "Kevin:\n\"Wait, that’s its real name?\nOur city is so weird...\nBut is that forest really a shortcut to the park?\"\n\n",
-		"gnode_name": "diag node_18",
+		"commands_raw": "Wait, that’s its real name?\n---\nOur city is so weird...\n---\nBut is that forest really a shortcut to the park?\n\n?> Continua{\n    signal(set,dialogue_name,Alice)\n    signal(set,npc_expression,speack)\n    ->kombini_20\n}",
+		"gnode_name": "kombini_19",
 		"id": 27,
-		"name": "Diag Node_18",
+		"name": "kombini_19",
 		"position": [
 			3600,
 			580
 		]
 	},
 	{
-		"commands_raw": "Alice:\n\"Yeah! Just follow this path and go straight, you’ll pop out right in front of the fountain.\"\n\n",
-		"gnode_name": "diag node_19",
+		"commands_raw": "\nYeah!\n---\nJust follow this path and go straight, \n---\nyou’ll pop out right in front of the fountain.\n\n?> Continua{\n    signal(set,npc_name,null)\n    signal(set,dialogue_name,Kevin)\n    signal(set,pg_expression,speack)\n    ->kombini_21\n}",
+		"gnode_name": "kombini_20",
 		"id": 28,
-		"name": "Diag Node_19",
+		"name": "kombini_20",
 		"position": [
 			3820,
 			580
 		]
 	},
 	{
-		"commands_raw": "Kevin:\n\"Mmmh, I don’t know... but I have no other choice, I’m way too thirsty.\nOh well, a walk in the woods is easy. Nothing can go wrong.\"",
-		"gnode_name": "diag node_20",
+		"commands_raw": "Mmmh, I don’t know... \n---\nbut I have no other choice, \n---\nI’m way too thirsty.\n---\nOh well, a walk in the woods is easy. \n---\nNothing can go wrong.",
+		"gnode_name": "kombini_21",
 		"id": 29,
-		"name": "Diag Node_20",
+		"name": "kombini_21",
 		"position": [
 			4020,
 			580
