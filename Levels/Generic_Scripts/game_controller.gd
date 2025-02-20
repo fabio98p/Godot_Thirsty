@@ -65,4 +65,4 @@ func hide_option_menu() -> void:
 	pause_menu_instance.visible = true
 	
 func death_player()-> void:
-	print("ehm... sono morto di sete! THIRSTY")
+	get_tree().reload_current_scene()

@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var hud: Control = $"../HUD"
-
+var speed_slow = 100.0
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 @export var hp_max := 4
@@ -15,7 +15,10 @@ func _physics_process(delta: float) -> void:
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_vector("left", "right", "forward", "back")
 	if direction:
-		self.velocity = direction * SPEED
+		if Input.is_action_pressed("jump"):
+			self.velocity = direction * speed_slow
+		else:
+			self.velocity = direction * SPEED
 	else:
 		self.velocity = Vector2.ZERO
 		
