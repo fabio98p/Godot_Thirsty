@@ -243,6 +243,7 @@ radius = 8.24621
 radius = 3.16228
 
 [node name="Player" type="CharacterBody2D"]
+z_index = 200
 motion_mode = 1
 script = ExtResource("1_62xh4")
 
@@ -250,7 +251,7 @@ script = ExtResource("1_62xh4")
 sprite_frames = SubResource("SpriteFrames_riwa8")
 animation = &"u_run"
 autoplay = "idle"
-frame_progress = 0.654343
+frame_progress = 0.107758
 
 [node name="InvFrameTimer" type="Timer" parent="."]
 wait_time = 2.5

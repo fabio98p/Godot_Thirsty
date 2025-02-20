@@ -2,7 +2,6 @@ extends CharacterBody2D
 
 @onready var inv_frame_timer: Timer = $InvFrameTimer
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
-@onready var hud: Control = $"../HUD"
 var speed_slow = 100.0
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
@@ -10,6 +9,7 @@ const JUMP_VELOCITY = -400.0
 var current_hp = hp_max
 var isInvincible := false
 signal player_dead
+signal player_hit
 
 func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
@@ -39,7 +39,7 @@ func change_animation(direction: Vector2):
 		animation = "d_run"
 	elif direction.x == 0 && direction.y <= -0.1:
 		animation = "u_run"
-		
+	
 	animated_sprite_2d.animation = animation
 	
 func lose_hp():
@@ -48,8 +48,8 @@ func lose_hp():
 		if current_hp == 0:
 			player_dead.emit()
 		inv_frame_timer.start()
+		player_hit.emit()
 		isInvincible = true
-		hud.change_afterlife(current_hp)
 	
 
 func _on_inv_frame_timer_timeout() -> void:

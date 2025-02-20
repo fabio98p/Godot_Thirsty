@@ -1,10 +1,11 @@
-[gd_scene load_steps=59 format=4 uid="uid://0voju36h31a7"]
+[gd_scene load_steps=60 format=4 uid="uid://0voju36h31a7"]
 
 [ext_resource type="Script" path="res://Levels/Generic_Scripts/game_controller.gd" id="1_dwsm6"]
 [ext_resource type="PackedScene" uid="uid://bxa5nus5m4ntu" path="res://menus/scenes/pause_menu.tscn" id="2_xhrso"]
 [ext_resource type="PackedScene" uid="uid://cawi1y20tbbfy" path="res://menus/scenes/option_menu.tscn" id="3_106cb"]
-[ext_resource type="PackedScene" uid="uid://b68it0wpeivxb" path="res://Player_and_hud/Player_and_hud.tscn" id="4_6ad1q"]
+[ext_resource type="PackedScene" uid="uid://dahmom2txf0uv" path="res://Player_and_hud/Player/player.tscn" id="4_yo5l3"]
 [ext_resource type="Texture2D" uid="uid://xuueyigshkw8" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/roadtilemap16x16.png" id="5_kmn14"]
+[ext_resource type="PackedScene" uid="uid://d1cwkxxbgcmug" path="res://Player_and_hud/HUD/hud.tscn" id="5_xcpc2"]
 [ext_resource type="Texture2D" uid="uid://lpxaft5migcm" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/Tilemap32x32_down_environment.png" id="6_egv7w"]
 [ext_resource type="Texture2D" uid="uid://dp8wee3bwxaw7" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Vegetation/bush.png" id="7_r0g7w"]
 [ext_resource type="Texture2D" uid="uid://bfwkjpt77buc" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Vegetation/minitree32x48.png" id="8_6nbjd"]
@@ -540,18 +541,6 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector2(0, 0), Vector2(0, -3536)]
 }
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = false
-tracks/2/path = NodePath("../Player_and_Hud:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 120),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(0, -3536)]
-}
 
 [sub_resource type="Animation" id="Animation_2lea4"]
 length = 0.001
@@ -579,18 +568,6 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector2(0, 0)]
 }
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../Player_and_Hud:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ij6db"]
 _data = {
@@ -603,11 +580,17 @@ script = ExtResource("1_dwsm6")
 pause_menu = ExtResource("2_xhrso")
 option_menu = ExtResource("3_106cb")
 
-[node name="Player_and_Hud" parent="." instance=ExtResource("4_6ad1q")]
+[node name="Player" parent="." instance=ExtResource("4_yo5l3")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(512, 300)
 process_callback = 0
+
+[node name="HUD" parent="Camera2D" instance=ExtResource("5_xcpc2")]
+offset_left = -512.0
+offset_top = -300.0
+offset_right = -512.0
+offset_bottom = -300.0
 
 [node name="Background_tilemap" type="TileMapLayer" parent="."]
 position = Vector2(0, -753)

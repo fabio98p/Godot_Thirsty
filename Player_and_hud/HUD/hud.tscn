@@ -11,7 +11,9 @@ script = ExtResource("1_xg5uo")
 texture_path = Array[String](["res://Assets/life/life/death/death2.png", "res://Assets/life/life/onelife/h1.png", "res://Assets/life/life/halflife/h1.png", "res://Assets/life/life/almosthalflife/h1.png", "res://Assets/life/life/fulllife/h1.png"])
 
 [node name="Panel" type="Panel" parent="."]
+z_index = 881
 layout_mode = 0
-offset_right = 146.0
+offset_left = 1.0
+offset_right = 147.0
 offset_bottom = 40.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_d6fvt")

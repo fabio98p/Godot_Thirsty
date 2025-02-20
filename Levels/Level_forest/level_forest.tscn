@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dblekf2wgqq1e"]
+[gd_scene load_steps=5 format=3 uid="uid://dblekf2wgqq1e"]
 
 [ext_resource type="PackedScene" uid="uid://bhcf2pa40j7ph" path="res://Enemy/citizen_enemy.tscn" id="1_ggaws"]
 [ext_resource type="Script" path="res://Levels/Generic_Scripts/game_controller.gd" id="1_s31yo"]
-[ext_resource type="PackedScene" uid="uid://b68it0wpeivxb" path="res://Player_and_hud/Player_and_hud.tscn" id="3_j0fh6"]
+[ext_resource type="PackedScene" uid="uid://dahmom2txf0uv" path="res://Player_and_hud/Player/player.tscn" id="3_8qr16"]
+[ext_resource type="PackedScene" uid="uid://d1cwkxxbgcmug" path="res://Player_and_hud/HUD/hud.tscn" id="4_p3vuh"]
 
 [node name="Level_forest" type="Node2D"]
 script = ExtResource("1_s31yo")
@@ -14,4 +15,13 @@ bullet_speed = 30.0
 
 [node name="Bullets" type="Node" parent="."]
 
-[node name="Player_and_Hud" parent="." instance=ExtResource("3_j0fh6")]
+[node name="Player" parent="." instance=ExtResource("3_8qr16")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(513, 303)
+
+[node name="HUD" parent="Camera2D" instance=ExtResource("4_p3vuh")]
+offset_left = -512.0
+offset_top = -301.0
+offset_right = -512.0
+offset_bottom = -301.0

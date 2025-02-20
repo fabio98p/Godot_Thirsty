@@ -1,16 +1,21 @@
 extends Node2D
 
+@onready var hud: Control = $Camera2D/HUD
+@onready var player: CharacterBody2D = $Player
 @onready var camera_2d: Camera2D = $Camera2D
 @export var pause_menu: PackedScene
 @export var option_menu: PackedScene
+@export var player_position: Vector2 = Vector2(531, 530)
 var pause_menu_instance
 var option_menu_instance 
 var pause_already_pressed := false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	get_node("Player_and_Hud").get_node("Player").connect("player_dead", Callable(self, "death_player"))
-
-
+	player.position = player_position
+	#get_node("Player_and_Hud").get_node("Player").connect("player_dead", Callable(self, "death_player"))
+	#get_node("Player_and_Hud").get_node("Player").connect("player_dead", Callable(self, "death_player"))
+	player.connect("player_dead", Callable(self, "death_player"))
+	player.connect("player_hit", Callable(self, "playerHitted"))
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -36,6 +41,7 @@ func connectToPlayerHit(bullet: Bullet):
 
 func playerHitted():
 	print("player take a hit")
+	hud.change_afterlife(player.current_hp)
 
 func on_pause_delete():
 	print("funzioone")
