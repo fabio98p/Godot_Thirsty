@@ -22,6 +22,5 @@ position = Vector2(518, 501)
 
 [node name="Enemy" parent="." instance=ExtResource("4_wam6v")]
 position = Vector2(511, 124)
-level_scene = "Level_boss"
 
 [node name="Bullets" type="Node" parent="."]

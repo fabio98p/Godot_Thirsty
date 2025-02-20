@@ -1,9 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://itvnkntfrqk2"]
+[gd_scene load_steps=9 format=3 uid="uid://itvnkntfrqk2"]
 
 [ext_resource type="Script" path="res://Enemy/enemy_boss.gd" id="1_tlvwf"]
 [ext_resource type="PackedScene" uid="uid://cu4jgwl0oakgw" path="res://bullet_hell/bullet.tscn" id="2_bocpt"]
-[ext_resource type="Texture2D" uid="uid://825bfp2py1va" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Shots/Shot1/shot1_exp2.png" id="3_4u05y"]
+[ext_resource type="Texture2D" uid="uid://c0n4jncqi3pqx" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship3/Exhaust/Turbo_flight/Exhaust1/exhaust2.png" id="3_07vcx"]
 [ext_resource type="Texture2D" uid="uid://dmdvh6bu0fa68" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship6/Ship6.png" id="3_sdtf3"]
+[ext_resource type="Texture2D" uid="uid://cglgau4nikbkq" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship4/Exhaust/Turbo_flight/Exhaust1/exhaust3.png" id="4_bxgj1"]
+[ext_resource type="Texture2D" uid="uid://bb6xydqpsyw7f" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship1/Exhaust/Normal_flight/Exhaust1/exhaust2.png" id="5_qgxap"]
+[ext_resource type="Texture2D" uid="uid://cdytkuknhsapp" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship2/Exhaust/Normal_flight/Exhaust1/exhaust2.png" id="6_4ug5e"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bqm4q"]
 radius = 59.0
@@ -11,19 +14,20 @@ height = 232.0
 
 [node name="Enemy_boss" type="Node2D"]
 script = ExtResource("1_tlvwf")
-bullet_scene = ExtResource("2_bocpt")
-bullet_sprite = ExtResource("3_4u05y")
-shoot_timer_wait_time = 0.2
-spawn_point_count = 3
-fire_angle_rotator = 360
-bullet_direction = 0.0
+level_scene = "Level_boss"
+bullet_scene_rotor1 = ExtResource("2_bocpt")
+bullet_sprite_rotor1 = ExtResource("3_07vcx")
+bullet_scene_rotor2 = ExtResource("2_bocpt")
+bullet_sprite_rotor2 = ExtResource("4_bxgj1")
+bullet_scene_rotor3 = ExtResource("2_bocpt")
+bullet_sprite_rotor3 = ExtResource("5_qgxap")
+bullet_scene_rotor4 = ExtResource("2_bocpt")
+bullet_sprite_rotor4 = ExtResource("6_4ug5e")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 rotation = 1.5708
 scale = Vector2(2, 2)
 texture = ExtResource("3_sdtf3")
-
-[node name="Shoot_rate_spawn_timer" type="Timer" parent="."]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -31,8 +35,42 @@ texture = ExtResource("3_sdtf3")
 rotation = -8.98647e-05
 shape = SubResource("CapsuleShape2D_bqm4q")
 
-[node name="Rotetor_cont" type="Node2D" parent="."]
+[node name="Rotor1" type="Node2D" parent="."]
 
-[node name="Rotator_bullets" type="Node2D" parent="Rotetor_cont"]
+[node name="Shoot_rate_spawn_timer_rotor1" type="Timer" parent="Rotor1"]
 
-[connection signal="timeout" from="Shoot_rate_spawn_timer" to="." method="_on_shoot_rate_spawn_timer_timeout"]
+[node name="Rotetor_cont" type="Node2D" parent="Rotor1"]
+
+[node name="Rotator_bullets" type="Node2D" parent="Rotor1/Rotetor_cont"]
+
+[node name="Rotor2" type="Node2D" parent="."]
+position = Vector2(1, -25)
+
+[node name="Shoot_rate_spawn_timer_rotor2" type="Timer" parent="Rotor2"]
+
+[node name="Rotetor_cont" type="Node2D" parent="Rotor2"]
+
+[node name="Rotator_bullets" type="Node2D" parent="Rotor2/Rotetor_cont"]
+
+[node name="Rotor3" type="Node2D" parent="."]
+position = Vector2(0, -49)
+
+[node name="Shoot_rate_spawn_timer_rotor3" type="Timer" parent="Rotor3"]
+
+[node name="Rotetor_cont" type="Node2D" parent="Rotor3"]
+
+[node name="Rotator_bullets" type="Node2D" parent="Rotor3/Rotetor_cont"]
+
+[node name="Rotor4" type="Node2D" parent="."]
+position = Vector2(0, -72)
+
+[node name="Shoot_rate_spawn_timer_rotor4" type="Timer" parent="Rotor4"]
+
+[node name="Rotetor_cont" type="Node2D" parent="Rotor4"]
+
+[node name="Rotator_bullets" type="Node2D" parent="Rotor4/Rotetor_cont"]
+
+[connection signal="timeout" from="Rotor1/Shoot_rate_spawn_timer_rotor1" to="." method="_on_shoot_rate_spawn_timer_rotor_1_timeout"]
+[connection signal="timeout" from="Rotor2/Shoot_rate_spawn_timer_rotor2" to="." method="_on_shoot_rate_spawn_timer_rotor_2_timeout"]
+[connection signal="timeout" from="Rotor3/Shoot_rate_spawn_timer_rotor3" to="." method="_on_shoot_rate_spawn_timer_rotor_3_timeout"]
+[connection signal="timeout" from="Rotor4/Shoot_rate_spawn_timer_rotor4" to="." method="_on_shoot_rate_spawn_timer_rotor_4_timeout"]
