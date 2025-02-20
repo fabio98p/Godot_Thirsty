@@ -1,7 +1,7 @@
 extends Node2D
 
 
-@onready var shoot_rate_spawn_timer: Timer = $Timer
+@onready var shoot_rate_spawn_timer: Timer = $Shoot_rate_spawn_timer
 @onready var rotator_bullets: Node2D = $Rotetor_cont/Rotator_bullets
 @onready var rotetor_cont: Node2D = $Rotetor_cont
 
@@ -15,6 +15,8 @@ extends Node2D
 @export var fire_angle_rotator = 50
 @export var bullet_direction: float = 90
 @export var bullet_speed: float = 100
+
+
 func _ready():	
 	#rotator_bullets.rotation = bullet_direction
 	rotetor_cont.rotation = bullet_direction
@@ -37,7 +39,7 @@ func _process(delta):
 	rotator_bullets.rotation_degrees = fmod(new_rotation, fire_angle_rotator)
 	rotator_bullets.get_children()[0].rotation = bullet_direction
 
-func _on_timer_timeout() -> void:
+func _on_shoot_rate_spawn_timer_timeout() -> void:
 	for s in rotator_bullets.get_children():
 		var bullet = bullet_scene.instantiate()
 		bullet.bullet_sprite = bullet_sprite

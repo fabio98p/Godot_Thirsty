@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://owggx5hftgux"]
+
+[ext_resource type="Script" path="res://Levels/Generic_Scripts/game_controller.gd" id="1_m7hqa"]
+[ext_resource type="PackedScene" uid="uid://d1cwkxxbgcmug" path="res://Player_and_hud/HUD/hud.tscn" id="2_c5kgu"]
+[ext_resource type="PackedScene" uid="uid://dahmom2txf0uv" path="res://Player_and_hud/Player/player.tscn" id="3_5me42"]
+[ext_resource type="PackedScene" uid="uid://itvnkntfrqk2" path="res://Enemy/enemy_boss.tscn" id="4_wam6v"]
+
+[node name="Level_boss" type="Node2D"]
+script = ExtResource("1_m7hqa")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(512, 300)
+
+[node name="HUD" parent="Camera2D" instance=ExtResource("2_c5kgu")]
+offset_left = -512.0
+offset_top = -300.0
+offset_right = -512.0
+offset_bottom = -300.0
+
+[node name="Player" parent="." instance=ExtResource("3_5me42")]
+position = Vector2(518, 501)
+
+[node name="Enemy" parent="." instance=ExtResource("4_wam6v")]
+position = Vector2(511, 124)
+level_scene = "Level_boss"
+
+[node name="Bullets" type="Node" parent="."]
