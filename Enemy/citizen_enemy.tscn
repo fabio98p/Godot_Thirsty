@@ -51,8 +51,10 @@ sprite_frames = SubResource("SpriteFrames_44pn6")
 autoplay = "default"
 frame_progress = 0.766079
 
-[node name="Rotator_bullets" type="Node2D" parent="."]
-
 [node name="Timer" type="Timer" parent="."]
+
+[node name="Rotetor_cont" type="Node2D" parent="."]
+
+[node name="Rotator_bullets" type="Node2D" parent="Rotetor_cont"]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

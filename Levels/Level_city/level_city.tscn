@@ -886,36 +886,7 @@ texture = ExtResource("25_mmt3s")
 [node name="Citizen_enemy2" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
 position = Vector2(856, -565)
 bullet_sprite = ExtResource("36_2p8tf")
-rotate_speed = 50
-shoot_timer_wait_time = 0.2
-
-[node name="Citizen_enemy3" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
-position = Vector2(866, -1269)
-bullet_sprite = ExtResource("36_2p8tf")
-rotate_speed = 50
-shoot_timer_wait_time = 0.2
-
-[node name="Citizen_enemy4" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
-position = Vector2(850, -1718)
-bullet_sprite = ExtResource("36_2p8tf")
-rotate_speed = 50
-shoot_timer_wait_time = 0.2
-
-[node name="Citizen_enemy5" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
-position = Vector2(854, -2025)
-bullet_sprite = ExtResource("36_2p8tf")
-rotate_speed = 50
-shoot_timer_wait_time = 0.2
-
-[node name="Citizen_enemy6" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
-position = Vector2(854, -2559)
-bullet_sprite = ExtResource("36_2p8tf")
-rotate_speed = 50
-shoot_timer_wait_time = 0.2
-
-[node name="Citizen_enemy7" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
-position = Vector2(854, -3194)
-bullet_sprite = ExtResource("36_2p8tf")
+level_scene = "Level_city"
 rotate_speed = 50
 shoot_timer_wait_time = 0.2
 
@@ -925,54 +896,7 @@ shoot_timer_wait_time = 0.2
 
 [node name="Citizen_enemy3" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
 position = Vector2(43, -708)
-rotate_speed = 80
-shoot_timer_wait_time = 0.4
-radius = 0
-fire_angle_rotator = 70
-bullet_direction = 0.0
-
-[node name="Citizen_enemy4" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
-position = Vector2(36, -1178)
-rotate_speed = 80
-shoot_timer_wait_time = 0.4
-radius = 0
-fire_angle_rotator = 70
-bullet_direction = 0.0
-
-[node name="Citizen_enemy5" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
-position = Vector2(50, -1606)
-rotate_speed = 80
-shoot_timer_wait_time = 0.4
-radius = 0
-fire_angle_rotator = 70
-bullet_direction = 0.0
-
-[node name="Citizen_enemy6" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
-position = Vector2(50, -2034)
-rotate_speed = 80
-shoot_timer_wait_time = 0.4
-radius = 0
-fire_angle_rotator = 70
-bullet_direction = 0.0
-
-[node name="Citizen_enemy7" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
-position = Vector2(58, -2419)
-rotate_speed = 80
-shoot_timer_wait_time = 0.4
-radius = 0
-fire_angle_rotator = 70
-bullet_direction = 0.0
-
-[node name="Citizen_enemy8" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
-position = Vector2(25, -2767)
-rotate_speed = 80
-shoot_timer_wait_time = 0.4
-radius = 0
-fire_angle_rotator = 70
-bullet_direction = 0.0
-
-[node name="Citizen_enemy9" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
-position = Vector2(42, -3445)
+level_scene = "Level_city"
 rotate_speed = 80
 shoot_timer_wait_time = 0.4
 radius = 0

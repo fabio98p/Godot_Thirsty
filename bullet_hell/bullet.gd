@@ -5,11 +5,11 @@ var bullet_sprite: Texture
 @export var speed: float = 100
 @onready var timer: Timer = $Timer
 @onready var sprite_2d: Sprite2D = $Sprite2D
-
+var level_scene: String
 signal playerHit
 
 func _ready() -> void:
-	get_tree().get_root().get_node("Level_city").connectToPlayerHit(self)
+	get_tree().get_root().get_node(level_scene).connectToPlayerHit(self)
 	sprite_2d.texture = bullet_sprite
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
