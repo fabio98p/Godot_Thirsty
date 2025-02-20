@@ -11,6 +11,14 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yj4tw")
+dialogue_value = "Konbini_scene_start"
+npc_expression = {
+"angry": "",
+"idle": "res://Assets/pg_images/Sprite_alice_idle.png",
+"sad": "res://Assets/pg_images/Sprite_alice_sad.png",
+"speack": "res://Assets/pg_images/Sprite_alice_speak.png",
+"surprise": "res://Assets/pg_images/Sprite_alice_surprise.png"
+}
 
 [node name="DialogSistem" parent="." instance=ExtResource("1_qhr5c")]
 layout_mode = 1

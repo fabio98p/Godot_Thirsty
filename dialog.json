@@ -78,5 +78,225 @@
 			480,
 			500
 		]
+	},
+	{
+		"commands_raw": "signal(set,dialogue_name,Alice)\nsignal(set,npc_name,Alice)\nsignal(set,npc_expression,speack)\nsignal(set,background,bg_bed_room)\nsignal(set,pg_expression,idle)\n\n\"Hey, hi Kevin! How’s it going?\"\n\n?> Continua{\n    signal(set,dialogue_name,Kevin)\n    signal(set,npc_expression,idle)\n    signal(set,pg_expression,speack)\n    \n    ->kombini_1\n}",
+		"gnode_name": "konbini_scene_start",
+		"id": 8,
+		"name": "Konbini_scene_start",
+		"position": [
+			-120,
+			580
+		]
+	},
+	{
+		"commands_raw": "\nUhm... \n---\nhi Alice. I guess I’m fine... \n---\nI just forgot that today was the TOTALLY NORMAL\ncivil war between East and West...\n---\ni dont know the motivation for today\n---\nBut uhh... \n---\nwhat happened here?\"\n\n",
+		"gnode_name": "kombini_1",
+		"id": 9,
+		"name": "kombini_1",
+		"position": [
+			120,
+			580
+		]
+	},
+	{
+		"commands_raw": "Alice:\n\"Oh, you mean the konbini? Dunno, it exploded. Maybe a gas leak? Who knows, hehe.\"\n\n",
+		"gnode_name": "diag node_1",
+		"id": 10,
+		"name": "Diag Node_1",
+		"position": [
+			280,
+			580
+		]
+	},
+	{
+		"commands_raw": "Kevin:\n\"Oh, okay... Do you happen to have any water? I’m dying of thirst!\"\n\n",
+		"gnode_name": "diag node_2",
+		"id": 11,
+		"name": "Diag Node_2",
+		"position": [
+			460,
+			580
+		]
+	},
+	{
+		"commands_raw": "Alice:\n\"Damn, Kev, I just used the last bottles to wash my uniform. It got dirty during the evacuation—there was this nasty stain, haha.\"\n\n",
+		"gnode_name": "diag node_3",
+		"id": 12,
+		"name": "Diag Node_3",
+		"position": [
+			640,
+			580
+		]
+	},
+	{
+		"commands_raw": "Kevin:\n\"You mean those empty bottles over there?\"\n\n",
+		"gnode_name": "diag node_4",
+		"id": 13,
+		"name": "Diag Node_4",
+		"position": [
+			820,
+			580
+		]
+	},
+	{
+		"commands_raw": "Alice:\n\"Yep! Exactly those!\"\n\n",
+		"gnode_name": "diag node_5",
+		"id": 14,
+		"name": "Diag Node_5",
+		"position": [
+			1020,
+			580
+		]
+	},
+	{
+		"commands_raw": "Kevin:\n\"....\nAlice.....\"\n\n",
+		"gnode_name": "diag node_6",
+		"id": 15,
+		"name": "Diag Node_6",
+		"position": [
+			1200,
+			580
+		]
+	},
+	{
+		"commands_raw": "Alice:\n\"Yeah, Kev?\"\n\n",
+		"gnode_name": "diag node_7",
+		"id": 16,
+		"name": "Diag Node_7",
+		"position": [
+			1380,
+			580
+		]
+	},
+	{
+		"commands_raw": "Kevin:\n\"That’s like... at least 10 liters!!! Are you telling me you used that holy, incredible, delicious water... just for a stain???\"\n\n",
+		"gnode_name": "diag node_8",
+		"id": 17,
+		"name": "Diag Node_8",
+		"position": [
+			1560,
+			580
+		]
+	},
+	{
+		"commands_raw": "Alice:\n\"Hey! It was a REALLY stubborn stain! Look, it’s still there!\"\n\n",
+		"gnode_name": "diag node_9",
+		"id": 18,
+		"name": "Diag Node_9",
+		"position": [
+			1760,
+			580
+		]
+	},
+	{
+		"commands_raw": "Kevin:\n\"THAT'S NOT A STAIN! It's a patch!!! You put it on last month when you tore your uniform! I remember!!!\"\n\n",
+		"gnode_name": "diag node_10",
+		"id": 19,
+		"name": "Diag Node_10",
+		"position": [
+			1960,
+			580
+		]
+	},
+	{
+		"commands_raw": "Alice:\n\"Ohhh, so THAT’S why it wouldn’t come off! HAHAHA what a fail, LOL!\"\n\n",
+		"gnode_name": "diag node_11",
+		"id": 20,
+		"name": "Diag Node_11",
+		"position": [
+			2160,
+			580
+		]
+	},
+	{
+		"commands_raw": "Kevin:\n\"My water...\nMy thirst...\nThirst...\nTHIRST!\"\n\n",
+		"gnode_name": "diag node_12",
+		"id": 21,
+		"name": "Diag Node_12",
+		"position": [
+			2360,
+			580
+		]
+	},
+	{
+		"commands_raw": "Alice:\n\"If you're that thirsty, I’ve got the perfect solution for you!\"\n\n",
+		"gnode_name": "diag node_13",
+		"id": 22,
+		"name": "Diag Node_13",
+		"position": [
+			2580,
+			580
+		]
+	},
+	{
+		"commands_raw": "Kevin:\n\"Yeah? Please tell me! What do I do?\"\n\n",
+		"gnode_name": "diag node_14",
+		"id": 23,
+		"name": "Diag Node_14",
+		"position": [
+			2780,
+			580
+		]
+	},
+	{
+		"commands_raw": "Alice:\n\"Just go drink from the anti-toxins park fountain, duh!\"\n\n",
+		"gnode_name": "diag node_15",
+		"id": 24,
+		"name": "Diag Node_15",
+		"position": [
+			2980,
+			580
+		]
+	},
+	{
+		"commands_raw": "Kevin:\n\"But the fountain is on the OTHER SIDE of the city!!!\nI’d have to go all the way back, and I really don’t feel like getting hit with more money and potatoes.\"\n\n",
+		"gnode_name": "diag node_16",
+		"id": 25,
+		"name": "Diag Node_16",
+		"position": [
+			3200,
+			580
+		]
+	},
+	{
+		"commands_raw": "Alice:\n\"Silly! Just take the shortcut through the Forest of the Damned!\"\n\n",
+		"gnode_name": "diag node_17",
+		"id": 26,
+		"name": "Diag Node_17",
+		"position": [
+			3400,
+			580
+		]
+	},
+	{
+		"commands_raw": "Kevin:\n\"Wait, that’s its real name?\nOur city is so weird...\nBut is that forest really a shortcut to the park?\"\n\n",
+		"gnode_name": "diag node_18",
+		"id": 27,
+		"name": "Diag Node_18",
+		"position": [
+			3600,
+			580
+		]
+	},
+	{
+		"commands_raw": "Alice:\n\"Yeah! Just follow this path and go straight, you’ll pop out right in front of the fountain.\"\n\n",
+		"gnode_name": "diag node_19",
+		"id": 28,
+		"name": "Diag Node_19",
+		"position": [
+			3820,
+			580
+		]
+	},
+	{
+		"commands_raw": "Kevin:\n\"Mmmh, I don’t know... but I have no other choice, I’m way too thirsty.\nOh well, a walk in the woods is easy. Nothing can go wrong.\"",
+		"gnode_name": "diag node_20",
+		"id": 29,
+		"name": "Diag Node_20",
+		"position": [
+			4020,
+			580
+		]
 	}
 ]
