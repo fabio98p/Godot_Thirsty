@@ -80,7 +80,7 @@
 		]
 	},
 	{
-		"commands_raw": "signal(set,dialogue_name,Alice)\nsignal(set,npc_name,Alice)\nsignal(set,npc_expression,speack)\nsignal(set,background,bg_bed_room)\nsignal(set,pg_expression,idle)\n\n\"Hey, hi Kevin! How’s it going?\"\n\n?> Continua{\n    signal(set,dialogue_name,Kevin)\n    signal(set,npc_expression,idle)\n    signal(set,pg_expression,speack)\n    \n    ->kombini_1\n}",
+		"commands_raw": "signal(set,dialogue_name,Alice)\nsignal(set,npc_name,Alice)\nsignal(set,npc_expression,speack)\nsignal(set,background,bg_bed_room)\nsignal(set,pg_expression,idle)\nsignal(set,background,bg_bed_room)\n\n\"Hey, hi Kevin! How’s it going?\"\n\n?> Continua{\n    signal(set,dialogue_name,Kevin)\n    signal(set,npc_expression,idle)\n    signal(set,pg_expression,speack)\n    \n    ->kombini_1\n}",
 		"gnode_name": "konbini_scene_start",
 		"id": 8,
 		"name": "Konbini_scene_start",
@@ -260,7 +260,7 @@
 		]
 	},
 	{
-		"commands_raw": "Silly!\n---\nJust take the shortcut\nthrough the Forest of the Damned!\n\n?> Continua{\n    signal(set,dialogue_name,Kevin)\n    signal(set,npc_expression,idle)\n    signal(set,pg_expression,speack)\n    ->kombini_19\n}",
+		"commands_raw": "Silly!\n---\nJust take the shortcut\nsignal(set,background,bg_bath_room)\nthrough the Forest of the Damned!\n\n?> Continua{\n    signal(set,dialogue_name,Kevin)\n    signal(set,npc_expression,idle)\n    signal(set,pg_expression,speack)\n    ->kombini_19\n}",
 		"gnode_name": "kombini_18",
 		"id": 26,
 		"name": "kombini_18",

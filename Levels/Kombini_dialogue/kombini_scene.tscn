@@ -12,6 +12,11 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yj4tw")
 dialogue_value = "Konbini_scene_start"
+backgrounds = {
+"bg_bath_room": "res://Assets/Img_background_dialogue/forest.png",
+"bg_bed_room": "res://Assets/Img_background_dialogue/City1-modify.png",
+"bg_entrance_house": ""
+}
 npc_expression = {
 "angry": "",
 "idle": "res://Assets/pg_images/Sprite_alice_idle.png",
