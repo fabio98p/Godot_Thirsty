@@ -907,8 +907,7 @@ offset_right = 821.0
 offset_bottom = 395.0
 theme_override_colors/font_color = Color(0.945098, 1, 0, 1)
 theme_override_fonts/font = ExtResource("37_qwuab")
-text = "Nothing can go wrong
-its just water no?
-be careful
-not to be thirsty"
+text = "SPACE
+
+for the slow mode"
 horizontal_alignment = 1
