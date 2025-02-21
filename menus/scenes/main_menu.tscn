@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://btcfigagl7wq0"]
+[gd_scene load_steps=10 format=3 uid="uid://btcfigagl7wq0"]
 
 [ext_resource type="Texture2D" uid="uid://crk3jq04o2fy2" path="res://menus/assets/background/img1/aesthetic-pixel-art-garden-at-night-0ax4fopcqzot21lj.jpg" id="1_4bevd"]
 [ext_resource type="Script" path="res://menus/scripts/main_menu.gd" id="1_ukf5g"]
 [ext_resource type="PackedScene" uid="uid://cawi1y20tbbfy" path="res://menus/scenes/option_menu.tscn" id="2_ck0dt"]
+[ext_resource type="PackedScene" uid="uid://cs3cj7utcstit" path="res://menus/scenes/select_scene_scene.tscn" id="3_xgaid"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uyiai"]
 texture = ExtResource("1_4bevd")
@@ -64,6 +65,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ukf5g")
 option_menu = ExtResource("2_ck0dt")
+select_scene = ExtResource("3_xgaid")
 
 [node name="Background" type="Panel" parent="."]
 layout_mode = 1
@@ -112,7 +114,17 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_yltbn")
 theme_override_styles/hover = SubResource("StyleBoxFlat_w3rh1")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_lbojn")
 theme_override_styles/normal = SubResource("StyleBoxFlat_100ax")
-text = "Starta la partita"
+text = "Story Mode"
+
+[node name="Button_scenes" type="Button" parent="Buttons_cont"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yltbn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w3rh1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lbojn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_100ax")
+text = "Select Level"
 
 [node name="Button_options" type="Button" parent="Buttons_cont"]
 layout_mode = 2
@@ -135,5 +147,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_100ax")
 text = "Exit"
 
 [connection signal="pressed" from="Buttons_cont/Button_start" to="." method="_on_button_start_pressed"]
+[connection signal="pressed" from="Buttons_cont/Button_scenes" to="." method="_on_button_scenes_pressed"]
 [connection signal="pressed" from="Buttons_cont/Button_options" to="." method="_on_button_options_pressed"]
 [connection signal="pressed" from="Buttons_cont/Button_exit" to="." method="_on_button_exit_pressed"]

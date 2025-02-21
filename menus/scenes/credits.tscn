@@ -1,0 +1,115 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddtk606kw31la"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j0sbl"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_k014k"]
+resource_name = "credits_escalation"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ap6ct"]
+_data = {
+"credits_escalation": SubResource("Animation_k014k")
+}
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(512, 300)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 9400.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j0sbl")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ap6ct")
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -310.5
+offset_right = 310.5
+offset_bottom = 258.0
+grow_horizontal = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Teams" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Team di sviluppo"
+horizontal_alignment = 1
+
+[node name="Teams_testo" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Game Director / Project Lead → Chi ha guidato il progetto.
+Game Designer → Chi ha ideato le meccaniche di gioco.
+Programmer(s) → Chi ha scritto il codice.
+Art Director / Artists → Chi ha creato la grafica e le animazioni.
+Music & Sound Design → Chi ha composto la musica e lavorato agli effetti sonori.
+Writers → Chi ha scritto la storia e i dialoghi.
+QA Testers → Chi ha testato il gioco per scovare bug.
+Producers → Se c’è qualcuno che ha gestito tempistiche e risorse.
+
+"
+horizontal_alignment = 1
+
+[node name="Tools" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "TOOLS AND SOFTWARE
+"
+horizontal_alignment = 1
+
+[node name="Tools_testo" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "-Godot
+-Libresprite
+-GodotEzDialoguePlugin by ezTheDev – License MIT"
+horizontal_alignment = 1
+
+[node name="Ringraziamenti" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "SPECIAL THANKS"
+horizontal_alignment = 1
+
+[node name="Ringraziamenti_testo" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "We would like to thank Itch.io and Brackeys for this amazing game jam! 
+We had a lot of fun and are really proud of what we managed to create,
+ even though we’re not very skilled in graphics or sound design. 
+This was our first jam, and it definitely won’t be the last...
+
+We also want to thank our friend Carlo,
+ who helped us with some translation errors and game testing.
+
+And,
+of course,
+THANK YOU
+for playing this game! 😊
+We truly hope you had at least half as much fun playing it as we did making it. 😃
+
+
+
+
+See you in Thirsty 2: Mission SpaceWaterLaw!
+
+(now in 3D!)
+
+
+
+"
+horizontal_alignment = 1

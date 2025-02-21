@@ -21,6 +21,8 @@ offset_bottom = -300.0
 position = Vector2(518, 501)
 
 [node name="Enemy" parent="." instance=ExtResource("4_wam6v")]
-position = Vector2(511, 124)
+position = Vector2(504, 124)
+shoot_timer_wait_time_rotor1 = 0.1
+bullet_speed_rotor1 = 100.0
 
 [node name="Bullets" type="Node" parent="."]

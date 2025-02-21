@@ -17,12 +17,29 @@ script = ExtResource("1_tlvwf")
 level_scene = "Level_boss"
 bullet_scene_rotor1 = ExtResource("2_bocpt")
 bullet_sprite_rotor1 = ExtResource("3_07vcx")
+rotate_speed_rotor1 = 150
+shoot_timer_wait_time_rotor1 = 0.3
+fire_angle_rotator_rotor1 = 60
+bullet_direction_rotor1 = 180.0
+bullet_speed_rotor1 = 200.0
 bullet_scene_rotor2 = ExtResource("2_bocpt")
 bullet_sprite_rotor2 = ExtResource("4_bxgj1")
+spawn_point_count_rotor2 = 4
+fire_angle_rotator_rotor2 = 360
+bullet_speed_rotor2 = 150.0
 bullet_scene_rotor3 = ExtResource("2_bocpt")
 bullet_sprite_rotor3 = ExtResource("5_qgxap")
+spawn_point_count_rotor3 = 4
+fire_angle_rotator_rotor3 = 360
+bullet_direction_rotor3 = 180.0
+bullet_speed_rotor3 = 150.0
 bullet_scene_rotor4 = ExtResource("2_bocpt")
 bullet_sprite_rotor4 = ExtResource("6_4ug5e")
+rotate_speed_rotor4 = 30
+shoot_timer_wait_time_rotor4 = 0.5
+spawn_point_count_rotor4 = 5
+fire_angle_rotator_rotor4 = 360
+bullet_speed_rotor4 = 300.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 rotation = 1.5708
@@ -36,6 +53,8 @@ rotation = -8.98647e-05
 shape = SubResource("CapsuleShape2D_bqm4q")
 
 [node name="Rotor1" type="Node2D" parent="."]
+position = Vector2(7, 82)
+rotation = -0.644027
 
 [node name="Shoot_rate_spawn_timer_rotor1" type="Timer" parent="Rotor1"]
 
@@ -44,7 +63,7 @@ shape = SubResource("CapsuleShape2D_bqm4q")
 [node name="Rotator_bullets" type="Node2D" parent="Rotor1/Rotetor_cont"]
 
 [node name="Rotor2" type="Node2D" parent="."]
-position = Vector2(1, -25)
+position = Vector2(49, -6)
 
 [node name="Shoot_rate_spawn_timer_rotor2" type="Timer" parent="Rotor2"]
 
@@ -53,7 +72,7 @@ position = Vector2(1, -25)
 [node name="Rotator_bullets" type="Node2D" parent="Rotor2/Rotetor_cont"]
 
 [node name="Rotor3" type="Node2D" parent="."]
-position = Vector2(0, -49)
+position = Vector2(-47, -6)
 
 [node name="Shoot_rate_spawn_timer_rotor3" type="Timer" parent="Rotor3"]
 
@@ -62,7 +81,7 @@ position = Vector2(0, -49)
 [node name="Rotator_bullets" type="Node2D" parent="Rotor3/Rotetor_cont"]
 
 [node name="Rotor4" type="Node2D" parent="."]
-position = Vector2(0, -72)
+position = Vector2(1, -51)
 
 [node name="Shoot_rate_spawn_timer_rotor4" type="Timer" parent="Rotor4"]
 

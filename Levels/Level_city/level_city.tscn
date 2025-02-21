@@ -868,8 +868,8 @@ texture = ExtResource("25_mmt3s")
 
 [node name="Citizen_enemy2" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
 position = Vector2(856, -565)
-bullet_sprite = ExtResource("36_2p8tf")
 level_scene = "Level_city"
+bullet_sprite = ExtResource("36_2p8tf")
 rotate_speed = 50
 shoot_timer_wait_time = 0.2
 
