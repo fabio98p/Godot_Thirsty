@@ -173,6 +173,7 @@ sources/0 = SubResource("TileSetAtlasSource_r8pwr")
 script = ExtResource("1_m7hqa")
 pause_menu = ExtResource("2_imjii")
 option_menu = ExtResource("3_tgekj")
+next_scene = "res://Levels/Ending_dialogue/ending_scene.tscn"
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
 scroll_offset = Vector2(575, 323)

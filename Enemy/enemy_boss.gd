@@ -212,7 +212,7 @@ func destroy_boss():
 	#mettere esplosioni
 	kill()
 	await get_tree().create_timer(4.0).timeout
-	#get_tree().change_scene_to_file("res://Levels/Ending_dialogue/ending_scene.tscn")
+	get_tree().change_scene_to_file("res://Levels/Ending_dialogue/ending_scene.tscn")
 	queue_free()
 	
 func kill():
