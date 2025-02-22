@@ -181,7 +181,7 @@ animations = [{
 size = Vector2(5, 8)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xlay8"]
-radius = 99.1262
+radius = 50.0
 
 [node name="Level_forest" type="Node2D"]
 script = ExtResource("1_s31yo")
@@ -233,6 +233,7 @@ position = Vector2(967, 118)
 color = Color(0.362147, 0.244346, 0, 1)
 
 [node name="Wall" type="StaticBody2D" parent="."]
+collision_layer = 64
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall"]
 rotation = 3.14159

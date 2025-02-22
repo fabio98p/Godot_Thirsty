@@ -691,6 +691,7 @@ tile_map_data = PackedByteArray("AAAbABcADwAAAAAAAAAbABgADwAAAAEAAAAbABkADwAAAAI
 tile_set = SubResource("TileSet_tw854")
 
 [node name="Wall" type="StaticBody2D" parent="."]
+collision_layer = 64
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall"]
 rotation = -3.14159
@@ -1036,6 +1037,7 @@ bullet_direction = 0.0
 [node name="Bullets" type="Node" parent="Enemies/West_enemies2"]
 
 [node name="Label" type="Label" parent="."]
+visible = false
 offset_left = 175.0
 offset_top = 325.0
 offset_right = 413.0
@@ -1048,6 +1050,7 @@ for the movement"
 horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="."]
+visible = false
 offset_left = 529.0
 offset_top = 322.0
 offset_right = 821.0
