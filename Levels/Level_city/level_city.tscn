@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=4 uid="uid://0voju36h31a7"]
+[gd_scene load_steps=76 format=4 uid="uid://0voju36h31a7"]
 
 [ext_resource type="Script" path="res://Levels/Generic_Scripts/game_controller.gd" id="1_dwsm6"]
 [ext_resource type="PackedScene" uid="uid://bxa5nus5m4ntu" path="res://menus/scenes/pause_menu.tscn" id="2_xhrso"]
@@ -40,6 +40,7 @@
 [ext_resource type="FontFile" uid="uid://dhglvak4fko4" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/fonts/PixelOperator8-Bold.ttf" id="37_qwuab"]
 [ext_resource type="Texture2D" uid="uid://ccuv7y45e2bsc" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/particles/smokeeffect_repeat_48x64.png" id="39_hqw5n"]
 [ext_resource type="Texture2D" uid="uid://cpn3yify3y5ll" path="res://Assets/craftpix-net-865357-free-pixel-citizens-for-top-down-tower-defense/3/S_Idle.png" id="39_u7xs1"]
+[ext_resource type="AudioStream" uid="uid://bb32evc1b38kx" path="res://Assets/musics/music_zapsplat_easy_cheesy.mp3" id="41_4b7x4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kin8h"]
 texture = ExtResource("5_kmn14")
@@ -1037,7 +1038,6 @@ bullet_direction = 0.0
 [node name="Bullets" type="Node" parent="Enemies/West_enemies2"]
 
 [node name="Label" type="Label" parent="."]
-visible = false
 offset_left = 175.0
 offset_top = 325.0
 offset_right = 413.0
@@ -1050,7 +1050,6 @@ for the movement"
 horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="."]
-visible = false
 offset_left = 529.0
 offset_top = 322.0
 offset_right = 821.0
@@ -1083,6 +1082,10 @@ shape = SubResource("CircleShape2D_c8hmd")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0.977749, 0.887503, 0.8464, 1)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("41_4b7x4")
+autoplay = true
 
 [connection signal="area_entered" from="Alice/Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="body_entered" from="Alice/Area2D" to="." method="_on_area_2d_body_entered"]

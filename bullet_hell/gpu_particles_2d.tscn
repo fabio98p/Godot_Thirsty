@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bn3sy3u7diukv"]
+
+[ext_resource type="Material" uid="uid://chi2vlk8a25xa" path="res://bullet_hell/gpu_particles_2d.tres" id="1_jxtjy"]
+[ext_resource type="Texture2D" uid="uid://cjvfbquop4oku" path="res://Assets/NaD6F.png" id="1_u4qdt"]
+
+[node name="GPUParticles2D" type="GPUParticles2D"]
+amount = 350
+process_material = ExtResource("1_jxtjy")
+lifetime = 1.4
+explosiveness = 1.0
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+color = Color(0.779944, 0.0411969, 0.345354, 1)
+texture = ExtResource("1_u4qdt")
+texture_scale = 1.42
