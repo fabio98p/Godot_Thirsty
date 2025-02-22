@@ -11,6 +11,20 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_pa7v5")
+dialogue_value = "Ending_scene_start"
+backgrounds = {
+"bg_sunrise": "res://Assets/Img_background_dialogue/forest.png"
+}
+npc_expression = {
+"aliceidle": "res://Assets/pg_images/Sprite_alice_idle.png",
+"alicespeack": "res://Assets/pg_images/Sprite_alice_speak.png",
+"alicesurprise": "res://Assets/pg_images/Sprite_alice_surprise.png",
+"notthing": "",
+"sergenteidle": "res://Assets/pg_images/Sprite_sergente_idle.png",
+"sergentespeack": "res://Assets/pg_images/Sprite_sergente_speak.png",
+"sergentessurprise": "res://Assets/pg_images/Sprite_sergente_stupito.png",
+"zugplupangry": "res://Assets/pg_images/Sprite_alien_chief_angry.png"
+}
 
 [node name="DialogSistem" parent="." instance=ExtResource("1_qjvee")]
 layout_mode = 1
