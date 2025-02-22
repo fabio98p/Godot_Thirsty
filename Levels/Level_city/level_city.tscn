@@ -975,35 +975,35 @@ position = Vector2(574, -4602)
 scale = Vector2(1.82975, 1.82975)
 sprite_frames = SubResource("SpriteFrames_jstv8")
 autoplay = "default"
-frame_progress = 0.991629
+frame_progress = 0.0514853
 
 [node name="smoke2" type="AnimatedSprite2D" parent="Enviroments"]
 position = Vector2(548, -4575)
 scale = Vector2(1.01648, 1.01648)
 sprite_frames = SubResource("SpriteFrames_jstv8")
 autoplay = "default"
-frame_progress = 0.993134
+frame_progress = 0.0529902
 
 [node name="smoke3" type="AnimatedSprite2D" parent="Enviroments"]
 position = Vector2(605, -4575)
 scale = Vector2(1.01648, 1.01648)
 sprite_frames = SubResource("SpriteFrames_jstv8")
 autoplay = "default"
-frame_progress = 0.911858
+frame_progress = 0.971715
 
 [node name="smoke4" type="AnimatedSprite2D" parent="Enviroments"]
 position = Vector2(592, -4575)
 scale = Vector2(0.609798, 0.558713)
 sprite_frames = SubResource("SpriteFrames_jstv8")
 autoplay = "default"
-frame_progress = 0.461368
+frame_progress = 0.521225
 
 [node name="smoke5" type="AnimatedSprite2D" parent="Enviroments"]
 position = Vector2(536, -4575)
 scale = Vector2(0.973866, 0.892283)
 sprite_frames = SubResource("SpriteFrames_jstv8")
 autoplay = "default"
-frame_progress = 0.61572
+frame_progress = 0.675577
 
 [node name="Enemies" type="Node" parent="."]
 
