@@ -11,6 +11,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_u4l7h")
+dialogue_value = "Cliffside_scene_start"
+backgrounds = {
+"bg_alianstorm": "res://Assets/Img_background_dialogue/forest2.png",
+"bg_cliffside": "res://Assets/Img_background_dialogue/forest.png"
+}
+npc_expression = {
+"angry": "res://Assets/pg_images/Sprite_alien_chief_angry.png",
+"idle": "res://Assets/pg_images/Sprite_alien_chief_idle.png"
+}
 
 [node name="DialogSistem" parent="." instance=ExtResource("2_fu7oi")]
 layout_mode = 1
