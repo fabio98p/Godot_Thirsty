@@ -1,12 +1,12 @@
 [gd_scene load_steps=10 format=3 uid="uid://btcfigagl7wq0"]
 
-[ext_resource type="Texture2D" uid="uid://crk3jq04o2fy2" path="res://menus/assets/background/img1/aesthetic-pixel-art-garden-at-night-0ax4fopcqzot21lj.jpg" id="1_4bevd"]
 [ext_resource type="Script" path="res://menus/scripts/main_menu.gd" id="1_ukf5g"]
 [ext_resource type="PackedScene" uid="uid://cawi1y20tbbfy" path="res://menus/scenes/option_menu.tscn" id="2_ck0dt"]
 [ext_resource type="PackedScene" uid="uid://cs3cj7utcstit" path="res://menus/scenes/select_scene_scene.tscn" id="3_xgaid"]
+[ext_resource type="Texture2D" uid="uid://cxaxu1yys3w5p" path="res://Assets/Img_background_dialogue/bg_sunrise.png" id="4_dmqjo"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uyiai"]
-texture = ExtResource("1_4bevd")
+texture = ExtResource("4_dmqjo")
 modulate_color = Color(0.568973, 0.568973, 0.568973, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yltbn"]
