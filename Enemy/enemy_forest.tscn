@@ -44,7 +44,7 @@ bullet_sprite = ExtResource("3_whdyd")
 sprite_frames = SubResource("SpriteFrames_04ltj")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.998311
+frame_progress = 0.522808
 
 [node name="Timer" type="Timer" parent="."]
 
