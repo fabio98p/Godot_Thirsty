@@ -510,7 +510,7 @@
 		]
 	},
 	{
-		"commands_raw": "signal(set,dialogue_name,Kevin)\nsignal(set,npc_name,null)\nsignal(set,background,bg_cliffside)\nsignal(set,pg_expression,idle)\nsignal(set,npc_expression,idle)\n\n\n\nCome on, aliens, show yourselves!\n---\nI know you're here!\n\n?> Continua{\nsignal(set,pg_expression,idle)\nsignal(set,npc_name,zugplup)\nsignal(set,dialogue_name,???)\n\n->cliffside1\n}",
+		"commands_raw": "signal(set,dialogue_name,Kevin)\nsignal(set,npc_name,null)\nsignal(set,background,bg_cliffside)\nsignal(set,pg_expression,angry)\nsignal(set,npc_expression,idle)\n\n\n\nCome on, aliens, show yourselves!\n---\nI know you're here!\n\n?> Continua{\nsignal(set,npc_name,zugplup)\nsignal(set,dialogue_name,???)\n\n->cliffside1\n}",
 		"gnode_name": "cliffside_scene_start",
 		"id": 51,
 		"name": "Cliffside_scene_start",
@@ -520,7 +520,7 @@
 		]
 	},
 	{
-		"commands_raw": "Odivapmi zzzzzz ertserret nu,\n---\nzzzzzz et adraug am\n\n?> Continua{\n->cliffside2\n}",
+		"commands_raw": "Odivapmi zzzzzz ertserret nu,\n---\nzzzzzz et adraug am\n\n?> Continua{\nsignal(set,dialogue_name,Kevin)\n\n->cliffside2\n}",
 		"gnode_name": "cliffside1",
 		"id": 52,
 		"name": "cliffside1",
@@ -530,7 +530,7 @@
 		]
 	},
 	{
-		"commands_raw": "Huh? I can’t understand\na damn word.\n\n?> Continua{\n->cliffside3\n}",
+		"commands_raw": "Huh? I can’t understand\na damn word.\n\n?> Continua{\nsignal(set,dialogue_name,???)\n\n->cliffside3\n}",
 		"gnode_name": "cliffside2",
 		"id": 53,
 		"name": "cliffside2",
@@ -540,7 +540,7 @@
 		]
 	},
 	{
-		"commands_raw": "My apologies, human, my zzzzz\ntranslator was...\nset in reverse zzzzz.\n\n?> Continua{\n->cliffside4\n}",
+		"commands_raw": "My apologies, human, my zzzzz\ntranslator was...\nset in reverse zzzzz.\n\n?> Continua{\nsignal(set,dialogue_name,Kevin)\n->cliffside4\n}",
 		"gnode_name": "cliffside3",
 		"id": 54,
 		"name": "cliffside3",
@@ -550,7 +550,7 @@
 		]
 	},
 	{
-		"commands_raw": "Are you the one in charge here?\n---\nYou look uglier than the others.\n\n?> Continua{\n->cliffside5\n}",
+		"commands_raw": "Are you the one in charge here?\n---\nYou look uglier than the others.\n\n?> Continua{\nsignal(set,dialogue_name,Zugplup)\n->cliffside5\n}",
 		"gnode_name": "cliffside4",
 		"id": 55,
 		"name": "cliffside4",
@@ -560,7 +560,7 @@
 		]
 	},
 	{
-		"commands_raw": "Correct, human!\n---\nI am the great and fearsome ZUGPLUP\n---\npack leader of my hermit crabs!\n---\nAnd we are here for—\n\n?> Continua{\n->cliffside6\n}",
+		"commands_raw": "Correct, human!\n---\nI am the great and fearsome ZUGPLUP\n---\npack leader of my hermit crabs!\n---\nAnd we are here for—\n\n?> Continua{\nsignal(set,dialogue_name,Kevin)\n->cliffside6\n}",
 		"gnode_name": "cliffside5",
 		"id": 56,
 		"name": "cliffside5",
@@ -570,7 +570,7 @@
 		]
 	},
 	{
-		"commands_raw": "For what?!?\n---\nWhat are you here for?!?\n\n?> Continua{\n->cliffside7\n}",
+		"commands_raw": "For what?!?\n---\nWhat are you here for?!?\n\n?> Continua{\nsignal(set,dialogue_name,Zugplup)\n\n->cliffside7\n}",
 		"gnode_name": "cliffside6",
 		"id": 57,
 		"name": "cliffside6",
@@ -580,7 +580,7 @@
 		]
 	},
 	{
-		"commands_raw": "Ahem… I was just about to say that\n---\nhuman. Cough cough.\n---\nBlah blah great and fearsome blah blah\n---\npack leader of my hermit crabs\n---\nand we are here for… your water!\n\n\n?> Continua{\n->cliffside8\n}",
+		"commands_raw": "Ahem… I was just about to say that\n---\nhuman. Cough cough.\n---\nBlah blah great and fearsome blah blah\n---\npack leader of my hermit crabs\n---\nand we are here for… your water!\n\n\n?> Continua{\nsignal(set,dialogue_name,Kevin)\n->cliffside8\n}",
 		"gnode_name": "cliffside7",
 		"id": 58,
 		"name": "cliffside7",
@@ -590,7 +590,7 @@
 		]
 	},
 	{
-		"commands_raw": "Why??\n---\nWhy do you want our water???\n\n?> Continua{\n->cliffside9\n}",
+		"commands_raw": "Why??\n---\nWhy do you want our water???\n\n?> Continua{\nsignal(set,dialogue_name,Zugplup)\n->cliffside9\n}",
 		"gnode_name": "cliffside8",
 		"id": 59,
 		"name": "cliffside8",
@@ -600,7 +600,7 @@
 		]
 	},
 	{
-		"commands_raw": "We want it simply because\nwe are greedy beings!\n---\nThrough our intergalactic research,\n---\nwe have discovered that water from this planet\nis the moistest there\nis in the entire galaxy!\n---\nSo we want it all for ourselves!\n\n?> Continua{\n->cliffside10\n}",
+		"commands_raw": "We want it simply because\nwe are greedy beings!\n---\nThrough our intergalactic research,\n---\nwe have discovered that water\nfrom this planet.\n---\nis the moistest there\nis in the entire galaxy!\n---\nSo we want it all for ourselves!\n\n?> Continua{\nsignal(set,dialogue_name,Kevin)\n->cliffside10\n}",
 		"gnode_name": "cliffside9",
 		"id": 60,
 		"name": "cliffside9",
@@ -610,7 +610,7 @@
 		]
 	},
 	{
-		"commands_raw": "I won’t let you, Zuplug!!!\n---\nI’m here to defeat you!\n\n?> Continua{\n->cliffside11\n}",
+		"commands_raw": "I won’t let you, Zuplug!!!\n---\nI’m here to defeat you!\n\n?> Continua{\nsignal(set,dialogue_name,Zugplup)\nsignal(set,npc_expression,angry)\n->cliffside11\n}",
 		"gnode_name": "cliffside10",
 		"id": 61,
 		"name": "cliffside10",
@@ -620,7 +620,7 @@
 		]
 	},
 	{
-		"commands_raw": "ZUGPLUP!!!\n---\nVery well, human, let’s see\nwhat you’re capable of!\n---\nPOWER UP THE SHIP!\n\n?> Continua{\n->cliffside12\n}",
+		"commands_raw": "ZUGPLUP!!!\n---\nVery well, human, let’s see\nwhat you’re capable of!\n---\nPOWER UP THE SHIP!\n\n?> Continua{\nsignal(set,dialogue_name,Kevin)\n->cliffside12\n}",
 		"gnode_name": "cliffside11",
 		"id": 62,
 		"name": "cliffside11",
@@ -630,7 +630,7 @@
 		]
 	},
 	{
-		"commands_raw": "Huh? The ship?\n---\nNo… no! Hey—1v1! HEY!!!\n---\nThat’s not fair!\n---\nWhat the hell, oh well… at least I’m armed, right?\n---\nI’m so damn thirsty…\n\n?> Continua{\n    signal(set,scenes,res://Levels/Level_boss/level_boss.tscn)\n} ",
+		"commands_raw": "Huh? The ship?\n---\nNo… no! Hey—1v1! HEY!!!\n---\nThat’s not fair!\n---\nWhat the hell, oh well… at least.\nI’m armed, right?\n---\nI’m so damn thirsty…\n\n?> Continua{\n    signal(set,scenes,res://Levels/Level_boss/level_boss.tscn)\n} ",
 		"gnode_name": "cliffside12",
 		"id": 63,
 		"name": "cliffside12",
