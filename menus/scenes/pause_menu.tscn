@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bxa5nus5m4ntu"]
+[gd_scene load_steps=8 format=3 uid="uid://bxa5nus5m4ntu"]
 
 [ext_resource type="Script" path="res://menus/scripts/pause_menu.gd" id="1_amdy2"]
+[ext_resource type="Texture2D" uid="uid://crk3jq04o2fy2" path="res://menus/assets/background/img1/aesthetic-pixel-art-garden-at-night-0ax4fopcqzot21lj.jpg" id="2_l3rwk"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n88bl"]
-bg_color = Color(0, 0, 0, 1)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yebbq"]
+texture = ExtResource("2_l3rwk")
+modulate_color = Color(0.568973, 0.568973, 0.568973, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lvtbe"]
 
@@ -56,21 +58,27 @@ shadow_offset = Vector2(5, 5)
 process_mode = 3
 z_index = 4096
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_amdy2")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Background" type="Panel" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -512.0
+offset_top = -300.0
+offset_right = 512.0
+offset_bottom = 300.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_n88bl")
+theme_override_styles/panel = SubResource("StyleBoxTexture_yebbq")
 
 [node name="Title" type="Label" parent="."]
 layout_mode = 1
@@ -78,9 +86,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -256.5
-offset_top = 91.0
+offset_top = -196.0
 offset_right = 256.5
-offset_bottom = 168.0
+offset_bottom = -119.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 56
 text = "Gioco in pausa"

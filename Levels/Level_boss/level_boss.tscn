@@ -1,10 +1,12 @@
-[gd_scene load_steps=17 format=4 uid="uid://owggx5hftgux"]
+[gd_scene load_steps=19 format=4 uid="uid://owggx5hftgux"]
 
 [ext_resource type="Script" path="res://Levels/Generic_Scripts/game_controller.gd" id="1_m7hqa"]
 [ext_resource type="PackedScene" uid="uid://d1cwkxxbgcmug" path="res://Player_and_hud/HUD/hud.tscn" id="2_c5kgu"]
+[ext_resource type="PackedScene" uid="uid://bxa5nus5m4ntu" path="res://menus/scenes/pause_menu.tscn" id="2_imjii"]
 [ext_resource type="Texture2D" uid="uid://bu0pq35cq5xb6" path="res://Assets/img_boss_fight/1.png" id="2_xrusp"]
 [ext_resource type="PackedScene" uid="uid://dahmom2txf0uv" path="res://Player_and_hud/Player/player.tscn" id="3_5me42"]
 [ext_resource type="Texture2D" uid="uid://cw5on67xol7dg" path="res://Assets/img_boss_fight/2.png" id="3_nrkyn"]
+[ext_resource type="PackedScene" uid="uid://cawi1y20tbbfy" path="res://menus/scenes/option_menu.tscn" id="3_tgekj"]
 [ext_resource type="Texture2D" uid="uid://drib1vxsr7mh3" path="res://Assets/img_boss_fight/3.png" id="4_7x5ct"]
 [ext_resource type="PackedScene" uid="uid://itvnkntfrqk2" path="res://Enemy/enemy_boss.tscn" id="4_wam6v"]
 [ext_resource type="Texture2D" uid="uid://lpxaft5migcm" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/Tilemaps & Additive Env/Tilemap32x32_down_environment.png" id="5_7sej0"]
@@ -166,6 +168,8 @@ sources/0 = SubResource("TileSetAtlasSource_r8pwr")
 
 [node name="Level_boss" type="Node2D"]
 script = ExtResource("1_m7hqa")
+pause_menu = ExtResource("2_imjii")
+option_menu = ExtResource("3_tgekj")
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
 scroll_offset = Vector2(575, 323)
