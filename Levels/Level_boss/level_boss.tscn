@@ -317,6 +317,7 @@ bullet_sprite_rotor4 = ExtResource("13_dk3qp")
 [node name="Bullets" type="Node" parent="."]
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+visible = false
 color = Color(0.0491319, 0.512964, 0.502833, 1)
 energy = 0.9
 shadow_enabled = true
