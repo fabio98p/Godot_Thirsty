@@ -1,15 +1,20 @@
-[gd_scene load_steps=12 format=3 uid="uid://dy6ojes0dljoj"]
+[gd_scene load_steps=14 format=3 uid="uid://dy6ojes0dljoj"]
 
 [ext_resource type="Script" path="res://Player_and_hud/HUD/dialog_sistem.gd" id="1_fisah"]
 [ext_resource type="Script" path="res://addons/ez_dialogue/ez_dialogue_node.gd" id="2_agowf"]
 [ext_resource type="JSON" path="res://dialog.json" id="2_b6slm"]
-[ext_resource type="Texture2D" uid="uid://dphcgbji5yf7p" path="res://Assets/generic_img/back_dialog_backgoround.png" id="3_bk1p3"]
+[ext_resource type="Texture2D" uid="uid://bla2wnqn6k2jj" path="res://Assets/Img_background_dialogue/back_dialogue_bg.png" id="3_4rxnk"]
+[ext_resource type="Texture2D" uid="uid://k6i3tb0p5nr7" path="res://Assets/Img_background_dialogue/back_dialogue_bg_name.png" id="4_8gp5i"]
 [ext_resource type="Texture2D" uid="uid://h638e8j7jdwh" path="res://Assets/pg_images/Sprite_kevin_speak.png" id="4_j8bib"]
 [ext_resource type="FontFile" uid="uid://dhglvak4fko4" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/fonts/PixelOperator8-Bold.ttf" id="4_sotqv"]
 [ext_resource type="FontFile" uid="uid://doebr7djodoy2" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/fonts/PixelOperator8.ttf" id="5_7edsq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wyqyc"]
-texture = ExtResource("3_bk1p3")
+texture = ExtResource("3_4rxnk")
+modulate_color = Color(0.146876, 0.526013, 0.509331, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fnc28"]
+texture = ExtResource("4_8gp5i")
 modulate_color = Color(0.146876, 0.526013, 0.509331, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xhjpt"]
@@ -55,20 +60,40 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -319.0
+offset_left = -372.0
 offset_top = -272.0
-offset_right = 581.0
+offset_right = 678.0
 offset_bottom = 258.0
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(0.720001, 0.52)
 alignment = 1
-metadata/_edit_lock_ = true
 
 [node name="Background_dialogue" type="Panel" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_wyqyc")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -318.0
+offset_top = -272.0
+offset_right = 732.0
+offset_bottom = 258.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.720001, 0.52)
+alignment = 1
+
+[node name="Background_dialogue" type="Panel" parent="HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_fnc28")
 
 [node name="Speack_person" type="Label" parent="."]
 layout_mode = 2
@@ -130,7 +155,7 @@ offset_left = 1071.0
 offset_top = 357.0
 offset_right = 1117.0
 offset_bottom = 397.0
-scale = Vector2(-9.417, 6.076)
+scale = Vector2(-9.417, 6.01308)
 theme_override_styles/panel = SubResource("StyleBoxTexture_vpxt8")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
