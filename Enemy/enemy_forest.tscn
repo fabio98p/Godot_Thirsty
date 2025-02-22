@@ -1,0 +1,55 @@
+[gd_scene load_steps=9 format=3 uid="uid://crc8sjc44c4cl"]
+
+[ext_resource type="Script" path="res://Enemy/enemy_forest.gd" id="1_xoxei"]
+[ext_resource type="PackedScene" uid="uid://cu4jgwl0oakgw" path="res://bullet_hell/bullet.tscn" id="2_2xj1m"]
+[ext_resource type="Texture2D" uid="uid://dd30wxgl1f0gx" path="res://Assets/Modern Fantasy JRPG Character Sprites/Modern Fantasy JRPG Character Sprites (transparent).png" id="2_g7sa8"]
+[ext_resource type="Texture2D" uid="uid://ba5h2xprfe0ud" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Animations/Shots/Shot4/shot4_exp4.png" id="3_whdyd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wyd7n"]
+atlas = ExtResource("2_g7sa8")
+region = Rect2(72, 32, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ks6v"]
+atlas = ExtResource("2_g7sa8")
+region = Rect2(96, 32, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_83bpu"]
+atlas = ExtResource("2_g7sa8")
+region = Rect2(120, 32, 24, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_04ltj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wyd7n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ks6v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83bpu")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Enemy_forest" type="Node2D"]
+script = ExtResource("1_xoxei")
+level_scene = "Level_forest"
+bullet_scene = ExtResource("2_2xj1m")
+bullet_sprite = ExtResource("3_whdyd")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_04ltj")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.998311
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Rotetor_cont" type="Node2D" parent="."]
+
+[node name="Rotator_bullets" type="Node2D" parent="Rotetor_cont"]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
