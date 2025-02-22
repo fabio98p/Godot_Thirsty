@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://itvnkntfrqk2"]
+[gd_scene load_steps=10 format=3 uid="uid://itvnkntfrqk2"]
 
 [ext_resource type="Script" path="res://Enemy/enemy_boss.gd" id="1_tlvwf"]
 [ext_resource type="PackedScene" uid="uid://cu4jgwl0oakgw" path="res://bullet_hell/bullet.tscn" id="2_bocpt"]
@@ -7,8 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cglgau4nikbkq" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship4/Exhaust/Turbo_flight/Exhaust1/exhaust3.png" id="4_bxgj1"]
 [ext_resource type="Texture2D" uid="uid://bb6xydqpsyw7f" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship1/Exhaust/Normal_flight/Exhaust1/exhaust2.png" id="5_qgxap"]
 [ext_resource type="Texture2D" uid="uid://cdytkuknhsapp" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship2/Exhaust/Normal_flight/Exhaust1/exhaust2.png" id="6_4ug5e"]
-[ext_resource type="PackedScene" uid="uid://bn3sy3u7diukv" path="res://bullet_hell/gpu_particles_2d.tscn" id="8_y5qqn"]
-[ext_resource type="PackedScene" uid="uid://c8d2ueghxn61e" path="res://bullet_hell/particle_2.tscn" id="9_hwoit"]
+[ext_resource type="PackedScene" uid="uid://bsi3cdykup2kl" path="res://bullet_hell/cpu_particles_2d.tscn" id="8_a5nyk"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bqm4q"]
 radius = 59.0
@@ -91,27 +90,17 @@ position = Vector2(1, -51)
 
 [node name="Rotator_bullets" type="Node2D" parent="Rotor4/Rotetor_cont"]
 
-[node name="GPUParticles2D" parent="." instance=ExtResource("8_y5qqn")]
+[node name="CPUParticles2D" parent="." instance=ExtResource("8_a5nyk")]
 visible = false
-position = Vector2(-48, -17)
-emitting = false
-one_shot = true
+position = Vector2(36, -5)
 
-[node name="GPUParticles2D2" parent="." instance=ExtResource("8_y5qqn")]
+[node name="CPUParticles2D2" parent="." instance=ExtResource("8_a5nyk")]
 visible = false
-position = Vector2(48, -17)
-emitting = false
-one_shot = true
+position = Vector2(-34, -72)
 
-[node name="GPUParticles2D3" parent="." instance=ExtResource("8_y5qqn")]
+[node name="CPUParticles2D3" parent="." instance=ExtResource("8_a5nyk")]
 visible = false
-position = Vector2(3, 97)
-emitting = false
-one_shot = true
-
-[node name="Particle_2" parent="." instance=ExtResource("9_hwoit")]
-visible = false
-emitting = false
+position = Vector2(-30, 99)
 
 [connection signal="timeout" from="Rotor1/Shoot_rate_spawn_timer_rotor1" to="." method="_on_shoot_rate_spawn_timer_rotor_1_timeout"]
 [connection signal="timeout" from="Rotor2/Shoot_rate_spawn_timer_rotor2" to="." method="_on_shoot_rate_spawn_timer_rotor_2_timeout"]
