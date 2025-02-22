@@ -2,6 +2,12 @@ extends Node2D
 
 var finish_game := false
 
+@onready var gpu_particles_2d: GPUParticles2D = $GPUParticles2D
+@onready var gpu_particles_2d_2: GPUParticles2D = $GPUParticles2D2
+@onready var gpu_particles_2d_3: GPUParticles2D = $GPUParticles2D3
+@onready var particle_2: GPUParticles2D = $Particle_2
+
+
 @onready var shoot_rate_spawn_timer_rotor_1: Timer = $Rotor1/Shoot_rate_spawn_timer_rotor1
 @onready var rotetor_cont_rotor1: Node2D = $Rotor1/Rotetor_cont
 @onready var rotator_bullets_rotor1: Node2D = $Rotor1/Rotetor_cont/Rotator_bullets
@@ -204,5 +210,22 @@ func destroy_boss():
 	finish_game = true
 	print("addio rotori")
 	#mettere esplosioni
-	await get_tree().create_timer(5.0).timeout
-	get_tree().change_scene_to_file("res://Levels/Ending_dialogue/ending_scene.tscn")
+	kill()
+	await get_tree().create_timer(4.0).timeout
+	#get_tree().change_scene_to_file("res://Levels/Ending_dialogue/ending_scene.tscn")
+	queue_free()
+	
+func kill():
+	particle_2.visible = true
+	particle_2.emitting = true
+	await get_tree().create_timer(2.0).timeout
+	gpu_particles_2d.visible = true
+	gpu_particles_2d.emitting = true
+	await get_tree().create_timer(0.5).timeout
+	gpu_particles_2d_2.visible = true
+	gpu_particles_2d_2.emitting = true
+	await get_tree().create_timer(0.5).timeout
+	gpu_particles_2d_3.visible = true
+	gpu_particles_2d_3.emitting = true
+	
+	
