@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://owggx5hftgux"]
+[gd_scene load_steps=24 format=4 uid="uid://owggx5hftgux"]
 
 [ext_resource type="Script" path="res://Levels/Generic_Scripts/game_controller.gd" id="1_m7hqa"]
 [ext_resource type="PackedScene" uid="uid://d1cwkxxbgcmug" path="res://Player_and_hud/HUD/hud.tscn" id="2_c5kgu"]
@@ -229,6 +229,8 @@ _data = {
 "new_animation": SubResource("Animation_qe0he")
 }
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_34rhj"]
+
 [node name="Level_boss" type="Node2D"]
 script = ExtResource("1_m7hqa")
 pause_menu = ExtResource("2_imjii")
@@ -336,3 +338,19 @@ libraries = {
 "": SubResource("AnimationLibrary_rllki")
 }
 autoplay = "new_animation"
+
+[node name="Wall" type="StaticBody2D" parent="."]
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall"]
+rotation = 1.5708
+shape = SubResource("WorldBoundaryShape2D_34rhj")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Wall"]
+position = Vector2(1024, 0)
+rotation = -1.5708
+shape = SubResource("WorldBoundaryShape2D_34rhj")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall"]
+position = Vector2(0, 600)
+shape = SubResource("WorldBoundaryShape2D_34rhj")
