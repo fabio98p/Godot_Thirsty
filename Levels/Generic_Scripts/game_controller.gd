@@ -6,6 +6,7 @@ extends Node2D
 @export var pause_menu: PackedScene
 @export var option_menu: PackedScene
 @export var player_position: Vector2 = Vector2(531, 530)
+@export var next_scene: String
 var pause_menu_instance
 var option_menu_instance 
 var pause_already_pressed := false
@@ -71,3 +72,10 @@ func hide_option_menu() -> void:
 	
 func death_player()-> void:
 	get_tree().reload_current_scene()
+
+func next_level_scene()-> void:
+	get_tree().change_scene_to_file(next_scene)
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	next_level_scene()
