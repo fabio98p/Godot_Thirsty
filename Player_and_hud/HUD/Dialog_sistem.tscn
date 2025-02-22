@@ -34,6 +34,7 @@ dialog_json = ExtResource("2_b6slm")
 pg_expression = {
 "angry": "res://Assets/pg_images/Sprite_kevin_angry.png",
 "idle": "res://Assets/pg_images/Sprite_kevin_idle.png",
+"notthing": "",
 "sad": "res://Assets/pg_images/Sprite_kevin_sad.png",
 "speack": "res://Assets/pg_images/Sprite_kevin_speak.png",
 "surprise": "res://Assets/pg_images/Sprite_kevin_surprise.png"

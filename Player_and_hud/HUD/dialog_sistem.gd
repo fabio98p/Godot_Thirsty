@@ -9,11 +9,12 @@ extends Control
 @export var dialog_json: JSON 
 @onready var state= {}
 @export var pg_expression:Dictionary = {
+	"notthing": "",
 	"idle" : "",
 	"sad" : "",
 	"angry" : "",
 	"surprise": "",
-	"speack": ""
+	"speack": "",
 }
 
 @export var text_speed = 0.02# Tempo tra una lettera e l'altra (in secondi)

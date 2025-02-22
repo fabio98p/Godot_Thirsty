@@ -1,4 +1,5 @@
-[gd_scene load_steps=21 format=4 uid="uid://owggx5hftgux"]
+[gd_scene load_steps=23 format=4 uid="uid://owggx5hftgux"]
+
 [ext_resource type="Script" path="res://Levels/Generic_Scripts/game_controller.gd" id="1_m7hqa"]
 [ext_resource type="PackedScene" uid="uid://d1cwkxxbgcmug" path="res://Player_and_hud/HUD/hud.tscn" id="2_c5kgu"]
 [ext_resource type="PackedScene" uid="uid://bxa5nus5m4ntu" path="res://menus/scenes/pause_menu.tscn" id="2_imjii"]
