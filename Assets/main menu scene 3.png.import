@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4mw70buhrhd7"
-path="res://.godot/imported/Sprite_alien_chief_angry.png-c2414d96d37a07024aa0753eb21024bc.ctex"
+uid="uid://cs7ul7e1humol"
+path="res://.godot/imported/main menu scene 3.png-fc8111afdd1efec159b4229974197a7f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/pg_images/Sprite_alien_chief_angry.png"
-dest_files=["res://.godot/imported/Sprite_alien_chief_angry.png-c2414d96d37a07024aa0753eb21024bc.ctex"]
+source_file="res://Assets/main menu scene 3.png"
+dest_files=["res://.godot/imported/main menu scene 3.png-fc8111afdd1efec159b4229974197a7f.ctex"]
 
 [params]
 
