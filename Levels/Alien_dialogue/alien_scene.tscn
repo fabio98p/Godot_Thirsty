@@ -13,8 +13,8 @@ grow_vertical = 2
 script = ExtResource("1_u4l7h")
 dialogue_value = "Cliffside_scene_start"
 backgrounds = {
-"bg_alianstorm": "res://Assets/Img_background_dialogue/forest2.png",
-"bg_cliffside": "res://Assets/Img_background_dialogue/forest.png"
+"bg_alianstorm": "res://Assets/Img_background_dialogue/aliensss.png",
+"bg_cliffside": "res://Assets/Img_background_dialogue/cliffside.png"
 }
 npc_expression = {
 "angry": "res://Assets/pg_images/Sprite_alien_chief_angry.png",

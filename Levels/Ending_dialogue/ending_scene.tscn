@@ -13,7 +13,7 @@ grow_vertical = 2
 script = ExtResource("1_pa7v5")
 dialogue_value = "Ending_scene_start"
 backgrounds = {
-"bg_sunrise": "res://Assets/Img_background_dialogue/forest.png"
+"bg_sunrise": "res://Assets/Img_background_dialogue/bg_sunrise.png"
 }
 npc_expression = {
 "aliceidle": "res://Assets/pg_images/Sprite_alice_idle.png",
