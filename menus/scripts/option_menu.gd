@@ -1,8 +1,8 @@
 extends Control
 
-@onready var master_slide: HSlider = $AudioControl/Buttons_cont/Master_slide
-@onready var music_slide: HSlider = $AudioControl/Buttons_cont/Music_slide
-@onready var sfx_slide: HSlider = $AudioControl/Buttons_cont/Sfx_slide
+@onready var master_slide: HSlider = $CanvasLayer/AudioControl/Buttons_cont/Master_slide
+@onready var music_slide: HSlider = $CanvasLayer/AudioControl/Buttons_cont/Music_slide
+@onready var sfx_slide: HSlider = $CanvasLayer/AudioControl/Buttons_cont/Sfx_slide
 
 signal hide_option_menu 
 

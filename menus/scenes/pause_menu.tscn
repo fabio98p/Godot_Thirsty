@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://bxa5nus5m4ntu"]
 
 [ext_resource type="Script" path="res://menus/scripts/pause_menu.gd" id="1_amdy2"]
-[ext_resource type="Texture2D" uid="uid://crk3jq04o2fy2" path="res://menus/assets/background/img1/aesthetic-pixel-art-garden-at-night-0ax4fopcqzot21lj.jpg" id="2_l3rwk"]
+[ext_resource type="Texture2D" uid="uid://cxaxu1yys3w5p" path="res://Assets/Img_background_dialogue/bg_sunrise.png" id="2_pwy5h"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yebbq"]
-texture = ExtResource("2_l3rwk")
+texture = ExtResource("2_pwy5h")
 modulate_color = Color(0.568973, 0.568973, 0.568973, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lvtbe"]
@@ -67,36 +67,31 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_amdy2")
 
-[node name="Background" type="Panel" parent="."]
-layout_mode = 1
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Background" type="Panel" parent="CanvasLayer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -512.0
-offset_top = -300.0
-offset_right = 512.0
-offset_bottom = 300.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_yebbq")
 
-[node name="Title" type="Label" parent="."]
-layout_mode = 1
+[node name="Title" type="Label" parent="CanvasLayer"]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -256.5
-offset_top = -196.0
+offset_top = 104.0
 offset_right = 256.5
-offset_bottom = -119.0
+offset_bottom = 181.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 56
 text = "Gioco in pausa"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Buttons_cont" type="VBoxContainer" parent="."]
-layout_mode = 1
+[node name="Buttons_cont" type="VBoxContainer" parent="CanvasLayer"]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -110,7 +105,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 25
 
-[node name="Button_resume" type="Button" parent="Buttons_cont"]
+[node name="Button_resume" type="Button" parent="CanvasLayer/Buttons_cont"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 32
@@ -120,7 +115,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_twysb")
 theme_override_styles/normal = SubResource("StyleBoxFlat_mae36")
 text = "Resume"
 
-[node name="Button_reset" type="Button" parent="Buttons_cont"]
+[node name="Button_reset" type="Button" parent="CanvasLayer/Buttons_cont"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 32
@@ -130,7 +125,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_twysb")
 theme_override_styles/normal = SubResource("StyleBoxFlat_mae36")
 text = "Reset Levelssss"
 
-[node name="Button_options" type="Button" parent="Buttons_cont"]
+[node name="Button_options" type="Button" parent="CanvasLayer/Buttons_cont"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 32
@@ -140,7 +135,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_twysb")
 theme_override_styles/normal = SubResource("StyleBoxFlat_mae36")
 text = "Options"
 
-[node name="Button_exit" type="Button" parent="Buttons_cont"]
+[node name="Button_exit" type="Button" parent="CanvasLayer/Buttons_cont"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 32
@@ -150,7 +145,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_twysb")
 theme_override_styles/normal = SubResource("StyleBoxFlat_mae36")
 text = "Exit to main menu"
 
-[connection signal="pressed" from="Buttons_cont/Button_resume" to="." method="_on_button_resume_pressed"]
-[connection signal="pressed" from="Buttons_cont/Button_reset" to="." method="_on_button_reset_pressed"]
-[connection signal="pressed" from="Buttons_cont/Button_options" to="." method="_on_button_options_pressed"]
-[connection signal="pressed" from="Buttons_cont/Button_exit" to="." method="_on_button_exit_pressed"]
+[connection signal="pressed" from="CanvasLayer/Buttons_cont/Button_resume" to="." method="_on_button_resume_pressed"]
+[connection signal="pressed" from="CanvasLayer/Buttons_cont/Button_reset" to="." method="_on_button_reset_pressed"]
+[connection signal="pressed" from="CanvasLayer/Buttons_cont/Button_options" to="." method="_on_button_options_pressed"]
+[connection signal="pressed" from="CanvasLayer/Buttons_cont/Button_exit" to="." method="_on_button_exit_pressed"]
