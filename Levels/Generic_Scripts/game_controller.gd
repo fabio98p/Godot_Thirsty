@@ -11,6 +11,7 @@ var option_menu_instance
 var pause_already_pressed := false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	get_node("/root/AudioStreamPlayer2d").playing = false
 	player.position = player_position
 	
 	player.connect("player_dead", Callable(self, "death_player"))
