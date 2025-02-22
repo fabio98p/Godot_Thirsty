@@ -1,7 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://cs3cj7utcstit"]
+[gd_scene load_steps=14 format=3 uid="uid://cs3cj7utcstit"]
 
 [ext_resource type="Script" path="res://menus/scripts/select_scene_scene.gd" id="1_g06dk"]
 [ext_resource type="Texture2D" uid="uid://crk3jq04o2fy2" path="res://menus/assets/background/img1/aesthetic-pixel-art-garden-at-night-0ax4fopcqzot21lj.jpg" id="1_t2kdi"]
+[ext_resource type="Texture2D" uid="uid://cf8kr4x6o0avp" path="res://Assets/main menu scenes 1.png" id="3_b7wk0"]
+[ext_resource type="Texture2D" uid="uid://cs7ul7e1humol" path="res://Assets/main menu scene 3.png" id="4_lg833"]
+[ext_resource type="Texture2D" uid="uid://c1up7y8lx0fre" path="res://Assets/image main menu scene 2.png" id="5_jig2f"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hjhf1"]
 texture = ExtResource("1_t2kdi")
@@ -53,6 +56,17 @@ corner_radius_bottom_left = 10
 shadow_color = Color(0.0768358, 0.0768358, 0.0768358, 0.470588)
 shadow_size = 5
 shadow_offset = Vector2(5, 5)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xy6ma"]
+texture = ExtResource("3_b7wk0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_625od"]
+texture = ExtResource("4_lg833")
+modulate_color = Color(0.568973, 0.568973, 0.568973, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6pyy6"]
+texture = ExtResource("5_jig2f")
+modulate_color = Color(0.568973, 0.568973, 0.568973, 1)
 
 [node name="Select_scene_scene" type="Control"]
 layout_mode = 3
@@ -143,6 +157,45 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_pqknk")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_2vnij")
 theme_override_styles/normal = SubResource("StyleBoxFlat_4mm5h")
 text = "Back"
+
+[node name="Background2" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 175.0
+offset_top = 171.0
+offset_right = -681.0
+offset_bottom = -286.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_xy6ma")
+
+[node name="Background3" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 628.0
+offset_top = 171.0
+offset_right = -228.0
+offset_bottom = -286.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_625od")
+
+[node name="Background4" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 384.0
+offset_top = 171.0
+offset_right = -472.0
+offset_bottom = -286.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_6pyy6")
 
 [connection signal="pressed" from="HBoxContainer/Button_level_1" to="." method="_on_button_level_1_pressed"]
 [connection signal="pressed" from="HBoxContainer/Button_level_2" to="." method="_on_button_level_2_pressed"]
