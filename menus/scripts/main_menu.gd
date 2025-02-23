@@ -4,6 +4,10 @@ extends Control
 @export var select_scene: PackedScene
 var option_menu_instance: Control
 var select_scene_instance: Control
+
+func _ready() -> void:
+	DisplayServer.window_set_size(Vector2i(1024, 600))  # Imposta la risoluzione fissa
+	DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_RESIZE_DISABLED, true)  # Disabilita il ridimensionamento
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass

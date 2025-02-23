@@ -25,6 +25,8 @@ OptionsHandler="*res://menus/scripts/options_handler.gd"
 
 window/size/viewport_width=1024
 window/size/viewport_height=600
+window/size/resizable=false
+window/stretch/mode="viewport"
 
 [editor_plugins]
 
