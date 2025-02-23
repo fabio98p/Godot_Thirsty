@@ -1,5 +1,9 @@
 extends CharacterBody2D
 
+
+
+@onready var mesh_instance_2d_2: MeshInstance2D = $Area2D/MeshInstance2D2
+@onready var mesh_instance_2d: MeshInstance2D = $Area2D/MeshInstance2D
 @onready var player_hit_particle: CPUParticles2D = $Player_hit_particle
 @export var can_fire : bool = false
 @export var bullet_scene: PackedScene
