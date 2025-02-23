@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var player_hit_particle: CPUParticles2D = $Player_hit_particle
 @export var can_fire : bool = false
 @export var bullet_scene: PackedScene
 @onready var inv_frame_timer: Timer = $InvFrameTimer
@@ -60,6 +61,22 @@ func change_animation(direction: Vector2):
 	
 func lose_hp():
 	if !isInvincible:
+		player_hit_particle.emitting = true
+		animated_sprite_2d.modulate.a = 0.5
+		await get_tree().create_timer(0.31).timeout
+		animated_sprite_2d.modulate.a = 1
+		await get_tree().create_timer(0.32).timeout
+		animated_sprite_2d.modulate.a = 0.5
+		await get_tree().create_timer(0.30).timeout
+		animated_sprite_2d.modulate.a = 1
+		await get_tree().create_timer(0.28).timeout
+		animated_sprite_2d.modulate.a = 0.5
+		await get_tree().create_timer(0.26).timeout
+		animated_sprite_2d.modulate.a = 1
+		await get_tree().create_timer(0.24).timeout
+		animated_sprite_2d.modulate.a = 0.5
+		await get_tree().create_timer(0.22).timeout
+		animated_sprite_2d.modulate.a = 1
 		current_hp = current_hp-1
 		if current_hp == 0:
 			player_dead.emit()

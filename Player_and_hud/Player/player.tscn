@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://dahmom2txf0uv"]
+[gd_scene load_steps=40 format=3 uid="uid://dahmom2txf0uv"]
 
 [ext_resource type="Script" path="res://Player_and_hud/Player/player.gd" id="1_62xh4"]
 [ext_resource type="Texture2D" uid="uid://cy32bwetkotyd" path="res://Assets/craftpix-net-865357-free-pixel-citizens-for-top-down-tower-defense/2/D_Walk.png" id="2_8t76w"]
@@ -6,7 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://6n2sqicdqq3y" path="res://Assets/craftpix-net-865357-free-pixel-citizens-for-top-down-tower-defense/2/U_Walk.png" id="2_ffvts"]
 [ext_resource type="Texture2D" uid="uid://s2eixh73euok" path="res://Assets/craftpix-net-865357-free-pixel-citizens-for-top-down-tower-defense/2/U_Special.png" id="4_ooase"]
 [ext_resource type="Texture2D" uid="uid://colmilkbaf3j3" path="res://Assets/craftpix-net-865357-free-pixel-citizens-for-top-down-tower-defense/2/S_Walk.png" id="4_w7mwh"]
-[ext_resource type="PackedScene" uid="uid://cfcqlw6jw2yj4" path="res://bullet_hell/bullet_player.tscn" id="7_gvfx1"]
+[ext_resource type="PackedScene" path="res://bullet_hell/bullet_player.tscn" id="7_gvfx1"]
+[ext_resource type="PackedScene" uid="uid://uf4pw6l6gy8o" path="res://Player_and_hud/player_hit_particle.tscn" id="8_12urs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_riii5"]
 atlas = ExtResource("2_8t76w")
@@ -257,7 +258,7 @@ autoplay = "idle"
 frame_progress = 0.107758
 
 [node name="InvFrameTimer" type="Timer" parent="."]
-wait_time = 2.5
+wait_time = 2.0
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
@@ -270,6 +271,9 @@ collision_mask = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_qj1w6")
+
+[node name="Player_hit_particle" parent="." instance=ExtResource("8_12urs")]
+z_index = 15
 
 [connection signal="timeout" from="InvFrameTimer" to="." method="_on_inv_frame_timer_timeout"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

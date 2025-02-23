@@ -3,6 +3,7 @@
 [node name="Player_hit_particle" type="CPUParticles2D"]
 emitting = false
 amount = 14
+lifetime = 0.3
 one_shot = true
 explosiveness = 0.35
 emission_shape = 1
