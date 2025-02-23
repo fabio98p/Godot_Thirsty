@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://itvnkntfrqk2"]
+[gd_scene load_steps=13 format=3 uid="uid://itvnkntfrqk2"]
 
 [ext_resource type="Script" path="res://Enemy/enemy_boss.gd" id="1_tlvwf"]
 [ext_resource type="PackedScene" uid="uid://cu4jgwl0oakgw" path="res://bullet_hell/bullet.tscn" id="2_bocpt"]
@@ -8,6 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://bb6xydqpsyw7f" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship1/Exhaust/Normal_flight/Exhaust1/exhaust2.png" id="5_qgxap"]
 [ext_resource type="Texture2D" uid="uid://cdytkuknhsapp" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship2/Exhaust/Normal_flight/Exhaust1/exhaust2.png" id="6_4ug5e"]
 [ext_resource type="PackedScene" uid="uid://bsi3cdykup2kl" path="res://bullet_hell/cpu_particles_2d.tscn" id="8_a5nyk"]
+[ext_resource type="AudioStream" uid="uid://c1kkdwgmxpkst" path="res://Assets/musics/sound effect/explosion/explosion-6055.mp3" id="9_nd3xs"]
+[ext_resource type="AudioStream" uid="uid://5j70fg2r5j57" path="res://Assets/musics/sound effect/explosion/explosion-91872.mp3" id="10_iv4gg"]
+[ext_resource type="AudioStream" uid="uid://bog56nnb1tjfd" path="res://Assets/musics/sound effect/explosion/explosion-drop-6879.mp3" id="11_rfkx2"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bqm4q"]
 radius = 59.0
@@ -101,6 +104,15 @@ position = Vector2(-34, -72)
 [node name="CPUParticles2D3" parent="." instance=ExtResource("8_a5nyk")]
 visible = false
 position = Vector2(-30, 99)
+
+[node name="explosion_1" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_nd3xs")
+
+[node name="explosion_2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_iv4gg")
+
+[node name="explosion_3" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_rfkx2")
 
 [connection signal="timeout" from="Rotor1/Shoot_rate_spawn_timer_rotor1" to="." method="_on_shoot_rate_spawn_timer_rotor_1_timeout"]
 [connection signal="timeout" from="Rotor2/Shoot_rate_spawn_timer_rotor2" to="." method="_on_shoot_rate_spawn_timer_rotor_2_timeout"]

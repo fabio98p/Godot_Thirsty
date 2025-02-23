@@ -1,6 +1,9 @@
 extends Node2D
 
 var finish_game := false
+@onready var explosion_1: AudioStreamPlayer2D = $explosion_1
+@onready var explosion_2: AudioStreamPlayer2D = $explosion_2
+@onready var explosion_3: AudioStreamPlayer2D = $explosion_3
 
 #@onready var gpu_particles_2d: GPUParticles2D = $GPUParticles2D
 #@onready var gpu_particles_2d_2: GPUParticles2D = $GPUParticles2D2
@@ -208,7 +211,7 @@ func _on_shoot_rate_spawn_timer_rotor_4_timeout() -> void:
 			bullet.rotation = s.global_rotation
 			
 func destroy_boss():
-	await get_tree().create_timer(134.4).timeout #134.4
+	await get_tree().create_timer(4.4).timeout #134.4
 	finish_game = true
 	print("addio rotori")
 	#mettere esplosioni
@@ -220,11 +223,16 @@ func destroy_boss():
 func kill():
 	cpu_particles_2d.visible = true
 	cpu_particles_2d.emitting = true
+	explosion_1.playing= true
 	await get_tree().create_timer(2.0).timeout
 	cpu_particles_2d_2.visible = true
 	cpu_particles_2d_2.emitting = true
+	explosion_1.playing= true
+	explosion_2.playing= true
 	await get_tree().create_timer(0.5).timeout
 	cpu_particles_2d_3.visible = true
 	cpu_particles_2d_3.emitting = true
-	
+	explosion_1.playing= true
+	explosion_2.playing= true
+	explosion_3.playing= true
 	
