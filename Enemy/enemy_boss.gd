@@ -184,7 +184,7 @@ func _on_shoot_rate_spawn_timer_rotor_2_timeout() -> void:
 
 func _on_shoot_rate_spawn_timer_rotor_3_timeout() -> void:
 	if finish_game == false:
-		await get_tree().create_timer(27.0).timeout
+		await get_tree().create_timer(27.0).timeout #27.0
 		for s in rotator_bullets_rotor3.get_children():
 			var bullet = bullet_scene_rotor3.instantiate()
 			bullet.bullet_sprite = bullet_sprite_rotor3
@@ -197,7 +197,7 @@ func _on_shoot_rate_spawn_timer_rotor_3_timeout() -> void:
 
 func _on_shoot_rate_spawn_timer_rotor_4_timeout() -> void:
 	if finish_game == false:
-		await get_tree().create_timer(55.0).timeout
+		await get_tree().create_timer(54.5).timeout
 		for s in rotator_bullets_rotor4.get_children():
 			var bullet = bullet_scene_rotor4.instantiate()
 			bullet.bullet_sprite = bullet_sprite_rotor4
@@ -208,7 +208,7 @@ func _on_shoot_rate_spawn_timer_rotor_4_timeout() -> void:
 			bullet.rotation = s.global_rotation
 			
 func destroy_boss():
-	await get_tree().create_timer(29).timeout #134.4
+	await get_tree().create_timer(134.4).timeout #134.4
 	finish_game = true
 	print("addio rotori")
 	#mettere esplosioni
