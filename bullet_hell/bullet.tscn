@@ -11,9 +11,9 @@ z_index = 1
 script = ExtResource("1_k8ooh")
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(-3, -3)
-scale = Vector2(0.351563, 0.347656)
-color = Color(1, 0.356863, 1, 0.478431)
+position = Vector2(1, 1)
+scale = Vector2(0.116465, 0.119048)
+color = Color(1, 0.356863, 1, 0.521569)
 texture = ExtResource("2_a3a54")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://dblekf2wgqq1e"]
+[gd_scene load_steps=25 format=4 uid="uid://dblekf2wgqq1e"]
 
 [ext_resource type="Script" path="res://Levels/Generic_Scripts/game_controller.gd" id="1_s31yo"]
 [ext_resource type="PackedScene" uid="uid://bxa5nus5m4ntu" path="res://menus/scenes/pause_menu.tscn" id="2_ebqoc"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cawi1y20tbbfy" path="res://menus/scenes/option_menu.tscn" id="3_py87u"]
 [ext_resource type="PackedScene" uid="uid://d1cwkxxbgcmug" path="res://Player_and_hud/HUD/hud.tscn" id="4_p3vuh"]
 [ext_resource type="Texture2D" uid="uid://dd7v0318wq0yo" path="res://Assets/FreePack.png/zeo254-completed-commission.png" id="5_s266l"]
+[ext_resource type="Texture2D" uid="uid://cjvfbquop4oku" path="res://Assets/NaD6F.png" id="6_e55bs"]
 [ext_resource type="Texture2D" uid="uid://cpn3yify3y5ll" path="res://Assets/craftpix-net-865357-free-pixel-citizens-for-top-down-tower-defense/3/S_Idle.png" id="8_2woq7"]
 [ext_resource type="PackedScene" uid="uid://crc8sjc44c4cl" path="res://Enemy/enemy_forest.tscn" id="8_72sah"]
 [ext_resource type="AudioStream" uid="uid://vg7k27m3ubug" path="res://Assets/musics/music_zapsplat_game_music_action_fast_euro_house_pumping_fun_arcade_rave_024.mp3" id="9_elp36"]
@@ -201,6 +202,12 @@ tile_set = SubResource("TileSet_rrdv2")
 [node name="Bullets" type="Node" parent="."]
 
 [node name="Player" parent="." instance=ExtResource("3_8qr16")]
+
+[node name="PointLight2D" type="PointLight2D" parent="Player"]
+position = Vector2(0, -4)
+scale = Vector2(1.05546, 1.05546)
+energy = 0.07
+texture = ExtResource("6_e55bs")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(512, 300)

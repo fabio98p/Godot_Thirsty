@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://crc8sjc44c4cl"]
+[gd_scene load_steps=10 format=3 uid="uid://crc8sjc44c4cl"]
 
 [ext_resource type="Script" path="res://Enemy/enemy_forest.gd" id="1_xoxei"]
 [ext_resource type="PackedScene" uid="uid://cu4jgwl0oakgw" path="res://bullet_hell/bullet.tscn" id="2_2xj1m"]
 [ext_resource type="Texture2D" uid="uid://dd30wxgl1f0gx" path="res://Assets/Modern Fantasy JRPG Character Sprites/Modern Fantasy JRPG Character Sprites (transparent).png" id="2_g7sa8"]
 [ext_resource type="Texture2D" uid="uid://ba5h2xprfe0ud" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Animations/Shots/Shot4/shot4_exp4.png" id="3_whdyd"]
+[ext_resource type="Texture2D" uid="uid://cjvfbquop4oku" path="res://Assets/NaD6F.png" id="5_jspla"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wyd7n"]
 atlas = ExtResource("2_g7sa8")
@@ -51,5 +52,11 @@ frame_progress = 0.563581
 [node name="Rotetor_cont" type="Node2D" parent="."]
 
 [node name="Rotator_bullets" type="Node2D" parent="Rotetor_cont"]
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(1, 6)
+scale = Vector2(0.118125, 0.118125)
+color = Color(0.176471, 0.823529, 0, 0.470588)
+texture = ExtResource("5_jspla")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -301,8 +301,9 @@ position = Vector2(518, 501)
 
 [node name="PointLight2D" type="PointLight2D" parent="Player"]
 position = Vector2(-3, -3)
-scale = Vector2(0.351563, 0.347656)
+scale = Vector2(0.745721, 0.737433)
 color = Color(1, 0.356863, 1, 0.478431)
+energy = 0.73
 texture = ExtResource("9_2mpus")
 
 [node name="Enemy" parent="." instance=ExtResource("4_wam6v")]
