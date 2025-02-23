@@ -134,7 +134,7 @@ offset_bottom = 570.0
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0.360784, 1)
 theme_override_fonts/font = ExtResource("4_sotqv")
 theme_override_styles/normal = SubResource("StyleBoxFlat_xhjpt")
-text = "Continua"
+text = "Continue"
 
 [node name="EzDialogue" type="Node" parent="."]
 script = ExtResource("2_agowf")
