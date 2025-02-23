@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 
+@onready var audio_stream_player_2d: AudioStreamPlayer2D = $AudioStreamPlayer2D
 
 @onready var mesh_instance_2d_2: MeshInstance2D = $Area2D/MeshInstance2D2
 @onready var mesh_instance_2d: MeshInstance2D = $Area2D/MeshInstance2D
@@ -67,27 +68,30 @@ func lose_hp():
 	if !isInvincible:
 		player_hit_particle.emitting = true
 		current_hp = current_hp-1
-		animated_sprite_2d.modulate.a = 0.5
-		await get_tree().create_timer(0.31).timeout
-		animated_sprite_2d.modulate.a = 1
-		await get_tree().create_timer(0.32).timeout
-		animated_sprite_2d.modulate.a = 0.5
-		await get_tree().create_timer(0.30).timeout
-		animated_sprite_2d.modulate.a = 1
-		await get_tree().create_timer(0.28).timeout
-		animated_sprite_2d.modulate.a = 0.5
-		await get_tree().create_timer(0.26).timeout
-		animated_sprite_2d.modulate.a = 1
-		await get_tree().create_timer(0.24).timeout
-		animated_sprite_2d.modulate.a = 0.5
-		await get_tree().create_timer(0.22).timeout
-		animated_sprite_2d.modulate.a = 1
-		
+		audio_stream_player_2d.playing = true
 		if current_hp == 0:
 			player_dead.emit()
-		inv_frame_timer.start()
-		player_hit.emit()
-		isInvincible = true
+		else:
+			inv_frame_timer.start()
+			player_hit.emit()
+			isInvincible = true
+			animated_sprite_2d.modulate.a = 0.5
+			await get_tree().create_timer(0.31).timeout
+			animated_sprite_2d.modulate.a = 1
+			await get_tree().create_timer(0.32).timeout
+			animated_sprite_2d.modulate.a = 0.5
+			await get_tree().create_timer(0.30).timeout
+			animated_sprite_2d.modulate.a = 1
+			await get_tree().create_timer(0.28).timeout
+			animated_sprite_2d.modulate.a = 0.5
+			await get_tree().create_timer(0.26).timeout
+			animated_sprite_2d.modulate.a = 1
+			await get_tree().create_timer(0.24).timeout
+			animated_sprite_2d.modulate.a = 0.5
+			await get_tree().create_timer(0.22).timeout
+			animated_sprite_2d.modulate.a = 1
+		
+		
 	
 
 func _on_inv_frame_timer_timeout() -> void:

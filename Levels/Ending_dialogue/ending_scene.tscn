@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c32rtpgtksewa"]
+[gd_scene load_steps=5 format=3 uid="uid://c32rtpgtksewa"]
 
 [ext_resource type="Script" path="res://Levels/Ending_dialogue/ending_scene.gd" id="1_pa7v5"]
 [ext_resource type="PackedScene" uid="uid://dy6ojes0dljoj" path="res://Player_and_hud/HUD/Dialog_sistem.tscn" id="1_qjvee"]
 [ext_resource type="AudioStream" uid="uid://s4s8vtnnl686" path="res://Assets/musics/ambient-future-garage-vocals-with-pad-limbo_140bpm_G_minor.wav" id="3_o8mra"]
+[ext_resource type="AudioStream" uid="uid://blpiagd3v073q" path="res://Assets/musics/sound effect/hurt and aaaAAAAAAAH/desperate-shout-106691.mp3" id="4_ya6fi"]
 
 [node name="Ending_scene" type="Control"]
 layout_mode = 3
@@ -35,3 +36,6 @@ stream = ExtResource("3_o8mra")
 autoplay = true
 max_distance = 12000.0
 attenuation = 3.38614e-05
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_ya6fi")
