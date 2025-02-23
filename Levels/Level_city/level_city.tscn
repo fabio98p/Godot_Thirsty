@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=4 uid="uid://0voju36h31a7"]
+[gd_scene load_steps=77 format=4 uid="uid://0voju36h31a7"]
 
 [ext_resource type="Script" path="res://Levels/Generic_Scripts/game_controller.gd" id="1_dwsm6"]
 [ext_resource type="PackedScene" uid="uid://bxa5nus5m4ntu" path="res://menus/scenes/pause_menu.tscn" id="2_xhrso"]
@@ -36,8 +36,9 @@
 [ext_resource type="PackedScene" uid="uid://nubhk65xe1u2" path="res://Assets/Assets_collision_scene/sign_orange.tscn" id="33_j8cyr"]
 [ext_resource type="PackedScene" uid="uid://57j2uriat84d" path="res://Assets/Assets_collision_scene/trashcan.tscn" id="34_8tdff"]
 [ext_resource type="PackedScene" uid="uid://bhcf2pa40j7ph" path="res://Enemy/citizen_enemy.tscn" id="35_coxac"]
-[ext_resource type="Texture2D" uid="uid://cb4otlstb4id2" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Animations/Shots/Shot4/shot4_3.png" id="36_2p8tf"]
 [ext_resource type="FontFile" uid="uid://dhglvak4fko4" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/fonts/PixelOperator8-Bold.ttf" id="37_qwuab"]
+[ext_resource type="Texture2D" uid="uid://eyhmbo01mycw" path="res://Assets/bullets/soldisoldisoldi.png" id="38_s1jlk"]
+[ext_resource type="Texture2D" uid="uid://cdh05k4cru8i5" path="res://Assets/bullets/patataatata.png" id="39_hd58m"]
 [ext_resource type="Texture2D" uid="uid://ccuv7y45e2bsc" path="res://Assets/ASSET PACK - TopDown City BY BESHKEK ART/particles/smokeeffect_repeat_48x64.png" id="39_hqw5n"]
 [ext_resource type="Texture2D" uid="uid://cpn3yify3y5ll" path="res://Assets/craftpix-net-865357-free-pixel-citizens-for-top-down-tower-defense/3/S_Idle.png" id="39_u7xs1"]
 [ext_resource type="AudioStream" uid="uid://bb32evc1b38kx" path="res://Assets/musics/music_zapsplat_easy_cheesy.mp3" id="41_4b7x4"]
@@ -1101,26 +1102,100 @@ frame_progress = 0.675577
 [node name="Est_enemies" type="Node" parent="Enemies"]
 
 [node name="Citizen_enemy2" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
-position = Vector2(856, -565)
+z_index = 100
+position = Vector2(955, -801)
 level_scene = "Level_city"
-bullet_sprite = ExtResource("36_2p8tf")
+bullet_sprite = ExtResource("38_s1jlk")
 rotate_speed = 50
 shoot_timer_wait_time = 0.2
+bullet_direction = 1.47
+bullet_speed = 150.0
 
-[node name="Bullets" type="Node" parent="Enemies/Est_enemies"]
+[node name="Citizen_enemy4" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
+z_index = 100
+position = Vector2(960, -2823)
+level_scene = "Level_city"
+bullet_sprite = ExtResource("38_s1jlk")
+rotate_speed = 50
+shoot_timer_wait_time = 0.2
+bullet_direction = 1.47
+bullet_speed = 150.0
+
+[node name="Citizen_enemy5" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
+z_index = 100
+position = Vector2(960, -3043)
+level_scene = "Level_city"
+bullet_sprite = ExtResource("38_s1jlk")
+rotate_speed = 50
+shoot_timer_wait_time = 0.2
+bullet_direction = 1.47
+bullet_speed = 150.0
+
+[node name="Citizen_enemy11" parent="Enemies/Est_enemies" instance=ExtResource("35_coxac")]
+z_index = 100
+position = Vector2(832, -4069)
+level_scene = "Level_city"
+bullet_sprite = ExtResource("38_s1jlk")
+rotate_speed = 50
+shoot_timer_wait_time = 0.2
+bullet_direction = 1.47
+bullet_speed = 150.0
+
+[node name="Bullets" type="Node2D" parent="Enemies/Est_enemies"]
+z_index = 100
 
 [node name="West_enemies2" type="Node" parent="Enemies"]
 
-[node name="Citizen_enemy3" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
-position = Vector2(43, -708)
+[node name="Bullets" type="Node2D" parent="Enemies/West_enemies2"]
+z_index = 100
+
+[node name="Citizen_enemy" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
+z_index = 100
+position = Vector2(57, -155)
 level_scene = "Level_city"
+bullet_sprite = ExtResource("39_hd58m")
 rotate_speed = 80
-shoot_timer_wait_time = 0.4
+shoot_timer_wait_time = 0.3
 radius = 0
 fire_angle_rotator = 70
-bullet_direction = 0.0
+bullet_direction = -0.3
+bullet_speed = 200.0
 
-[node name="Bullets" type="Node" parent="Enemies/West_enemies2"]
+[node name="Citizen_enemy9" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
+z_index = 100
+position = Vector2(65, -1911)
+level_scene = "Level_city"
+bullet_sprite = ExtResource("39_hd58m")
+rotate_speed = 80
+shoot_timer_wait_time = 0.3
+radius = 0
+fire_angle_rotator = 70
+bullet_direction = -0.3
+bullet_speed = 200.0
+
+[node name="Citizen_enemy11" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
+z_index = 100
+position = Vector2(67, -1777)
+level_scene = "Level_city"
+bullet_sprite = ExtResource("39_hd58m")
+rotate_speed = 80
+shoot_timer_wait_time = 0.3
+radius = 0
+fire_angle_rotator = 70
+bullet_direction = -0.3
+bullet_speed = 200.0
+
+[node name="Citizen_enemy12" parent="Enemies/West_enemies2" instance=ExtResource("35_coxac")]
+z_index = 100
+position = Vector2(53, -4069)
+level_scene = "Level_city"
+bullet_sprite = ExtResource("39_hd58m")
+rotate_speed = 80
+shoot_timer_wait_time = 0.3
+radius = 0
+fire_angle_rotator = 70
+bullet_direction = -0.3
+bullet_speed = 200.0
 
 [node name="Label" type="Label" parent="."]
 offset_left = 175.0
