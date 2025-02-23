@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dh7rt8osm7a3o"
+path="res://.godot/imported/zapsplat_multimedia_game_sound_laser_gun_fire_single_shot_retro_002_79072.mp3-2e2a2cd48ca01f8d95d835b221f13d7b.mp3str"
+
+[deps]
+
+source_file="res://Assets/musics/sound effect/zapsplat_multimedia_game_sound_laser_gun_fire_single_shot_retro_002_79072.mp3"
+dest_files=["res://.godot/imported/zapsplat_multimedia_game_sound_laser_gun_fire_single_shot_retro_002_79072.mp3-2e2a2cd48ca01f8d95d835b221f13d7b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
