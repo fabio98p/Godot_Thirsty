@@ -224,31 +224,6 @@ offset_bottom = -301.0
 
 [node name="Bullets" type="Node" parent="Enemies/Enemy_est"]
 
-[node name="Enemy_forest_est1" parent="Enemies/Enemy_est" instance=ExtResource("8_72sah")]
-position = Vector2(987, 921)
-rotate_speed = 80
-shoot_timer_wait_time = 0.3
-radius = 0
-fire_angle_rotator = 70
-bullet_direction = 1.47
-bullet_speed = 200.0
-
-[node name="Enemy_forest_est2" parent="Enemies/Enemy_est" instance=ExtResource("8_72sah")]
-position = Vector2(994, 1119)
-rotate_speed = 80
-shoot_timer_wait_time = 0.15
-radius = 0
-fire_angle_rotator = 70
-bullet_direction = 1.47
-bullet_speed = 300.0
-
-[node name="Enemy_forest_est3" parent="Enemies/Enemy_est" instance=ExtResource("8_72sah")]
-position = Vector2(976, 1014)
-rotate_speed = 50
-shoot_timer_wait_time = 0.3
-bullet_direction = 1.47
-bullet_speed = 150.0
-
 [node name="Enemy_forest_est4" parent="Enemies/Enemy_est" instance=ExtResource("8_72sah")]
 position = Vector2(925, -739)
 rotate_speed = 80
@@ -307,31 +282,6 @@ bullet_speed = 150.0
 [node name="Enem_west" type="Node" parent="Enemies"]
 
 [node name="Bullets" type="Node" parent="Enemies/Enem_west"]
-
-[node name="Enemy_forest_west" parent="Enemies/Enem_west" instance=ExtResource("8_72sah")]
-position = Vector2(127, 858)
-rotate_speed = 80
-shoot_timer_wait_time = 0.3
-radius = 0
-fire_angle_rotator = 70
-bullet_direction = -0.3
-bullet_speed = 200.0
-
-[node name="Enemy_forest_west2" parent="Enemies/Enem_west" instance=ExtResource("8_72sah")]
-position = Vector2(110, 997)
-rotate_speed = 80
-shoot_timer_wait_time = 0.15
-radius = 0
-fire_angle_rotator = 70
-bullet_direction = -0.3
-bullet_speed = 300.0
-
-[node name="Enemy_forest_west3" parent="Enemies/Enem_west" instance=ExtResource("8_72sah")]
-position = Vector2(118, 1127)
-rotate_speed = 50
-shoot_timer_wait_time = 0.3
-bullet_direction = -0.3
-bullet_speed = 150.0
 
 [node name="Enemy_forest_west5" parent="Enemies/Enem_west" instance=ExtResource("8_72sah")]
 position = Vector2(122, -517)
