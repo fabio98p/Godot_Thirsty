@@ -30,3 +30,7 @@ func hide_option_menu() -> void:
 	
 func hide_select_scene() -> void:
 	remove_child(select_scene_instance)
+
+
+func _on_button_credits_pressed() -> void:
+	get_tree().change_scene_to_file("res://menus/scenes/credits.tscn")

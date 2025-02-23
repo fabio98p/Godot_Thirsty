@@ -99,9 +99,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -180.0
-offset_top = -40.0
+offset_top = -94.0
 offset_right = 180.0
-offset_bottom = 244.0
+offset_bottom = 251.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 25
@@ -126,6 +126,16 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_lbojn")
 theme_override_styles/normal = SubResource("StyleBoxFlat_100ax")
 text = "Select Level"
 
+[node name="Button_credits" type="Button" parent="Buttons_cont"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yltbn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w3rh1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lbojn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_100ax")
+text = "Credits"
+
 [node name="Button_options" type="Button" parent="Buttons_cont"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -148,5 +158,6 @@ text = "Exit"
 
 [connection signal="pressed" from="Buttons_cont/Button_start" to="." method="_on_button_start_pressed"]
 [connection signal="pressed" from="Buttons_cont/Button_scenes" to="." method="_on_button_scenes_pressed"]
+[connection signal="pressed" from="Buttons_cont/Button_credits" to="." method="_on_button_credits_pressed"]
 [connection signal="pressed" from="Buttons_cont/Button_options" to="." method="_on_button_options_pressed"]
 [connection signal="pressed" from="Buttons_cont/Button_exit" to="." method="_on_button_exit_pressed"]
