@@ -13,6 +13,9 @@
 [ext_resource type="Texture2D" uid="uid://c7x7pnggmbpmf" path="res://Assets/pg_images/Sprite_alice_surprise.png" id="10_cwss4"]
 [ext_resource type="AudioStream" uid="uid://b6io35uhnygv7" path="res://Assets/musics/music_zapsplat_beautiful_reef.mp3" id="11_1tfcq"]
 [ext_resource type="Texture2D" uid="uid://ci8gmnwkcj8n8" path="res://Assets/img_credits/cover.png" id="13_b35uy"]
+[ext_resource type="Texture2D" uid="uid://cdh05k4cru8i5" path="res://Assets/bullets/patataatata.png" id="14_2vfsu"]
+[ext_resource type="Texture2D" uid="uid://eyhmbo01mycw" path="res://Assets/bullets/soldisoldisoldi.png" id="15_ijcg4"]
+[ext_resource type="Texture2D" uid="uid://diasfw7a54s6q" path="res://Assets/bullets/pillola_proiettile.png" id="16_e34fv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j0sbl"]
 bg_color = Color(0, 0, 0, 1)
@@ -34,7 +37,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_k014k"]
 resource_name = "credits_escalation"
-length = 60.0
+length = 120.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -42,10 +45,10 @@ tracks/0/path = NodePath("Camera2D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 60),
+"times": PackedFloat32Array(0, 120),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(512, -268), Vector2(512, 2654)]
+"values": [Vector2(512, -268), Vector2(512, 3925)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ap6ct"]
@@ -92,43 +95,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="Animation" id="Animation_r1eli"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(512, -272)]
-}
-
-[sub_resource type="Animation" id="Animation_gsswu"]
-resource_name = "new_animation"
-length = 60.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 60),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(512, -272), Vector2(512, 2664)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_a7sxl"]
-_data = {
-"RESET": SubResource("Animation_r1eli"),
-"new_animation": SubResource("Animation_gsswu")
-}
-
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t8ajt"]
 texture = ExtResource("13_b35uy")
 
@@ -142,7 +108,7 @@ grow_vertical = 2
 script = ExtResource("1_31f78")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(512, -272)
+position = Vector2(512, -268)
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -313,7 +279,7 @@ samplefocus.com
 
 zapsplat.com
 
-Music by DSTechnician from Pixabay
+DSTechnician from Pixabay
 
 
 
@@ -362,6 +328,13 @@ for playing this game! 😊
 We truly hope you had at least half as much fun playing it as we did making it. 😃
 
 
+Fabio: \"ciao colleghi!\"
+
+Mirko: \"ciao a tutti, :D divertiti? （づ￣3￣）づ╭❤️～\"
+
+
+
+
 
 
 See you in Thirsty 2: Mission SpaceWaterLaw!
@@ -369,6 +342,12 @@ See you in Thirsty 2: Mission SpaceWaterLaw!
 
 
 (now in 3D!)
+
+
+
+
+
+
 
 
 
@@ -422,9 +401,9 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_sgo5l")
 
 [node name="img_background5" type="Panel" parent="img_backfround"]
 offset_left = 153.0
-offset_top = 3438.0
+offset_top = 3662.0
 offset_right = 193.0
-offset_bottom = 3478.0
+offset_bottom = 3702.0
 scale = Vector2(17.9552, 11.1135)
 theme_override_styles/panel = SubResource("StyleBoxTexture_hy6gu")
 
@@ -450,7 +429,7 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="."]
-position = Vector2(554, 3128)
+position = Vector2(554, 3187)
 scale = Vector2(-2.499, 2.381)
 sprite_frames = SubResource("SpriteFrames_red0t")
 animation = &"idle"
@@ -503,11 +482,6 @@ THE END
 "
 horizontal_alignment = 1
 
-[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_a7sxl")
-}
-
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("11_1tfcq")
 autoplay = true
@@ -522,3 +496,74 @@ offset_right = 330.0
 offset_bottom = -365.0
 scale = Vector2(11.1379, 8.69538)
 theme_override_styles/panel = SubResource("StyleBoxTexture_t8ajt")
+
+[node name="Patataatata" type="Sprite2D" parent="."]
+position = Vector2(189, 1769)
+rotation = -0.201977
+texture = ExtResource("14_2vfsu")
+
+[node name="Patataatata2" type="Sprite2D" parent="."]
+position = Vector2(175, 1907)
+texture = ExtResource("14_2vfsu")
+
+[node name="Patataatata3" type="Sprite2D" parent="."]
+position = Vector2(139, 2033)
+rotation = 0.649067
+texture = ExtResource("14_2vfsu")
+
+[node name="Patataatata4" type="Sprite2D" parent="."]
+position = Vector2(139, 1673)
+rotation = -0.596313
+texture = ExtResource("14_2vfsu")
+
+[node name="Soldisoldisoldi" type="Sprite2D" parent="."]
+position = Vector2(921, 1707)
+rotation = 0.479039
+texture = ExtResource("15_ijcg4")
+
+[node name="Soldisoldisoldi2" type="Sprite2D" parent="."]
+position = Vector2(887.115, 1775)
+rotation = 0.258406
+texture = ExtResource("15_ijcg4")
+
+[node name="Soldisoldisoldi3" type="Sprite2D" parent="."]
+position = Vector2(887.115, 1850)
+rotation = -0.108795
+texture = ExtResource("15_ijcg4")
+
+[node name="Soldisoldisoldi4" type="Sprite2D" parent="."]
+position = Vector2(921, 1926)
+rotation = -0.395496
+texture = ExtResource("15_ijcg4")
+
+[node name="PillolaProiettile" type="Sprite2D" parent="."]
+position = Vector2(911, 2394)
+texture = ExtResource("16_e34fv")
+
+[node name="PillolaProiettile2" type="Sprite2D" parent="."]
+position = Vector2(911, 2324)
+texture = ExtResource("16_e34fv")
+
+[node name="PillolaProiettile3" type="Sprite2D" parent="."]
+position = Vector2(911, 2245)
+texture = ExtResource("16_e34fv")
+
+[node name="PillolaProiettile4" type="Sprite2D" parent="."]
+position = Vector2(911, 2446)
+texture = ExtResource("16_e34fv")
+
+[node name="PillolaProiettile5" type="Sprite2D" parent="."]
+position = Vector2(142.5, 2394)
+texture = ExtResource("16_e34fv")
+
+[node name="PillolaProiettile6" type="Sprite2D" parent="."]
+position = Vector2(142.5, 2324)
+texture = ExtResource("16_e34fv")
+
+[node name="PillolaProiettile7" type="Sprite2D" parent="."]
+position = Vector2(142.5, 2245)
+texture = ExtResource("16_e34fv")
+
+[node name="PillolaProiettile8" type="Sprite2D" parent="."]
+position = Vector2(142.5, 2446)
+texture = ExtResource("16_e34fv")
