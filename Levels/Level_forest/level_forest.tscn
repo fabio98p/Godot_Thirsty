@@ -233,15 +233,6 @@ fire_angle_rotator = 70
 bullet_direction = 1.47
 bullet_speed = 200.0
 
-[node name="Enemy_forest_est4" parent="Enemies/Enemy_est" instance=ExtResource("8_72sah")]
-position = Vector2(925, -739)
-rotate_speed = 80
-shoot_timer_wait_time = 0.3
-radius = 0
-fire_angle_rotator = 70
-bullet_direction = 1.47
-bullet_speed = 200.0
-
 [node name="Enemy_forest_est2" parent="Enemies/Enemy_est" instance=ExtResource("8_72sah")]
 position = Vector2(994, 1119)
 rotate_speed = 80
@@ -258,6 +249,15 @@ shoot_timer_wait_time = 0.3
 bullet_direction = 1.47
 bullet_speed = 150.0
 
+[node name="Enemy_forest_est4" parent="Enemies/Enemy_est" instance=ExtResource("8_72sah")]
+position = Vector2(925, -739)
+rotate_speed = 80
+shoot_timer_wait_time = 0.3
+radius = 0
+fire_angle_rotator = 70
+bullet_direction = 1.47
+bullet_speed = 200.0
+
 [node name="Enemy_forest_est6" parent="Enemies/Enemy_est" instance=ExtResource("8_72sah")]
 position = Vector2(940, -1413)
 rotate_speed = 50
@@ -266,7 +266,39 @@ bullet_direction = 1.47
 bullet_speed = 150.0
 
 [node name="Enemy_forest_est5" parent="Enemies/Enemy_est" instance=ExtResource("8_72sah")]
-position = Vector2(1027, -735)
+position = Vector2(976, -735)
+rotate_speed = 50
+shoot_timer_wait_time = 0.3
+bullet_direction = 1.47
+bullet_speed = 150.0
+
+[node name="Enemy_forest_est7" parent="Enemies/Enemy_est" instance=ExtResource("8_72sah")]
+position = Vector2(925, -1636)
+rotate_speed = 80
+shoot_timer_wait_time = 0.3
+radius = 0
+fire_angle_rotator = 70
+bullet_direction = 1.47
+bullet_speed = 200.0
+
+[node name="Enemy_forest_est9" parent="Enemies/Enemy_est" instance=ExtResource("8_72sah")]
+position = Vector2(959, -2066)
+rotate_speed = 50
+shoot_timer_wait_time = 0.3
+bullet_direction = 1.47
+bullet_speed = 150.0
+
+[node name="Enemy_forest_est8" parent="Enemies/Enemy_est" instance=ExtResource("8_72sah")]
+position = Vector2(925, -3151)
+rotate_speed = 80
+shoot_timer_wait_time = 0.3
+radius = 0
+fire_angle_rotator = 70
+bullet_direction = 1.47
+bullet_speed = 200.0
+
+[node name="Enemy_forest_est10" parent="Enemies/Enemy_est" instance=ExtResource("8_72sah")]
+position = Vector2(959, -3317)
 rotate_speed = 50
 shoot_timer_wait_time = 0.3
 bullet_direction = 1.47
@@ -278,24 +310,6 @@ bullet_speed = 150.0
 
 [node name="Enemy_forest_west" parent="Enemies/Enem_west" instance=ExtResource("8_72sah")]
 position = Vector2(127, 858)
-rotate_speed = 80
-shoot_timer_wait_time = 0.3
-radius = 0
-fire_angle_rotator = 70
-bullet_direction = -0.3
-bullet_speed = 200.0
-
-[node name="Enemy_forest_west5" parent="Enemies/Enem_west" instance=ExtResource("8_72sah")]
-position = Vector2(122, -517)
-rotate_speed = 80
-shoot_timer_wait_time = 0.3
-radius = 0
-fire_angle_rotator = 70
-bullet_direction = -0.3
-bullet_speed = 200.0
-
-[node name="Enemy_forest_west4" parent="Enemies/Enem_west" instance=ExtResource("8_72sah")]
-position = Vector2(133, -223)
 rotate_speed = 80
 shoot_timer_wait_time = 0.3
 radius = 0
@@ -319,8 +333,67 @@ shoot_timer_wait_time = 0.3
 bullet_direction = -0.3
 bullet_speed = 150.0
 
+[node name="Enemy_forest_west5" parent="Enemies/Enem_west" instance=ExtResource("8_72sah")]
+position = Vector2(122, -517)
+rotate_speed = 80
+shoot_timer_wait_time = 0.3
+radius = 0
+fire_angle_rotator = 70
+bullet_direction = -0.3
+bullet_speed = 200.0
+
+[node name="Enemy_forest_west4" parent="Enemies/Enem_west" instance=ExtResource("8_72sah")]
+position = Vector2(133, -223)
+rotate_speed = 80
+shoot_timer_wait_time = 0.3
+radius = 0
+fire_angle_rotator = 70
+bullet_direction = -0.3
+bullet_speed = 200.0
+
 [node name="Enemy_forest_west6" parent="Enemies/Enem_west" instance=ExtResource("8_72sah")]
 position = Vector2(118, -1164)
+rotate_speed = 50
+shoot_timer_wait_time = 0.3
+bullet_direction = -0.3
+bullet_speed = 150.0
+
+[node name="Enemy_forest_west7" parent="Enemies/Enem_west" instance=ExtResource("8_72sah")]
+position = Vector2(122, -1537)
+rotate_speed = 80
+shoot_timer_wait_time = 0.3
+radius = 0
+fire_angle_rotator = 70
+bullet_direction = -0.3
+bullet_speed = 200.0
+
+[node name="Enemy_forest_west8" parent="Enemies/Enem_west" instance=ExtResource("8_72sah")]
+position = Vector2(89, -1919)
+rotate_speed = 80
+shoot_timer_wait_time = 0.3
+radius = 0
+fire_angle_rotator = 70
+bullet_direction = -0.3
+bullet_speed = 200.0
+
+[node name="Enemy_forest_west9" parent="Enemies/Enem_west" instance=ExtResource("8_72sah")]
+position = Vector2(118, -2188)
+rotate_speed = 50
+shoot_timer_wait_time = 0.3
+bullet_direction = -0.3
+bullet_speed = 150.0
+
+[node name="Enemy_forest_west10" parent="Enemies/Enem_west" instance=ExtResource("8_72sah")]
+position = Vector2(89, -3291)
+rotate_speed = 80
+shoot_timer_wait_time = 0.3
+radius = 0
+fire_angle_rotator = 70
+bullet_direction = -0.3
+bullet_speed = 200.0
+
+[node name="Enemy_forest_west11" parent="Enemies/Enem_west" instance=ExtResource("8_72sah")]
+position = Vector2(118, -3560)
 rotate_speed = 50
 shoot_timer_wait_time = 0.3
 bullet_direction = -0.3
