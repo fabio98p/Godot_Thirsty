@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://6n2sqicdqq3y" path="res://Assets/craftpix-net-865357-free-pixel-citizens-for-top-down-tower-defense/2/U_Walk.png" id="2_ffvts"]
 [ext_resource type="Texture2D" uid="uid://s2eixh73euok" path="res://Assets/craftpix-net-865357-free-pixel-citizens-for-top-down-tower-defense/2/U_Special.png" id="4_ooase"]
 [ext_resource type="Texture2D" uid="uid://colmilkbaf3j3" path="res://Assets/craftpix-net-865357-free-pixel-citizens-for-top-down-tower-defense/2/S_Walk.png" id="4_w7mwh"]
-[ext_resource type="PackedScene" path="res://bullet_hell/bullet_player.tscn" id="7_gvfx1"]
-[ext_resource type="PackedScene" uid="uid://uf4pw6l6gy8o" path="res://Player_and_hud/player_hit_particle.tscn" id="8_12urs"]
+[ext_resource type="PackedScene" uid="uid://cfcqlw6jw2yj4" path="res://bullet_hell/bullet_player.tscn" id="7_gvfx1"]
+[ext_resource type="PackedScene" path="res://Player_and_hud/player_hit_particle.tscn" id="8_12urs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_riii5"]
 atlas = ExtResource("2_8t76w")

@@ -714,41 +714,41 @@ autoplay = "Auto_scroll"
 [node name="Enviroments" type="Node" parent="."]
 
 [node name="All-decals" type="Sprite2D" parent="Enviroments"]
-z_index = 100
+z_index = 1
 position = Vector2(358, -438)
 rotation = -4.41455
 texture = ExtResource("21_vd8eq")
 
 [node name="Crack-decal-11x11-01" type="Sprite2D" parent="Enviroments"]
-z_index = 100
+z_index = 1
 position = Vector2(263, -415)
 texture = ExtResource("22_2f2mp")
 
 [node name="Crack-decal-18x22-02" type="Sprite2D" parent="Enviroments"]
-z_index = 100
+z_index = 1
 position = Vector2(424, -310)
 texture = ExtResource("23_h6528")
 
 [node name="Tire-decal-27x05-01" type="Sprite2D" parent="Enviroments"]
-z_index = 100
+z_index = 1
 position = Vector2(295, -261)
 rotation = 1.57266
 texture = ExtResource("24_tk11m")
 
 [node name="Tire-decal-64x6-02" type="Sprite2D" parent="Enviroments"]
-z_index = 100
+z_index = 1
 position = Vector2(288, -371)
 rotation = -4.69114
 texture = ExtResource("25_mmt3s")
 
 [node name="Tire-decal-64x6-03" type="Sprite2D" parent="Enviroments"]
-z_index = 100
+z_index = 1
 position = Vector2(314, -373)
 rotation = -4.70321
 texture = ExtResource("25_mmt3s")
 
 [node name="Trail-decal-74x41" type="Sprite2D" parent="Enviroments"]
-z_index = 100
+z_index = 1
 position = Vector2(377, -287)
 rotation = 1.54564
 texture = ExtResource("26_nqjs3")
@@ -1018,13 +1018,13 @@ z_index = 100
 position = Vector2(443, -991)
 
 [node name="Tire-decal-64x6-04" type="Sprite2D" parent="Enviroments"]
-z_index = 100
+z_index = 1
 position = Vector2(364, -691)
 rotation = -1.61759
 texture = ExtResource("25_mmt3s")
 
 [node name="Tire-decal-64x6-05" type="Sprite2D" parent="Enviroments"]
-z_index = 100
+z_index = 1
 position = Vector2(389, -692)
 rotation = -1.61759
 texture = ExtResource("25_mmt3s")
