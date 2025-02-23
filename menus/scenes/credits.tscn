@@ -109,7 +109,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_gsswu"]
 resource_name = "new_animation"
-length = 30.0
+length = 60.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -117,7 +117,7 @@ tracks/0/path = NodePath("Camera2D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 30),
+"times": PackedFloat32Array(0, 60),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(512, -272), Vector2(512, 2664)]
@@ -181,7 +181,7 @@ text = "
 
 
 
-Team di sviluppo
+DEVELOPER TEAMS
 
 
 
@@ -192,21 +192,21 @@ horizontal_alignment = 1
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_1yg46")
 theme_override_font_sizes/font_size = 16
-text = "Game Director / Project Lead → Chi ha guidato il progetto.
+text = "Game Director / Project Lead → Fabio and Mirko
 
-Game Designer → Chi ha ideato le meccaniche di gioco.
+Game Designer → Fabio and Mirko
 
-Programmer(s) → Chi ha scritto il codice.
+Programmer(s) → Fabio and Mirko
 
-Art Director / Artists → Chi ha creato la grafica e le animazioni.
+Art Director / Artists Sprits → Fabio and Mirko 
 
-Music & Sound Design → Chi ha composto la musica e lavorato agli effetti sonori.
+Music & Sound Design → Nobody
 
-Writers → Chi ha scritto la storia e i dialoghi.
+Writers → Fabio and Mirko
 
-QA Testers → Chi ha testato il gioco per scovare bug.
+QA Testers → Fabio and Mirko and Carlo
 
-Producers → Se c’è qualcuno che ha gestito tempistiche e risorse.
+Producers → Fabio and Mirko
 
 
 
@@ -259,7 +259,70 @@ text = "-Godot
 "
 horizontal_alignment = 1
 
-[node name="Ringraziamenti" type="Label" parent="VBoxContainer"]
+[node name="Asset" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_gqe5v")
+theme_override_font_sizes/font_size = 32
+text = "ASSETS/MUSIC WE USED
+
+
+"
+horizontal_alignment = 1
+
+[node name="Asset_testo" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1yg46")
+text = "hud hearts -  closeluca.itch.io
+
+tilemap city - beshkekart.itch.io
+
+tileset forest - gametoolkit.itch.io
+
+animated sprite citizen - craftpix.net
+
+animated sprite player/alice - craftpix.net
+
+font pixel - Jayvee Enaguas - HarvettFox96
+
+small animated aliens - spriter-theo
+
+alien ship - free-game-assets.itch.io
+
+
+
+BACKGROUNDS IMAGE
+
+lisadikaprio.itch.io (Home)
+
+the-outlander.itch.io (bathroom)
+
+lisadikaprio.itch.io (Home 2)
+craftpix.net (kombini)
+
+craftpix.net (forest)
+
+chasersgaming.itch.io (military base)
+
+craftpix.net (bossfight)
+
+
+
+SONGS
+
+samplefocus.com
+
+zapsplat.com
+
+Music by DSTechnician from Pixabay
+
+
+
+
+
+"
+horizontal_alignment = 1
+
+[node name="Ringraziamenti3" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_gqe5v")
 theme_override_font_sizes/font_size = 32
@@ -270,7 +333,7 @@ text = "SPECIAL THANKS
 "
 horizontal_alignment = 1
 
-[node name="Ringraziamenti_testo" type="Label" parent="VBoxContainer"]
+[node name="Ringraziamenti_testo2" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_1yg46")
 text = "We would like to thank Itch.io and Brackeys for this amazing game jam! 
@@ -359,13 +422,41 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_sgo5l")
 
 [node name="img_background5" type="Panel" parent="img_backfround"]
 offset_left = 153.0
-offset_top = 2429.0
+offset_top = 3438.0
 offset_right = 193.0
-offset_bottom = 2469.0
+offset_bottom = 3478.0
 scale = Vector2(17.9552, 11.1135)
 theme_override_styles/panel = SubResource("StyleBoxTexture_hy6gu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(294, 98)
+scale = Vector2(2.49943, 2.38097)
+sprite_frames = SubResource("SpriteFrames_red0t")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(466, 1361)
+scale = Vector2(-2.499, 2.381)
+sprite_frames = SubResource("SpriteFrames_red0t")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
+position = Vector2(251, 2514)
+scale = Vector2(2.49943, 2.38097)
+sprite_frames = SubResource("SpriteFrames_red0t")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="."]
+position = Vector2(554, 3128)
+scale = Vector2(-2.499, 2.381)
+sprite_frames = SubResource("SpriteFrames_red0t")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="."]
 position = Vector2(294, 98)
 scale = Vector2(2.49943, 2.38097)
 sprite_frames = SubResource("SpriteFrames_red0t")

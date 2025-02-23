@@ -66,6 +66,7 @@ func change_animation(direction: Vector2):
 func lose_hp():
 	if !isInvincible:
 		player_hit_particle.emitting = true
+		current_hp = current_hp-1
 		animated_sprite_2d.modulate.a = 0.5
 		await get_tree().create_timer(0.31).timeout
 		animated_sprite_2d.modulate.a = 1
@@ -81,7 +82,7 @@ func lose_hp():
 		animated_sprite_2d.modulate.a = 0.5
 		await get_tree().create_timer(0.22).timeout
 		animated_sprite_2d.modulate.a = 1
-		current_hp = current_hp-1
+		
 		if current_hp == 0:
 			player_dead.emit()
 		inv_frame_timer.start()
