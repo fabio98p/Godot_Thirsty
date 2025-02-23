@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+@export var can_fire : bool = false
+@export var bullet_scene: PackedScene
 @onready var inv_frame_timer: Timer = $InvFrameTimer
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 var speed_slow = 100.0
@@ -11,6 +13,20 @@ var isInvincible := false
 signal player_dead
 signal player_hit
 
+func _ready() -> void:
+	stop_fire()
+	while true:
+		print("pew")
+		print(can_fire)
+		if can_fire:
+			var bullet = bullet_scene.instantiate()
+			add_child(bullet)
+		await get_tree().create_timer(0.15).timeout
+
+func stop_fire():
+	await get_tree().create_timer(134.4).timeout# 134.4
+	can_fire = false
+	
 func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.

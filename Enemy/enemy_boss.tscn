@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cglgau4nikbkq" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship4/Exhaust/Turbo_flight/Exhaust1/exhaust3.png" id="4_bxgj1"]
 [ext_resource type="Texture2D" uid="uid://bb6xydqpsyw7f" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship1/Exhaust/Normal_flight/Exhaust1/exhaust2.png" id="5_qgxap"]
 [ext_resource type="Texture2D" uid="uid://cdytkuknhsapp" path="res://Assets/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship2/Exhaust/Normal_flight/Exhaust1/exhaust2.png" id="6_4ug5e"]
-[ext_resource type="PackedScene" uid="uid://bsi3cdykup2kl" path="res://bullet_hell/cpu_particles_2d.tscn" id="8_a5nyk"]
+[ext_resource type="PackedScene" path="res://bullet_hell/cpu_particles_2d.tscn" id="8_a5nyk"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bqm4q"]
 radius = 59.0

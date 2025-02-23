@@ -7,6 +7,7 @@ extends Node2D
 @export var option_menu: PackedScene
 @export var player_position: Vector2 = Vector2(531, 530)
 @export var next_scene: String
+@export var player_can_fire:bool = false
 var pause_menu_instance
 var option_menu_instance 
 var pause_already_pressed := false
@@ -14,7 +15,7 @@ var pause_already_pressed := false
 func _ready() -> void:
 	get_node("/root/AudioStreamPlayer2d").playing = false
 	player.position = player_position
-	
+	player.can_fire = player_can_fire
 	player.connect("player_dead", Callable(self, "death_player"))
 	player.connect("player_hit", Callable(self, "playerHitted"))
 
