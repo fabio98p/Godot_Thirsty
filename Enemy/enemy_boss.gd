@@ -211,7 +211,7 @@ func _on_shoot_rate_spawn_timer_rotor_4_timeout() -> void:
 			bullet.rotation = s.global_rotation
 			
 func destroy_boss():
-	await get_tree().create_timer(4.4).timeout #134.4
+	await get_tree().create_timer(134.4).timeout #134.4
 	finish_game = true
 	print("addio rotori")
 	#mettere esplosioni
