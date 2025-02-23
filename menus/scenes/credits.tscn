@@ -158,21 +158,21 @@ horizontal_alignment = 1
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_1yg46")
 theme_override_font_sizes/font_size = 16
-text = "Game Director / Project Lead → Fabio and Mirko
+text = "Game Director / Project Lead - Fabio and Mirko
 
-Game Designer → Fabio and Mirko
+Game Designer - Fabio and Mirko
 
-Programmer(s) → Fabio and Mirko
+Programmer(s) - Fabio and Mirko
 
-Art Director / Artists Sprits → Fabio and Mirko 
+Art Director / Artists Sprits - Fabio and Mirko 
 
-Music & Sound Design → Nobody
+Music & Sound Design - Nobody
 
-Writers → Fabio and Mirko
+Writers - Fabio and Mirko
 
-QA Testers → Fabio and Mirko and Carlo
+QA Testers - Fabio and Mirko and Carlo
 
-Producers → Fabio and Mirko
+Producers - Fabio and Mirko
 
 
 
@@ -286,6 +286,8 @@ freesound_community from Pixabay
 u_r7cny11q7r from Pixabay
 
 
+
+
 "
 horizontal_alignment = 1
 
@@ -331,7 +333,7 @@ We truly hope you had at least half as much fun playing it as we did making it. 
 
 Fabio: \"ciao colleghi!\"
 
-Mirko: \"ciao a tutti, :D divertiti? （づ￣3￣）づ╭❤️～\"
+Mirko: \"ciao a tutti, :D divertiti? <3\"
 
 
 
@@ -416,7 +418,7 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
-position = Vector2(466, 1361)
+position = Vector2(466, 1301)
 scale = Vector2(-2.499, 2.381)
 sprite_frames = SubResource("SpriteFrames_red0t")
 animation = &"idle"
